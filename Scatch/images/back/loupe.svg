@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.062" height="31.25" viewBox="0 0 30.062 31.25">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta> <?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1 {
+        fill: #e5e5e5;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="loupe" class="cls-1" d="M930.446,404.676h-3.535v-3.54a0.589,0.589,0,1,0-1.178,0v3.54H922.2a0.59,0.59,0,0,0,0,1.179h3.535v3.539a0.589,0.589,0,1,0,1.178,0v-3.539h3.535A0.59,0.59,0,0,0,930.446,404.676Zm13.384,18.446-8.753-9.115a12.384,12.384,0,1,0-.871.8l8.775,9.137a0.58,0.58,0,0,0,.424.182A0.59,0.59,0,0,0,943.83,423.122Zm-28.7-17.857a11.193,11.193,0,1,1,11.193,11.208A11.212,11.212,0,0,1,915.129,405.265Z" transform="translate(-913.938 -392.875)"/>
+</svg>
