@@ -12,6 +12,7 @@
 
 @include font-face("Tahoma", "../fonts/Tahoma/Tahoma", 400, normal, eot ttf woff);
 @include font-face("TahomaBold", "../fonts/TahomaBold/Tahoma-Bold", 700, normal, eot ttf woff);
+@include font-face("CalibriBold", "../fonts/CalibriBold/CalibriBold", 700, normal, eot ttf woff);
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -20,7 +21,7 @@
 body {
   font-family: Tahoma, sans-serif;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   min-width: 320px;
   position: relative;
 }
@@ -63,7 +64,6 @@ button {
   border: none;
   padding: 0;
   margin: 0;
-  outline: none;
 }
 
 
@@ -94,7 +94,7 @@ button {
   height: 100%;
   padding: 0;
   margin: 0 !important;
-  overflow: hidden;
+  //overflow: hidden;
 }
 
 
