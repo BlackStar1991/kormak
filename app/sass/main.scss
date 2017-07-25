@@ -24,6 +24,7 @@ body {
   font-weight: 400;
   min-width: 320px;
   position: relative;
+  background-color: #f1f1f1;
 }
 
 .wrapperBlock {
@@ -66,6 +67,9 @@ button {
   margin: 0;
 }
 
+.correct_right{
+  padding-right: 0!important;
+}
 
 /*********************************************/
 /*TYPOGRAPHY*/

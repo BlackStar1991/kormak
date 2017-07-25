@@ -1,30 +1,56 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
-	//Цели для Яндекс.Метрики и Google Analytics
-	$(".count_element").on("click", (function() {
-		ga("send", "event", "goal", "goal");
-		yaCounterXXXXXXXX.reachGoal("goal");
-		return true;
-	}));
 
-	//jquery.matchHeight.js
-	//Docs: https://github.com/liabru/jquery-match-height
-	$('element').matchHeight();
+//   sliderEffect
+    function sliderEffectForButtons(button, element, duration) {
 
-	//AJAX forms send
-	//Docs: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
-		$.ajax({
-			type: "GET",
-			url: "mail.php",
-			data: $("form").serialize()
-		}).done(function() {
-			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
-		});
-		return false;
-	});
+        button.click(function () {
+            element.slideToggle(duration);
+        });
+    }
+
+//  hideShowEffect
+    function hideShowEffect(button, element) {
+
+        button.click(function () {
+            element.toggleClass("hidden");
+        });
+    }
+
+
+   var buttonLanguage = $(".bl_language__active"),
+       fieldWithOtherLanguage =$(".bl_language__variables"),
+       buttonChooseRigthLanguage = $(".bl_language__variables_item");
+
+    hideShowEffect(buttonLanguage, fieldWithOtherLanguage);
+    hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
+
+    function changeText(button, whatToChange) {
+
+    }
+
+
+    //// MAIN-BANNER
+    /*
+    $(".owl-carousel-1").owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            600: {
+                items: 1
+            }
+        }
+    });
+*/
+
 
 });
