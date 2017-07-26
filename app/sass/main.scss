@@ -71,6 +71,10 @@ button {
   padding-right: 0!important;
 }
 
+.correct_left{
+  padding-left: 0!important;
+}
+
 /*********************************************/
 /*TYPOGRAPHY*/
 /*********************************************/
@@ -102,9 +106,27 @@ button {
 }
 
 
+.main_catalogs{
+  width: 100%;
+  margin-top:25px;
+}
 
+.bl_catalogProducts{
+  width: 100%;
+  min-height:578px;
+  padding:20px;
+  background-color: #fff;
+}
 
+.title_name{
+  margin-top: 2px;
+  margin-bottom: 0;
 
+  text-align: left;
+  color: $color_grey2;
+  font-family: $TahomaBold;
+  font-size: 24px;
+}
 
 
 /*********************************************/

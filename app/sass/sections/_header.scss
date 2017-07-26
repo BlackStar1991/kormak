@@ -159,14 +159,20 @@
 .bl_fullControlsMenu{
   width: 100%;
   background-color: #fff;
+
+  padding-bottom: 16px; ////////////
 }
 
 $marginTopItem: 40px;
 
+.bl_logo__link{
+  display: block;
+  margin-top: $marginTopItem;  ////////
+}
+
 .bl_logo__image{
   display: block;
 
-  margin-top: $marginTopItem;  ////////
 }
 
 
@@ -340,6 +346,38 @@ $marginTopItem2:22px;
 
 .bl_personalRoom__text{
   display: inline-block;
-  margin-top: 16px;
+  //margin-top: 16px;
   text-align: center;
+}
+
+
+.bl_fullCategories{
+  width: 100%;
+  min-height:50px;
+  line-height: 2.78;
+  background-color: $color_blue;
+}
+
+.bl_fullCategories__field{
+  display: flex;
+  justify-content: space-between;
+}
+
+.bl_fullCategories__item{
+
+}
+
+.bl_fullCategories__link{
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+
+  &:hover,
+  &:focus{
+    color: white;
+    text-decoration: underline;
+  }
 }
