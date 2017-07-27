@@ -53,6 +53,54 @@ $(document).ready(function () {
         }
     });
 
+// slider_popular
+
+    $(".slider_popular").owlCarousel({
+        items: 4,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 0,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            // 600: {
+            //     items: 4
+            // }
+        }
+    });
+
+
+
+    // slider_newProducts
+
+    $(".slider_newProducts").owlCarousel({
+        items: 4,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 0,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            // 600: {
+            //     items: 4
+            // }
+        }
+    });
+
+
+
 
 
 
