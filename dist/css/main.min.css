@@ -1596,6 +1596,77 @@ button {
   font-weight: 400;
   text-transform: uppercase; }
 
+.bl_aboutShop {
+  background-color: #fff;
+  padding: 0 20px;
+  margin-top: 36px;
+  width: 100%; }
+
+.bl_aboutShop__title {
+  padding-top: 22px; }
+
+.bl_aboutShop__fullBlock {
+  width: 100%; }
+
+.bl_aboutShop__paragraph {
+  margin-top: 22px; }
+
+.bl_shopNews {
+  margin-top: 36px;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 20px; }
+
+.bl_shopNews__title {
+  line-height: 52px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.bl_shopNews__fullGroup {
+  width: 100%;
+  margin-top: 26px;
+  border-top: 1px solid #f1f1f1; }
+
+.bl_shopNews__news {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  color: #333;
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400; }
+
+.bl_shopNews__wrapperBlock {
+  margin-top: 18px;
+  line-height: 20px;
+  width: 100%; }
+
+.bl_shopNews__calendar {
+  float: left;
+  width: 14px;
+  height: 14px;
+  background: url("../image/calendar.svg") 50% 50% no-repeat; }
+
+.bl_shopNews__data {
+  float: left;
+  margin-left: 8px; }
+
+.bl_shopNews__data_text {
+  color: #333;
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px; }
+  .bl_shopNews__data_text:before {
+    content: "/";
+    color: inherit;
+    padding: 0; }
+  .bl_shopNews__data_text:first-child:before {
+    content: ""; }
+
+.bl_shopNews__moreInformation {
+  float: right;
+  color: #0160ac;
+  font-size: 14px; }
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/

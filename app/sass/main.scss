@@ -633,16 +633,77 @@ $minSliderHeight: 555px;  /// 578
 }
 
 .bl_shopNews__title{
-  padding-top: 22px;
+  //padding-top:22px;
+  line-height: 52px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .bl_shopNews__fullGroup{
+  width: 100%;
   margin-top: 26px;
+  border-top: 1px solid $color_lightGrey;
+}
+
+.bl_shopNews__news{
+  display: block;
+  width: 100%;
+  min-height: 30px;
+
+  color: $color_grey2;
+  font-family: $Tahoma;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+.bl_shopNews__wrapperBlock{
+  margin-top: 18px;
+  line-height: 20px;
+  width: 100%;
+}
+
+
+.bl_shopNews__calendar{
+  float: left;
+  width: 14px;
+  height: 14px;
+  background: url("../image/calendar.svg") 50% 50% no-repeat;
+}
+
+
+.bl_shopNews__data{
+  float: left;
+  margin-left: 8px;
 
 }
 
+
+.bl_shopNews__data_text{
+
+  color: $color_grey2;
+  font-family: $Tahoma;
+  font-size: 14px;
+
+
+  &:before{
+    content: "/";
+    color: inherit;
+    padding: 0;
+  }
+  &:first-child:before{
+    content: "";
+  }
+
+}
+
+
+.bl_shopNews__moreInformation{
+  float: right;
+  color: $color_blue;
+  font-size: 14px;
+
+}
 
 /*********************************************/
 /*FOOTER*/
