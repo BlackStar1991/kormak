@@ -910,7 +910,7 @@ button {
   height: 100%;
   line-height: 2;
   text-align: center;
-  margin-right: 3%; }
+  margin-right: 4.5%; }
 
 .bl_nav__link {
   display: block;
@@ -1017,16 +1017,17 @@ button {
 
 .bl_logo__link {
   display: block;
-  margin-top: 40px; }
+  margin-top: 30px; }
 
 .bl_logo__image {
   display: block; }
 
 .bl_phonesSearch {
   width: 100%;
+  margin-right: 10%;
   max-width: 330px;
   float: right;
-  margin-top: 40px; }
+  margin-top: 30px; }
 
 .bl_phones {
   width: 100%; }
@@ -1052,8 +1053,7 @@ button {
   background-color: #fff;
   border: 1px solid #e5e5e5;
   border-radius: 20px;
-  outline: none;
-  text-indent: 20px; }
+  outline: none; }
   .bl_search__field::-webkit-input-placeholder {
     text-align: center;
     color: #333;
@@ -1083,8 +1083,8 @@ button {
 
 .bl_search__button {
   position: absolute;
-  top: 34px;
-  right: 20px;
+  top: 37px;
+  right: 16px;
   width: 16px;
   height: 16px;
   background: url("../../image/search.svg") 50% 50% no-repeat; }
@@ -1093,7 +1093,7 @@ button {
   position: relative;
   width: 100%;
   float: right;
-  margin-top: 40px; }
+  margin-top: 30px; }
 
 .bl_currency__input {
   position: absolute;
@@ -1221,7 +1221,8 @@ button {
   background-color: #fff; }
 
 .title_name {
-  margin-top: 2px;
+  margin-top: 0;
+  vertical-align: top;
   margin-bottom: 0;
   text-align: left;
   color: #333;
@@ -1599,6 +1600,7 @@ button {
 .bl_aboutShop {
   background-color: #fff;
   padding: 0 20px;
+  min-height: 400px;
   margin-top: 36px;
   width: 100%; }
 
@@ -1615,6 +1617,7 @@ button {
   margin-top: 36px;
   background-color: #fff;
   width: 100%;
+  min-height: 400px;
   padding: 0 20px; }
 
 .bl_shopNews__title {
@@ -1670,6 +1673,116 @@ button {
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
+.footer_firstPart {
+  margin-top: 36px;
+  width: 100%;
+  min-height: 397px;
+  background-color: #fff; }
+
+.footer_secondPart {
+  width: 100%;
+  min-height: 50px;
+  background-color: #191a1d; }
+  .footer_secondPart__description {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    line-height: 3.7; }
+
+.footer_title {
+  margin-top: 37px;
+  margin-bottom: 0;
+  color: #333;
+  font-family: "TahomaBold", sans-serif;
+  font-size: 16px; }
+
+.footer_fullPages {
+  margin-top: 33px; }
+  .footer_fullPages__item {
+    width: 100%;
+    line-height: 32px; }
+  .footer_fullPages__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #333; }
+    .footer_fullPages__link:hover {
+      text-decoration: underline; }
+
+.footer_fullPages__contacts {
+  color: #333;
+  font-family: "TahomaBold", sans-serif;
+  font-size: 16px;
+  line-height: 32px; }
+
+.footer_fullPages__workTime {
+  margin-top: 36px; }
+
+.footer_fullPages__paragraph {
+  margin-bottom: 10px;
+  color: #333;
+  font-family: "Tahoma", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+.footer_fullPages__adress {
+  margin-top: 10px;
+  color: #333;
+  font-size: 16px; }
+
+.footer_fullPages__lunch {
+  margin-top: 20px; }
+
+.footer_fullPages__fullSocButtons {
+  width: 100%;
+  margin-top: 32px; }
+
+.bl_socButton {
+  float: left;
+  margin-right: 28px;
+  width: 51px;
+  height: 51px; }
+  .bl_socButton__facebook {
+    background-image: url(../image/sprite.png);
+    background-position: 0px -119px;
+    width: 50px;
+    height: 50px; }
+  .bl_socButton__google {
+    background-image: url(../image/sprite.png);
+    background-position: -55px -119px;
+    width: 50px;
+    height: 50px; }
+  .bl_socButton__youtube {
+    background-image: url(../image/sprite.png);
+    background-position: -110px -119px;
+    width: 50px;
+    height: 50px; }
+
+.bl_ancor {
+  position: fixed;
+  bottom: 383px;
+  right: 5%;
+  width: 95px;
+  height: 85px;
+  background: url("../../image/fish_up.svg") 50% 50% no-repeat;
+  z-index: 999; }
+
+.bl_ancor__link {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  width: 38px;
+  height: 15px;
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none; }
+  .bl_ancor__link:hover, .bl_ancor__link:focus, .bl_ancor__link:active {
+    color: #fff;
+    text-decoration: underline; }
+
 /*********************************************/
 /*@IMPORT MEDIA*/
 /*********************************************/

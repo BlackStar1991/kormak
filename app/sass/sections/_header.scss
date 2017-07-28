@@ -23,7 +23,7 @@
   height: 100%;
   line-height: 2;
   text-align: center;
-  margin-right: 3%; ////////// 30px
+  margin-right: 4.5%; ////////// 30px
 
 }
 
@@ -163,7 +163,7 @@
   padding-bottom: 16px; ////////////
 }
 
-$marginTopItem: 40px;
+$marginTopItem: 30px;
 
 .bl_logo__link{
   display: block;
@@ -178,6 +178,7 @@ $marginTopItem: 40px;
 
 .bl_phonesSearch{
   width: 100%;
+  margin-right: 10%;
   max-width: 330px;
   float: right;
   margin-top: $marginTopItem;  ////////
@@ -212,7 +213,7 @@ $marginTopItem: 40px;
   border: 1px solid $color_grey3;
   border-radius: 20px;
   outline:none;
-  text-indent: 20px;
+  //text-indent: 18px;
 
   &::placeholder{
     text-align: center;
@@ -233,8 +234,9 @@ $marginTopItem: 40px;
 
 .bl_search__button{
   position: absolute;
-  top: 34px;
-  right: 20px;
+  top: 37px;
+  right: 16px;
+
   width: 16px;
   height: 16px;
 

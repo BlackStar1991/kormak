@@ -120,7 +120,8 @@ $minSliderHeight: 555px;  /// 578
 }
 
 .title_name{
-  margin-top: 2px;
+  margin-top: 0;
+  vertical-align: top;
   margin-bottom: 0;
 
   text-align: left;
@@ -606,6 +607,7 @@ $minSliderHeight: 555px;  /// 578
 .bl_aboutShop{
   background-color: #fff;
   padding: 0 20px;
+  min-height:400px;
   margin-top: 36px;
   width: 100%;
 }
@@ -629,6 +631,7 @@ $minSliderHeight: 555px;  /// 578
   margin-top: 36px;
   background-color: #fff;
   width: 100%;
+  min-height: 400px;
   padding: 0 20px;
 }
 

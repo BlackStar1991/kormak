@@ -101,9 +101,67 @@ $(document).ready(function () {
 
 
 
+// Ancor to top
 
-
-
+    $(".bl_ancor").on("click", "a", function (event) {
+        event.preventDefault();
+        var id = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
 
 
 });
+
+// Showed ancor only when scrolling > scrineSize
+
+// $(window).scroll(function() {
+//
+//     var topNow = blockNavigation.offset().top;
+//     var leftNow = blockNavigation.offset().left;
+//
+//     if ( ($(this).scrollTop() > startFixed) && (screenWidth >= 1200) ) {
+//
+//
+//
+//
+//         addFluid.removeClass("hidden");
+//
+//
+//         addSomeClass(blockNavigation, "my_fixed");
+//         addSomeClass(blockRepresent , "my_fixed__represent");
+//         addSomeClass(blockTelephones, "my_fixed__telephones");
+//         addSomeClass(blockCallback, "my_fixed__callback");
+//
+//         takeRightTop(addFluid, topNow, -5);
+//
+//
+//         takeRightTop(blockRepresent, topNow, 5, leftNow, 310);
+//         takeRightTop(blockTelephones, topNow, -4, leftNow, 540);
+//         takeRightTop(blockCallback, topNow, -2, leftNow, 920 );
+//
+//
+//
+//     } else if($(this).scrollTop() <= startFixed ) {
+//
+//
+//         addFluid.addClass("hidden");
+//
+//
+//
+//
+//         removeSomeClass(blockNavigation, "my_fixed");
+//         removeSomeClass(blockRepresent, "my_fixed__represent");
+//         removeSomeClass(blockTelephones, "my_fixed__telephones");
+//         removeSomeClass(blockCallback, "my_fixed__callback");
+//
+//
+//
+//         topZiro($(".bl_represent"));
+//         topZiro($(".bl_telephones"));
+//         topZiro($(".bl_callback"));
+//
+//
+//     }
+//
+// });
