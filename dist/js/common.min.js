@@ -9,37 +9,41 @@ $(document).ready(function () {
 
     });
 
-//     headerPage.on('click', '.open-menu-main', function () {
-//         headerPage.removeClass('open-sub-menu');
-//         headerPage.toggleClass('open-main-menu');
-//     });
-//
-// //search
-//     headerPage.on('click', '.mobile-ico__search', function () {
-//         headerPage.removeClass('open-sub-menu');
-//         headerPage.toggleClass('open-search');
-//         headerPage.removeClass('open-main-menu');
-//     });
-//
-//     headerPage.on('click', '.close-search', function () {
-//         headerPage.toggleClass('open-search');
-//     });
-//
-// //footer
-//     $('.footer-page').on('click', '.h3-title', function () {
-//         $(this).closest('.foot-info-list__title').toggleClass('active');
-//     });
+
+    var buttonRubrics = $(".open-menu-main"),
+        fieldRubrics = $(".bl_fullCategories__field");
+
+
+    var buttonCategories = $(".bl_catalogProducts__title"),
+        fieldCategories = $(".bl_catalogProducts__full");
+
+
+    var buttonInformation = $(".code_information__title"),
+        fieldInformation = $(".code_information__full");
+
+
+    var buttonContacts = $(".code_contacts__title"),
+        fieldContacts = $(".code_contacts__full");
+
+
+    var buttonAdress = $(".code_adress__title"),
+        fieldAdress = $(".code_adress__full");
 
 
 //////////////////////////////////////////
 
+
 //   sliderEffect
     function sliderEffectForButtons(button, element, duration) {
 
-        button.click(function () {
-            element.slideToggle(duration);
-        });
+        // return function () {
+            button.click(function () {
+                element.slideToggle(duration);
+            });
+        // }(button, element, duration);
+
     }
+
 
 //  hideShowEffect
     function hideShowEffect(button, element) {
@@ -57,12 +61,8 @@ $(document).ready(function () {
     hideShowEffect(buttonLanguage, fieldWithOtherLanguage);
     hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
 
-    function changeText(button, whatToChange) {
 
-    }
-
-
- //// Main-slider
+    //// Main-slider
 
     $(".bl_mainSlider").owlCarousel({
         items: 1,
@@ -104,14 +104,16 @@ $(document).ready(function () {
                 items: 4
             },
             992: {
-                items: 3
+                items: 3,
+                center: true
             },
 
             550: {
                 items: 2
             },
             320: {
-                items: 1
+                items: 1,
+                center: true
             }
 
         }
@@ -138,13 +140,15 @@ $(document).ready(function () {
                 items: 4
             },
             992: {
-                items: 3
+                items: 3,
+                center: true
             },
             550: {
                 items: 2
             },
             320: {
-                items: 1
+                items: 1,
+                center: true
             }
 
         }
@@ -164,15 +168,15 @@ $(document).ready(function () {
             });
     }
 
-var blockPopular = $(".bl_popular"),
-    arrowPrev_popular = $(".slider_popular.owl-carousel .owl-prev"),
-    arrowNext_popular = $(".slider_popular.owl-carousel .owl-next"),
+    var blockPopular = $(".bl_popular"),
+        arrowPrev_popular = $(".slider_popular.owl-carousel .owl-prev"),
+        arrowNext_popular = $(".slider_popular.owl-carousel .owl-next"),
 
-    blockNewProducts = $(".bl_newProducts"),
-    arrowPrev_newProducts = $(".slider_newProducts.owl-carousel .owl-prev"),
-    arrowNext_newProducts = $(".slider_newProducts.owl-carousel .owl-next"),
+        blockNewProducts = $(".bl_newProducts"),
+        arrowPrev_newProducts = $(".slider_newProducts.owl-carousel .owl-prev"),
+        arrowNext_newProducts = $(".slider_newProducts.owl-carousel .owl-next"),
 
-    hover_arrowsClass = "arrow-prev__hover";
+        hover_arrowsClass = "arrow-prev__hover";
 
     hoverArrows(blockPopular, arrowPrev_popular, arrowNext_popular, hover_arrowsClass);
     hoverArrows(blockNewProducts, arrowPrev_newProducts, arrowNext_newProducts, hover_arrowsClass);
@@ -188,28 +192,48 @@ var blockPopular = $(".bl_popular"),
     });
 
 
-});
+/// buttons must work only  $(window).width() <=991px
+
+
+    function liveScopeOfButtons() {
+
+        if ($(window).width() <= 991) {
+
+            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
+            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
+            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
+            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
+            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
+
+
+        } else {
+            return false;
+        }
+
+    }
+
+    liveScopeOfButtons();
+
+
+
 
 // Showed ancor only when scrolling > scrineSize
 
-$(window).scroll(function() {
+$(window).scroll(function () {
 
-    // var topNow = blockNavigation.offset().top;
-    // var leftNow = blockNavigation.offset().left;
-    //
-    // if ( ($(this).scrollTop() > startFixed) && (screenWidth >= 1200) ) {
-    //
-    //
-    //
-    // } else if($(this).scrollTop() <= startFixed ) {
-    //
-    //
-    // }
+    var ancorFish = $(".bl_ancor"),
+        windowHeight = $(window).height() / 2;
+
+    if ($(this).scrollTop() > windowHeight) {
+
+        ancorFish.removeClass("hidden");
+
+    } else {
+        ancorFish.addClass("hidden");
+
+    }
 
 });
-
-
-
 
 
 // RESIZE WINDOW
@@ -227,15 +251,26 @@ var fullNavigation = $(".bl_fullNavigation"),
     closeMenu = "closeMenu";
 
 
+$(window).resize(function () {
 
-$(window).resize(function(){
-    if( body.width() >= 1200 ){
+    var fieldRubrics = $(".bl_fullCategories__field"),
+        fieldCategories = $(".bl_catalogProducts__full"),
+
+        fieldInformation = $(".code_information__full"),
+        fieldContacts = $(".code_contacts__full"),
+        fieldAdress = $(".code_adress__full");
+
+
+     var buttonsWorkRight = liveScopeOfButtons();      ///////////// Эта хрень не работает =(
+
+
+    if (body.width() >= 1200) {
+
 
         fullNavigation.removeClass(mobileNavigation);
-
         blockNavigation.removeClass(menuMobile);
         blockNavigation.removeClass(closeMenu);
-    }else {
+    } else {
         fullNavigation.addClass(mobileNavigation);
 
 
@@ -243,10 +278,36 @@ $(window).resize(function(){
         blockNavigation.addClass(closeMenu);
 
         iconMenu.removeClass(iconMenu_close);
+
+
     }
 
 
+    if (body.width() >= 992) {
+        fieldRubrics.css({"display": "block"});
+        fieldCategories.css({"display": "block"});
+        fieldInformation.css({"display": "block"});
+        fieldContacts.css({"display": "block"});
+        fieldAdress.css({"display": "block"});
+
+
+        return false;
+
+
+    } else {
+        fieldRubrics.css({"display": "none"});
+        fieldCategories.css({"display": "none"});
+        fieldInformation.css({"display": "none"});
+        fieldContacts.css({"display": "none"});
+        fieldAdress.css({"display": "none"});
+
+
+
+    }
 
 
 });
 $(window).resize();
+
+
+});

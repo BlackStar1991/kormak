@@ -20,6 +20,28 @@ $fb-total-width: 226px;
 $fb-total-height: 169px;
 $fb-image: '../image/sprite.png';
 $fb: (0px, 119px, 0px, -119px, 50px, 50px, 226px, 169px, '../image/sprite.png', 'fb', );
+$fish-breadcrumb-name: 'fish-breadcrumb';
+$fish-breadcrumb-x: 131px;
+$fish-breadcrumb-y: 88px;
+$fish-breadcrumb-offset-x: -131px;
+$fish-breadcrumb-offset-y: -88px;
+$fish-breadcrumb-width: 18px;
+$fish-breadcrumb-height: 11px;
+$fish-breadcrumb-total-width: 226px;
+$fish-breadcrumb-total-height: 169px;
+$fish-breadcrumb-image: '../image/sprite.png';
+$fish-breadcrumb: (131px, 88px, -131px, -88px, 18px, 11px, 226px, 169px, '../image/sprite.png', 'fish-breadcrumb', );
+$fish-breadcrumbs-name: 'fish-breadcrumbs';
+$fish-breadcrumbs-x: 154px;
+$fish-breadcrumbs-y: 88px;
+$fish-breadcrumbs-offset-x: -154px;
+$fish-breadcrumbs-offset-y: -88px;
+$fish-breadcrumbs-width: 18px;
+$fish-breadcrumbs-height: 11px;
+$fish-breadcrumbs-total-width: 226px;
+$fish-breadcrumbs-total-height: 169px;
+$fish-breadcrumbs-image: '../image/sprite.png';
+$fish-breadcrumbs: (154px, 88px, -154px, -88px, 18px, 11px, 226px, 169px, '../image/sprite.png', 'fish-breadcrumbs', );
 $fish-hit-name: 'fish_hit';
 $fish-hit-x: 0px;
 $fish-hit-y: 0px;
@@ -67,7 +89,7 @@ $youtube: (110px, 119px, -110px, -119px, 50px, 50px, 226px, 169px, '../image/spr
 $spritesheet-width: 226px;
 $spritesheet-height: 169px;
 $spritesheet-image: '../image/sprite.png';
-$spritesheet-sprites: ($fb, $fish-hit, $fish-up, $google, $youtube, );
+$spritesheet-sprites: ($fb, $fish-breadcrumb, $fish-breadcrumbs, $fish-hit, $fish-up, $google, $youtube, );
 $spritesheet: (226px, 169px, '../image/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables

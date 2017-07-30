@@ -79,7 +79,6 @@
     float: none;
     height:auto;
     display: block;
-    //border-bottom: 1px solid #fff;
     margin: 10px 0;
     z-index: 11;
   }
@@ -141,13 +140,13 @@
     content: "";
     width: 15px;
     height: 8px;
-    background: url("../../image/arrow_lang.svg") 50% 50% no-repeat;
+    background: url("../image/arrow_lang.svg") 50% 50% no-repeat;
   }
 }
 
 
 .bl_language__variables{
-  //display: none;
+
   position: absolute;
   top: 120%;
   left: 0;
@@ -180,7 +179,7 @@
     width: 15px;
     height: 8px;
     transform: rotate(90deg);
-    background: url("../../image/arrow_lang.svg") 50% 50% no-repeat;
+    background: url("../image/arrow_lang.svg") 50% 50% no-repeat;
     z-index:12;
 }
 
@@ -197,7 +196,7 @@
     content: "";
     width: 22px;
     height: 16px;
-    background: url("../../image/price.svg") 50% 50% no-repeat;
+    background: url("../image/price.svg") 50% 50% no-repeat;
   }
 
 }
@@ -225,7 +224,7 @@
     content: "";
     width: 16px;
     height: 16px;
-    background: url("../../image/location.svg") 50% 50% no-repeat;
+    background: url("../image/location.svg") 50% 50% no-repeat;
   }
 }
 
@@ -287,9 +286,10 @@ $marginTopItem: 30px;
   border: 1px solid $color_grey3;
   border-radius: 20px;
   outline:none;
-  //text-indent: 18px;
+  text-indent: 15px;
 
   &::placeholder{
+
     text-align: center;
     color: $color_grey2;
     font-size: 14px;
@@ -314,7 +314,7 @@ $marginTopItem: 30px;
   width: 16px;
   height: 16px;
 
-  background: url("../../image/search.svg") 50% 50% no-repeat;
+  background: url("../image/search.svg") 50% 50% no-repeat;
 }
 
 
@@ -390,7 +390,7 @@ $marginTopItem2:22px;
   margin: 0 auto;
   width: 46px;
   height: 40px;
-  background:url("../../image/basket.svg") 50% 50% no-repeat;
+  background:url("../image/basket.svg") 50% 50% no-repeat;
 }
 
 .bl_shoppingCart__allItems{
@@ -422,7 +422,7 @@ $marginTopItem2:22px;
   margin: 0 auto;
   width: 40px;
   height: 40px;
-  background: url("../../image/account.svg") 50% 50% no-repeat;
+  background: url("../image/account.svg") 50% 50% no-repeat;
 }
 
 .bl_personalRoom__text{
@@ -440,12 +440,7 @@ $marginTopItem2:22px;
 }
 
 .bl_fullCategories__field{
-  //display: flex;
-  //flex-direction:row;
-  //
-  //align-items: center;
-  //justify-content: space-between;
-  //flex-wrap:wrap;
+
   text-align: justify;
 
    &:after{
@@ -459,8 +454,6 @@ $marginTopItem2:22px;
 .bl_fullCategories__item{
   display: inline-block;
   max-height:50px;
-  //height: 100%;
-  //line-height: 2;
   vertical-align: middle;
 }
 
@@ -546,10 +539,11 @@ background-color: inherit;
 }
 
 .open-menu-main {
+  display: block;
+  margin: 10px auto 0;
   height: 30px;
   width: 150px;
   align-items: center;
-  justify-content: center;
   color: #fff;
   border: 1px solid #fff;
   background-color: inherit;

@@ -6,80 +6,225 @@
 /* Large Devices, Wide Screens 1280px */
 @media only screen and (max-width: 1200px) {
 
+  .bl_catalogProducts{
+    min-height: inherit;
+  }
+  .bl_catalogProducts__item{
+    margin-top: 7%;
+  }
+
+  .likeButton_circle{
+    margin-left: 1%;
+  }
+
+
 }
 
 /* Medium Devices, Desktops 992px */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 
-
-  .bl_logo__image{
+  .bl_logo__image {
     margin: 0 auto;
   }
 
-  .bl_phonesSearch{
+  .bl_phonesSearch {
     float: none;
     margin: 30px auto 0;
 
   }
 
-  .bl_currency{
+  .bl_currency {
     float: left;
-    
+
   }
-  .bl_currency__label{
+  .bl_currency__label {
     float: none;
   }
-  .bl_currency__label{
+  .bl_currency__label {
     float: none;
   }
-  .bl_personalRoom{
+  .bl_personalRoom {
     width: 50%;
     float: right;
     margin: 30px auto 0;
   }
-  .bl_personalRoom__text{
+  .bl_personalRoom__text {
     width: 100%;
     display: inline-block;
     text-align: center;
     margin: 0 auto;
   }
 
+  .bl_shoppingCart {
+    width: 50%;
+    float: left;
+    margin-top: 30px;
+
+  }
+
+  .bl_fullCategories__field{
+
+    display: none;
+
+  }
+  .bl_fullCategories__item{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+  }
 
 
-.bl_shoppingCart{
-  width: 50%;
-  float: left;
+  .main_catalogs{
+    margin-top: 0;
+  }
 
-  //padding-right: 20px;
-  margin-top: 30px;
+  .bl_catalogProducts{
+    min-height:inherit;
+  }
+  .bl_catalogProducts__title{
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #000;
+  }
+  .bl_catalogProducts__full{
+
+    display: none;
+
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+
+  }
+.bl_catalogProducts__item{
+  margin-top: 0;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color_blue;
+  border-bottom: 1px solid #fff;
+  box-sizing: border-box;
 
 }
+.bl_catalogProducts__link{
+  color: #fff;
+}
 
+
+
+  .likeButton_circle{
+    margin-left: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .likeButton_icon-car:after,
+  .likeButton_icon__cart:after,
+  .likeButton_icon__mark:after {
+    transform: translate(-50%, -50%) scale(.8);
+  }
+
+  .code_information__title,
+  .code_contacts__title,
+  .code_adress__title{
+
+    position: relative;
+    margin-top: 0;
+    padding: 10px;
+    border-bottom: 2px solid $color_blue;
+    //color: #fff;
+    &:after{
+
+      position: absolute;
+      top: 8px;
+      right: 10px;
+
+      font-size: 24px;
+      color: $color_blue;
+      content: "\f103";
+      font-family: $FontAwesom;
+    }
+  }
+
+
+  .code_information__full,
+  .code_contacts__full,
+  .code_adress__full{
+    display: none;
+  }
+
+  .footer_fullPages{
+    margin-top: 10px;
+  }
+
+  .footer_firstPart{
+  margin-bottom: 10px;
+}
 
 }
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
 
-
-  .bl_fullNavigation{
-    min-height:50px;
+  .bl_fullNavigation {
+    min-height: 50px;
   }
 
-  .bl_adress{
-    font-weight:bold;
+  .bl_adress {
+    font-weight: bold;
 
-    &:before{
+    &:before {
       background: none;
     }
   }
 
 
+  .bl_mainSlider__sale_text{
+    font-size: 5em;
+  }
+
+  .bl_mainSlider__sale{
+    top: 40px;
+    right: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .bl_mainSlider__sale{
+    width:auto;
+  }
+  .bl_mainSlider__sale_text{
+    font-size: 3em;
+  }
 
 }
 
+
+
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
+
+  .bl_phones__left,
+  .bl_phones__right {
+    float: none;
+    display: block;
+  }
+
+  .bl_search__button{
+    top: 14px;
+  }
+
+  .bl_mainSlider__sale{
+    top: 30px;
+  }
+
+  .bl_mainSlider__sale_text{
+    font-size: 2em;
+  }
 
 
 }
