@@ -127,7 +127,7 @@ $minSliderHeight: 555px;  /// 578
   text-align: left;
   color: $color_grey2;
   font-family: $TahomaBold;
-  font-size: 24px;
+  font-size: 18px;
 }
 .bl_catalogProducts__title{
   display: block;
@@ -330,9 +330,11 @@ $minSliderHeight: 555px;  /// 578
 
 }
 
-//.slider_popular.owl-carousel:hover .owl-nav{
-//  background-color: $color_blue;
-//}
+.arrow-prev__hover{
+  background-color: $color_blue !important;
+  border-color: $color_blue !important;
+}
+
 
 
 
@@ -439,9 +441,9 @@ $minSliderHeight: 555px;  /// 578
 
 .product_sliderCart__name{
   display: block;
-  margin: 36px auto 0;
+  margin: 30px auto 0;
   text-align: center;
-  width: 147px;
+  width: 154px;
   color: $color_grey2;
   font-family: $Tahoma;
   font-size: 16px;
@@ -450,7 +452,7 @@ $minSliderHeight: 555px;  /// 578
 
 .product_sliderCart__price{
   width: 100%;
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 .product_sliderCart__price_oldPrice{
@@ -522,7 +524,7 @@ $minSliderHeight: 555px;  /// 578
 }
 .bl_advantages__wrapper{
   height: 100%;
-  min-height:174px;
+  min-height:158px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -532,6 +534,8 @@ $minSliderHeight: 555px;  /// 578
 .bl_payment,
 .bl_quality
 {
+
+  width: 33%;
   display: flex;
   flex-direction: row;
   height: 100%;
@@ -540,10 +544,13 @@ $minSliderHeight: 555px;  /// 578
 
 .likeButton_circle{
   position: relative;
+  margin-left: 10%;
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 100px !important;
+  height: 100px !important;
   border-radius: 50%;
+  border: 1px solid red;
+
   box-shadow: 2.5px 4.3px 9px rgba(1, 1, 1, 0.14);
 }
 
@@ -593,8 +600,9 @@ $minSliderHeight: 555px;  /// 578
 
 
 .likeButton_text{
-  margin-left: 42px;
-
+  //width: 100%;
+  margin-left: 7%;  /////////////
+  display: inline-block;
   color: #2d3950;
   font-family: $Tahoma;
   font-size: 16px;
@@ -608,7 +616,7 @@ $minSliderHeight: 555px;  /// 578
   background-color: #fff;
   padding: 0 20px;
   min-height:400px;
-  margin-top: 36px;
+  margin-top: 30px;
   width: 100%;
 }
 

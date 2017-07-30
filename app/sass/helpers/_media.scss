@@ -4,76 +4,87 @@
 /*********************************************/
 
 /* Large Devices, Wide Screens 1280px */
-@media only screen and (max-width: $site) {
+@media only screen and (max-width: 1200px) {
 
 }
 
 /* Medium Devices, Desktops 992px */
-@media only screen and (max-width: $tablet-landscape) {
+@media only screen and (max-width: 992px) {
+
+
+  .bl_logo__image{
+    margin: 0 auto;
+  }
+
+  .bl_phonesSearch{
+    float: none;
+    margin: 30px auto 0;
+
+  }
+
+  .bl_currency{
+    float: left;
+    
+  }
+  .bl_currency__label{
+    float: none;
+  }
+  .bl_currency__label{
+    float: none;
+  }
+  .bl_personalRoom{
+    width: 50%;
+    float: right;
+    margin: 30px auto 0;
+  }
+  .bl_personalRoom__text{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+
+.bl_shoppingCart{
+  width: 50%;
+  float: left;
+
+  //padding-right: 20px;
+  margin-top: 30px;
+
+}
+
 
 }
 
 /* Small Devices, Tablets 768px */
-@media only screen and (max-width: $tablet) {
+@media only screen and (max-width: 768px) {
+
+
+  .bl_fullNavigation{
+    min-height:50px;
+  }
+
+  .bl_adress{
+    font-weight:bold;
+
+    &:before{
+      background: none;
+    }
+  }
+
+
 
 }
 
 /* Extra Small Devices, Phones 480px */
-@media only screen and (max-width: $phone-landscape) {
+@media only screen and (max-width: 480px) {
 
-  /*Disable Animation on Mobile Devices*/
-  .animated {
-    /*CSS transitions*/
-    -o-transition-property: none !important;
-    -moz-transition-property: none !important;
-    -ms-transition-property: none !important;
-    -webkit-transition-property: none !important;
-    transition-property: none !important;
-    /*CSS transforms*/
-    -o-transform: none !important;
-    -moz-transform: none !important;
-    -ms-transform: none !important;
-    -webkit-transform: none !important;
-    transform: none !important;
-    /*CSS animations*/
-    -webkit-animation: none !important;
-    -moz-animation: none !important;
-    -o-animation: none !important;
-    -ms-animation: none !important;
-    animation: none !important;
-  }
+
 }
 
 /* Custom, iPhone Retina 320px */
-@media only screen and (max-width: $phone) {
-
-}
-
-/*********************************************/
-/*Mobile First Method*/
-/*********************************************/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width: $phone) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: $phone-landscape) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width: $tablet) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width: $tablet-landscape) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: $site) {
+@media only screen and (max-width: 320px) {
 
 }

@@ -1,7 +1,7 @@
 .footer_firstPart{
   margin-top: 36px;
   width: 100%;
-  min-height:397px;
+  //min-height:330px;
   background-color: #fff;
 }
 
@@ -11,16 +11,23 @@
   background-color: #191a1d;
 
   &__description{
+    width: 100%;
+    display: inline-block;
     text-align: center;
-    color: white;
+    color: #fff;
     font-weight: 400;
     line-height: 3.7;
+
+    &:hover{
+      color: #fff;
+      text-decoration: underline;
+    }
   }
 }
 
 
 .footer_title{
-  margin-top: 37px;
+  margin-top: 26px;
   margin-bottom: 0;
   color: $color_grey2;
   font-family: $TahomaBold;
@@ -32,7 +39,7 @@
 
   &__item{
     width: 100%;
-    line-height: 32px;
+    line-height: 30px;
   }
 
   &__link{
@@ -105,8 +112,8 @@
 
   position: fixed;
 
-  bottom: 383px;
-  right: 5%;
+  bottom: 80px;
+  right: 3%;
 
   width: 95px;
   height: 85px;

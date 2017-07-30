@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Заголовок</title>
+    <title>Кормак</title>
     <!-- SEO -->
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -43,10 +43,14 @@
 <!--======================================  HEADER ==========================================================-->
 <header id="header" class="header">
     <div class="mainWrapper">
-        <div class="bl_fullNavigation">
+        <div class="bl_fullNavigation bl_fullNavigation_mobile">
             <div class="container">
-                <div class="col-md-7 col-xs-12 correct_left">
-                    <nav class="bl_nav">
+
+                <!--<button class="open-menu-main col-xs-3">Каталог</button>-->
+
+                <div class="col-md-7 col-xs-6 correct_left ">
+                    <button class="open-menu-min hidden-lg ">Menu</button>
+                    <nav class="bl_nav">        <!-- bl_nav__mobile closeMenu  -->
                         <ul class="bl_nav__fullItems">
                             <li class="bl_nav__item"><a href="#" class="bl_nav__link">Оплата и доставка</a></li>
                             <li class="bl_nav__item"><a href="#" class="bl_nav__link">Гарантия</a></li>
@@ -67,7 +71,7 @@
                             </ul>
 
                         </div>
-                        <div class="bl_itemPrice">
+                        <div class="bl_itemPrice hidden-xs">
                             <a class="bl_itemPrice__download" href="#">Прайс</a>
                         </div>
                         <span class="bl_adress">Киев, ул. Красноткацкая 43</span>
@@ -82,9 +86,9 @@
                         <img class="bl_logo__image" src="image/logo.png" alt="">
                     </a>
                 </div>
-                <div class="col-xs-6 col-md-5">
+                <div class="col-xs-11 col-md-5">
 
-                    <div class="bl_phonesSearch">
+                    <div class="bl_phonesSearch text-center">
                         <div class="bl_phones">
                             <span class="bl_phones__text bl_phones__left">+38(050) 000-00-00</span>
                             <span class="bl_phones__text bl_phones__right">+38(093) 000-00-00</span>
@@ -95,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-6 col-md-1 correct_right">
+                <div class="col-xs-1 col-md-1   correct_right">
                     <div class="bl_currency">
                         <input id="currency_uah" class="bl_currency__input" name="currency" type="radio" checked>
                         <label class="bl_currency__label" for="currency_uah"><span
@@ -108,7 +112,7 @@
                                 class="bl_currency__text bl_currency__decorCircle">usd</span></label>
                     </div>
                 </div>
-                <div class="col-xs-12 col-md-3 correct_right">
+                <div class="col-xs-12 col-md-3   correct_right">
                     <div class="bl_shoppingCart">
                         <a href="#" class="bl_shoppingCart__link">
                             <div class="bl_shoppingCart__icon"></div>
@@ -141,10 +145,8 @@
                         <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Одежда</a></li>
                         <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Обувь</a></li>
                         <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Кемпинг</a></li>
-                        <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Сертификаты</a>
-                        </li>
-                        <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Аксессуары</a>
-                        </li>
+                        <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Сертификаты</a></li>
+                        <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Аксессуары</a></li>
                         <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Акции</a></li>
                         <li class="bl_fullCategories__item"><a href="#" class="bl_fullCategories__link">Еще</a></li>
                     </ul>
@@ -522,7 +524,7 @@
 
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 hidden-xs">
                         <div class="bl_shopNews">
                             <h2 class="title_name bl_shopNews__title">Новости</h2>
                             <ul class="bl_shopNews__fullGroup">
@@ -530,6 +532,7 @@
                                     <h3 class="bl_shopNews__news">В воскресенье магазин не будет работать</h3>
                                     <div class="bl_shopNews__wrapperBlock clearfix">
                                         <a class="bl_shopNews__calendar" href="#"></a>
+                                        <!-- отсылает на страницу Новости -->
                                         <time class="bl_shopNews__data">
                                             <span class="bl_shopNews__data_text">14</span>
                                             <span class="bl_shopNews__data_text">06</span>
@@ -637,14 +640,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <p class="footer_secondPart__description">2013-2017 Интернет-магазин Кормак</p>
+                    <a class="footer_secondPart__description" href="#">2013-2017 Интернет-магазин Кормак</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 
-<div class="bl_ancor">
+<div class="bl_ancor hidden-xs">
     <div class="wrappenBlock">
         <a class="bl_ancor__link" href="#header">Вверх</a>
     </div>
