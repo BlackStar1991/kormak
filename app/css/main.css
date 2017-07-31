@@ -2303,9 +2303,9 @@ button {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-justify-content: space-a;
-      -ms-flex-pack: space-a;
-          justify-content: space-a;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
@@ -2369,6 +2369,40 @@ button {
 .inf_product {
   width: 100%;
   margin-top: 35px; }
+
+.inf_product__tabs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  background-color: #fff; }
+
+.inf_product__item {
+  width: 33%;
+  text-align: center;
+  color: #333;
+  font-family: "TahomaBold", sans-serif;
+  font-size: 24px;
+  line-height: 27px;
+  box-sizing: border-box;
+  background-color: inherit; }
+
+.nav-tabs .inf_product__item > a {
+  margin: 0;
+  padding: 15px 15px; }
+  .nav-tabs .inf_product__item > a:hover {
+    background-color: #fff; }
+
+.inf_product__tabs .inf_product__item.active a {
+  border: none;
+  border-top: 2px solid #0160ac;
+  color: #000; }
+  .inf_product__tabs .inf_product__item.active a:hover, .inf_product__tabs .inf_product__item.active a:focus, .inf_product__tabs .inf_product__item.active a:active {
+    border: none;
+    border-top: 2px solid #0160ac; }
 
 /*********************************************/
 /*FOOTER*/

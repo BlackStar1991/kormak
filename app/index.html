@@ -371,143 +371,103 @@
         <div class="container">
             <div class="col-xs-12">
                 <div class="inf_product">
-                    <div class="main-desc  tab-wrap">
-                        <ul class="main-desc-title">
-                            <li class="main-desc-title__item  tab-title  ">
-                                Описание
+
+                        <ul class="nav nav-tabs inf_product__tabs">
+                            <li class="inf_product__item   active">
+                                <a href="#tab-description" data-toggle="tab">Описание</a>
                             </li>
 
-                            <li class="main-desc-title__item  tab-title">
-                                Характеристики
+                            <li class="inf_product__item  ">
+                                <a href="#tab-specification" data-toggle="tab">Характеристики</a>
                             </li>
 
-                            <li class="main-desc-title__item  tab-title active">
-                                Отзывы
+                            <li class="inf_product__item  ">
+                                <a href="#tab-review" data-toggle="tab">Отзывов (0)</a>
                             </li>
                         </ul>
 
-                        <div class="main-desc-text">
-                            <li class="main-desc__item  tab-desc ">
-                                <div class="wrapperBlock">
-                                    <div class="main-descript-tab">
-                                        <div class="main-descript-tab__fullTab">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab-description">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, reiciendis.</p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, reiciendis.</p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, reiciendis.</p>
+                            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, reiciendis.</p>
+                            <h3>Features:</h3>
+                            <p>Unrivaled display performance</p>
+                            <ul>
+                                <li>
+                                    30-inch (viewable) active-matrix liquid crystal display provides breathtaking image quality and vivid, richly saturated color.</li>
+                                <li>
+                                    Support for 2560-by-1600 pixel resolution for display of high definition still and video imagery.</li>
+                                <li>
+                                    Wide-format design for simultaneous display of two full pages of text and graphics.</li>
+                                <li>
+                                    Industry standard DVI connector for direct attachment to Mac- and Windows-based desktops and notebooks</li>
+                                <li>
+                                    Incredibly wide (170 degree) horizontal and vertical viewing angle for maximum visibility and color performance.</li>
+                                <li>
+                                    Lightning-fast pixel response for full-motion digital video playback.</li>
+                                <li>
+                                    Support for 16.7 million saturated colors, for use in all graphics-intensive applications.</li>
+                            </ul>
+
+                          
+                        </div>
 
 
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Cumque doloribus illo impedit
-                                                modi molestias, recusandae.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, quia? Lorem
-                                                ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, nulla?</p>
-                                        </div>
-                                    </div>
+                        <div class="tab-pane" id="tab-specification">
+                            <table class="table table-bordered">
+                                <thead>
+                                <tr>
+                                    <td colspan="2"><strong>Processor</strong></td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Clockspeed</td>
+                                    <td>100mhz</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                                    <button class="main-desc__showMoreInfo">
-                                        <span class="main-desc__showMoreInfo_show">Показать больше информации</span>
-                                        <span class="main-desc__showMoreInfo_hide hidden">Скрыть информацию</span>
-                                    </button>
+
+
+
+
+                        <div class="tab-pane" id="tab-review">
+                            <form class="form-horizontal" id="form-review">
+                                <div id="review">
+                                    <p>Для этого товара нет отзывов. Будь первым, оцени товар!</p>
                                 </div>
-                            </li>
+                                <h2>Написать отзыв</h2>
+                                <div class="form-group required">
+                                    <div class="col-sm-12">
+                                        <label class="control-label" for="input-name">Ваше имя:</label>
+                                        <input type="text" name="name" value="" id="input-name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group required">
+                                    <div class="col-sm-12">
+                                        <label class="control-label" for="input-review">Ваш отзыв:</label>
+                                        <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
+                                        <div class="help-block"><span style="color: #FF0000;">Примечание:</span> HTML разметка не поддерживается! Используйте обычный текст.</div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+
+
 
                             <div class="main-desc__item  tab-desc">
                                 <div class="wrapperBlock">
 
 
                                     <div class="main-descript-tab">
-                                        <ul class="main-descript-tab__fullTab">
-                                            <li>
-                                                <span>Страна производитель:</span>
-                                                <span>Украина</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Материал</span>
-                                                <span>натуральная кожа</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Код производителя:</span>
-                                                <span>170550-BM</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Ремень:</span>
-                                                <span>регулируемый плечевой ремень</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Торговая марка:</span>
-                                                <span>Alliance</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Вес:</span>
-                                                <span>1.5 кг</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Цвет:</span>
-                                                <span>черный</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Цвет:</span>
-                                                <span>черный</span>
-                                            </li>
-
-                                            <li>
-                                                <span>Цвет:</span>
-                                                <span>черный</span>
-                                            </li>
-                                            <li>
-                                                <span>Цвет:</span>
-                                                <span>черный</span>
-                                            </li>
-                                            <li>
-                                                <span>Цвет:</span>
-                                                <span>черный</span>
-                                            </li>
-                                            <li>
-                                                <span>Цвет:</span>
-                                                <span>черный</span>
-                                            </li>
-
-                                        </ul>
-                                    </div>
-                                    <button class="main-desc__showMoreInfo">
-                                        <span class="main-desc__showMoreInfo_show">Показать больше информации</span>
-                                        <span class="main-desc__showMoreInfo_hide hidden">Скрыть информацию</span>
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="main-desc__item  tab-desc active">
-                                <div class="wrapperBlock">
 
 
-                                    <div class="main-descript-tab">
-
-                                        <div id="review"><p class="bl_review__dontHaveReview">Для этого товара нет отзывов. Будь первым, оцени товар! </p></div>     <!-- Это срабатывает если отзывов нету -->
 
                                         <ul  class="main-descript-tab__fullTab">
                                             <li class="bl_review">
@@ -533,99 +493,92 @@
 
 
 
+                                        <button class="main-desc__showMoreInfo">
+                                            <span class="main-desc__showMoreInfo_show">Показать больше информации</span>
+                                            <span class="main-desc__showMoreInfo_hide hidden">Скрыть информацию</span>
+                                        </button>
+
+
+
+                                        <button class="my_button-review code_addReview">
+                                            <span class="button_review">Оставить отзыв о товаре</span>
+                                            <i class="fa fa-bookmark" aria-hidden="true"></i>
+                                        </button>
+
+                                        <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> Спасибо за отзыв. Он будет добавлен после проверки администратором сайта.</div>
+
+                                        <!-- FORM Review -->
+                                        <form class="form-horizontal code_formRewiew">
+
+                                            <div class="form-group required">
+                                                <div class="col-sm-12">
+                                                    <p class="">
+                                                        <span>Рейтинг товара</span>
+                                                        <span class="block_rating__avarage">4.25</span>
+                                                        <span class="block_rating__reviews">(153 reviews)</span>
+                                                    </p>
+
+                                                    <div class="control-label">
+
+
+
+                                                        <fieldset class="block_rating__stars" >
+                                                            <input type="radio" id="star5" name="rating" value="5"/><label
+                                                                class="full" for="star5" title="Awesome - 5 stars"></label>
+                                                            <input type="radio" id="star4half" name="rating"
+                                                                   value="4 and a half"/><label class="half" for="star4half"
+                                                                                                title="Pretty good - 4.5 stars"></label>
+                                                            <input type="radio" id="star4" name="rating" value="4"/><label
+                                                                class="full" for="star4" title="Good - 4 stars"></label>
+                                                            <input type="radio" id="star3half" name="rating"
+                                                                   value="3 and a half"/><label class="half" for="star3half"
+                                                                                                title="Above average - 3.5 stars"></label>
+                                                            <input type="radio" id="star3" name="rating" value="3"/><label
+                                                                class="full" for="star3" title="Average - 3 stars"></label>
+                                                            <input type="radio" id="star2half" name="rating"
+                                                                   value="2 and a half"/><label class="half" for="star2half"
+                                                                                                title="Kinda bad - 2.5 stars"></label>
+                                                            <input type="radio" id="star2" name="rating" value="2"/><label
+                                                                class="full" for="star2"
+                                                                title="Kinda bad - 2 stars"></label>
+                                                            <input type="radio" id="star1half" name="rating"
+                                                                   value="1 and a half"/><label class="half" for="star1half"
+                                                                                                title="Meh - 1.5 stars"></label>
+                                                            <input type="radio" id="star1" name="rating" value="1"/><label
+                                                                class="full" for="star1"
+                                                                title="Sucks big time - 1 star"></label>
+                                                            <input type="radio" id="starhalf" name="rating"
+                                                                   value="half"/><label
+                                                                class="half" for="starhalf"
+                                                                title="Sucks big time - 0.5 stars"></label>
+                                                        </fieldset>
+
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="buttons clearfix">
+                                                <div class="pull-left">
+                                                    <button type="button" id="button-review" data-loading-text="Loading..." class="btn my_button-review">Оставить отзыв</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
 
 
 
 
                                     </div>
-                                    <button class="main-desc__showMoreInfo">
-                                        <span class="main-desc__showMoreInfo_show">Показать больше информации</span>
-                                        <span class="main-desc__showMoreInfo_hide hidden">Скрыть информацию</span>
-                                    </button>
 
 
 
-                                    <button class="my_button-review code_addReview">
-                                        <span class="button_review">Оставить отзыв о товаре</span>
-                                        <i class="fa fa-bookmark" aria-hidden="true"></i>
-                                    </button>
-
-                                    <div class="alert alert-success alert-dismissible"><i class="fa fa-check-circle"></i> Спасибо за отзыв. Он будет добавлен после проверки администратором сайта.</div>
-
-                                    <!-- FORM Review -->
-                                    <form class="form-horizontal code_formRewiew" id="form-review">
-
-                                        <div class="form-group required">
-                                            <div class="col-sm-12">
-                                                <label class="control-label" for="input-name">*Ваше имя</label>
-                                                <input type="text" name="name" value="" id="input-name" class="form-control" required>
-                                            </div>
-                                        </div>
-                                        <div class="form-group required">
-                                            <div class="col-sm-12">
-                                                <label class="control-label" for="input-review">*Ваш отзыв</label>
-                                                <textarea name="text" rows="5" id="input-review" class="form-control" required></textarea>
-                                                <div class="help-block"><span class="text-danger">Note:</span> HTML вставки не допустимы</div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group required">
-                                            <div class="col-sm-12">
-                                                <p class="">
-                                                    <span>Рейтинг товара</span>
-                                                    <span class="block_rating__avarage">4.25</span>
-                                                    <span class="block_rating__reviews">(153 reviews)</span>
-                                                </p>
-
-                                                <div class="control-label">
 
 
-
-                                                    <fieldset class="block_rating__stars" >
-                                                        <input type="radio" id="star5" name="rating" value="5"/><label
-                                                            class="full" for="star5" title="Awesome - 5 stars"></label>
-                                                        <input type="radio" id="star4half" name="rating"
-                                                               value="4 and a half"/><label class="half" for="star4half"
-                                                                                            title="Pretty good - 4.5 stars"></label>
-                                                        <input type="radio" id="star4" name="rating" value="4"/><label
-                                                            class="full" for="star4" title="Good - 4 stars"></label>
-                                                        <input type="radio" id="star3half" name="rating"
-                                                               value="3 and a half"/><label class="half" for="star3half"
-                                                                                            title="Above average - 3.5 stars"></label>
-                                                        <input type="radio" id="star3" name="rating" value="3"/><label
-                                                            class="full" for="star3" title="Average - 3 stars"></label>
-                                                        <input type="radio" id="star2half" name="rating"
-                                                               value="2 and a half"/><label class="half" for="star2half"
-                                                                                            title="Kinda bad - 2.5 stars"></label>
-                                                        <input type="radio" id="star2" name="rating" value="2"/><label
-                                                            class="full" for="star2"
-                                                            title="Kinda bad - 2 stars"></label>
-                                                        <input type="radio" id="star1half" name="rating"
-                                                               value="1 and a half"/><label class="half" for="star1half"
-                                                                                            title="Meh - 1.5 stars"></label>
-                                                        <input type="radio" id="star1" name="rating" value="1"/><label
-                                                            class="full" for="star1"
-                                                            title="Sucks big time - 1 star"></label>
-                                                        <input type="radio" id="starhalf" name="rating"
-                                                               value="half"/><label
-                                                            class="half" for="starhalf"
-                                                            title="Sucks big time - 0.5 stars"></label>
-                                                    </fieldset>
-
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="buttons clearfix">
-                                            <div class="pull-left">
-                                                <button type="button" id="button-review" data-loading-text="Loading..." class="btn my_button-review">Оставить отзыв</button>
-                                            </div>
-                                        </div>
-                                    </form>
                                 </div>
                             </div>
                         </div>
-                    </div>
+
                 </div>
             </div>
         </div>
