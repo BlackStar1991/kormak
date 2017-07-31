@@ -156,7 +156,7 @@ $(document).ready(function () {
 
 //    probuct_image__slider - SLIDER for Product
 
-    $(".probuct_image__slider").owlCarousel({
+    $(".product_image__slider").owlCarousel({
         items: 2,
         loop: true,
         nav: true,

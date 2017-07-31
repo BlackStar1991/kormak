@@ -194,23 +194,23 @@
             </div>
             <div class="col-xs-12">
                 <div class="col-md-7 block_white">
-                    <div class="probuct_image">
+                    <div class="product_image">
                         <div class="bl_wrappen">
-                            <div class="probuct_image__scaleIcon"></div>
-                            <div class="probuct_image__mainBlock">
-                                <img class="probuct_image__img" src="image/Products/product_2.jpg" alt="">
+                            <div class="product_image__scaleIcon"></div>
+                            <div class="product_image__mainBlock">
+                                <img class="product_image__img" src="image/Products/product_2.jpg" alt="">
                             </div>
-                            <ul class="probuct_image__slider owl-carousel">
-                                <li class="probuct_image__item">
-                                    <img class="probuct_image__sliderImg" src="image/Products/product_small_1.jpg"
+                            <ul class="product_image__slider owl-carousel">
+                                <li class="product_image__item">
+                                    <img class="product_image__sliderImg" src="image/Products/product_small_1.jpg"
                                          alt="">
                                 </li>
-                                <li class="probuct_image__item">
-                                    <img class="probuct_image__sliderImg" src="image/Products/product_small_2.jpg"
+                                <li class="product_image__item">
+                                    <img class="product_image__sliderImg" src="image/Products/product_small_2.jpg"
                                          alt="">
                                 </li>
-                                <li class="probuct_image__item">
-                                    <img class="probuct_image__sliderImg" src="image/Products/product_small_3.jpg"
+                                <li class="product_image__item">
+                                    <img class="product_image__sliderImg" src="image/Products/product_small_3.jpg"
                                          alt="">
                                 </li>
                             </ul>
@@ -257,39 +257,46 @@
                         <div class="block_quantity">
                             <p class="block_quantity__text">Количество:</p>
                             <div class="block_quantity__box">
-                                <button class="block_quantity__minus">-</button>
+                                <button class="block_quantity__minus"><span>-</span></button>
                                 <input class="block_quantity__input" type="text" value="1">
-                                <button class="block_quantity__plus">+</button>
+                                <button class="block_quantity__plus"><span>+</span></button>
                             </div>
                         </div>
                         <div class="bl_description">
                             <p class="bl_description__text">Краткое описание:</p>
-                            <div class="bl_description__box">
+                            <p class="bl_description__box">
                                 <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     When an unknown printer took a galley of type.
                                 </span>
-                            </div>
+                            </p>
                         </div>
 
                         <button class="btn_buy"><span class="btn_buy__text">Купить</span></button>
+
+
                         <div class="bl_buyOneClick">
                             <p class="bl_buyOneClick__text">
                                 Купить в 1 клик:
                             </p>
-                            <div class="bl_wrappen">
-                                <input class="btn_buy__input" type="text">
-                                <button class="btn_buy__wrappen"></button>
+                            <div class="btn_buy__overflow">
+                                <input class="btn_buy__input" type="tel" placeholder="+38 (0XX) XXX-XX-XX">
+                                <button class="btn_buy__send">
+                                    <span class="bl_wrappen">
+                                        <span class="btn_buy__send_icon"></span>
+                                    </span>
+
+                                </button>
                             </div>
                         </div>
 
-                        <div class="bl_delivery">
-                            <p class="bl_delivery__text bl_delivery__text_mainText">Способы доставки:</p>
-                            <p class="bl_delivery__text">Самовывоз: <span class="bl_delivery__text_free">БЕСПЛАТНО</span></p>
-                            <p class="bl_delivery__text">Курьером: <span class="bl_delivery__text_free">БЕСПЛАТНО</span></p>
-                            <p class="bl_delivery__text">
-                                <span class="bl_delivery__text_valueDelivery">Пункт «Нова Пошта»:</span> <span class="bl_delivery__text_simplePrice">35 грн</span> <span class="bl_delivery__text_city">(Киев)</span></p>
+                        <div class="bl_productDelivery">
+                            <p class="bl_productDelivery__text bl_productDelivery__text_mainText">Способы доставки:</p>
+                            <p class="bl_productDelivery__text">Самовывоз: <span class="color_red">БЕСПЛАТНО</span></p>
+                            <p class="bl_productDelivery__text">Курьером: <span class="color_red">БЕСПЛАТНО</span></p>
+                            <p class="bl_productDelivery__text">
+                                <span class="bl_productDelivery__text_valueDelivery">Пункт «Нова Пошта»:</span> <span class="bl_productDelivery__text_simplePrice">35 грн</span> <span class="bl_productDelivery__text_city">(Киев)</span></p>
                         </div>
 
 
@@ -298,8 +305,55 @@
 
                 </div>
             </div>
+        </div>
 
+        <div class="container">
+            <div class="col-md-12">
 
+                <div class="bl_productAdvantages">
+                    <div class="bl_productAdvantagesDelivery">
+                        <div class="bl_productAdvantagesDelivery__icon-delivery"></div>
+                        <p class="bl_advantages__title">
+                            Условия доставки
+                        </p>
+                        <div class="bl_advantages__allVariants">
+                            <p class="bl_advantages__text">
+                                Доставка по Украине — 35 грн.
+                                От 600 грн — бесплатно.
+                            </p>
+
+                            <p class="bl_advantages__text">
+                                Доставка по Киеву — 50 грн.
+                                От 600 грн — бесплатно
+                            </p>
+                            <a class="bl_advantages__link" href="#">Подробнее о доставке</a>  <!-- отсылает на страницу доставки -->
+                        </div>
+                    </div>
+
+                    <div class="bl_productAdvantagesPayment">
+                        <div class="bl_productAdvantagesPayment__icon-cart"></div>
+                        <p class="bl_advantages__title">
+                            Оплата при получении
+                        </p>
+                        <div class="bl_advantages__allVariants">
+                            <p class="bl_advantages__text">Оплата производится наличными при получении товара.</p>
+                            <p class="bl_advantages__text">Также у нас предусмотрен безналичный расчет.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="bl_productAdvantagesExchange">
+                        <div class="bl_productAdvantagesExchange__icon-return"></div>
+                        <p class="bl_advantages__title">
+                            Возврат и обмен
+                        </p>
+                        <div class="bl_advantages__allVariants">
+                            <p class="bl_advantages__text">Если вас не устроил товар вы можете вернуть деньги или обменять его.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
 
 
