@@ -156,45 +156,148 @@
             <ul class="bl_breadcrumbs">
                 <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
                 <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Название категории</a></li>
-                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link bl_breadcrumbs__active" href="#">Название товара</a></li>
+                <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link bl_breadcrumbs__active"
+                                                    href="#">Название товара</a></li>
             </ul>
-            <div class="bl_fullProduct">
-                <div class="col-xs-12">
-                    <h2 class="bl_fullProduct__title">712001-S Костюм зимний Norfin Hunting Wild Passion (-30°)</h2>
 
+            <div class="col-xs-12">
+                <div class="bl_productName">
+                    <h2 class="bl_fullProduct__title">712001-S Костюм зимний Norfin Hunting Wild Passion (-30°)</h2>
                     <div class="bl_raiting">
-                        <button  class="bl_raiting__button">Оценить товар</button>
+                        <button class="bl_raiting__button">Оценить товар</button>
                         <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="checkbox" name="raiting_star" checked>
+                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="1" checked>
                             <span class="bl_raiting__star"></span>
                         </label>
                         <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="checkbox" name="raiting_star">
+                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="2">
                             <span class="bl_raiting__star"></span>
                         </label>
                         <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="checkbox" name="raiting_star">
+                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="3">
                             <span class="bl_raiting__star"></span>
                         </label>
                         <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="checkbox" name="raiting_star">
+                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="4">
                             <span class="bl_raiting__star"></span>
                         </label>
                         <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="checkbox" name="raiting_star">
+                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="5">
                             <span class="bl_raiting__star"></span>
                         </label>
 
 
                     </div>
-
                 </div>
 
 
             </div>
+            <div class="col-xs-12">
+                <div class="col-md-7 block_white">
+                    <div class="probuct_image">
+                        <div class="bl_wrappen">
+                            <div class="probuct_image__scaleIcon"></div>
+                            <div class="probuct_image__mainBlock">
+                                <img class="probuct_image__img" src="image/Products/product_2.jpg" alt="">
+                            </div>
+                            <ul class="probuct_image__slider owl-carousel">
+                                <li class="probuct_image__item">
+                                    <img class="probuct_image__sliderImg" src="image/Products/product_small_1.jpg"
+                                         alt="">
+                                </li>
+                                <li class="probuct_image__item">
+                                    <img class="probuct_image__sliderImg" src="image/Products/product_small_2.jpg"
+                                         alt="">
+                                </li>
+                                <li class="probuct_image__item">
+                                    <img class="probuct_image__sliderImg" src="image/Products/product_small_3.jpg"
+                                         alt="">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 block_white">
+                    <div class="product_info">
+                        <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span></p>
+                        <p class="product_info__productAvailability">На складе:
+                            <span class="product_info__productAvailability__yes">есть в наличии</span>  <!--  выводи если товар есть -->
+                            <span class="product_info__productAvailability__no hidden">временно нету</span>  <!--  выводи если товара нет -->
+                        </p>
+
+                        <div class="bl_price">
+                            <span class="bl_price__newPrice hidden">10 328 грн</span>
+                            <span class="bl_price__oldPrice hidden">11 138 грн</span>
+
+                            <span class="bl_price__normal">11 138 грн</span>  <!-- выводить когда нету акций -->
+                        </div>
+                        <div class="product_size">
+                            <p class="product_size__text">Размер:</p>
+                            <label class="product_size__label">
+                                <input class="product_size__input" type="radio" name="productSize" value="">
+                                <span class="product_size__text">s</span>
+                            </label>
+                            <label class="product_size__label">
+                                <input class="product_size__input" type="radio" name="productSize" value="">
+                                <span class="product_size__text">m</span>
+                            </label>
+                            <label class="product_size__label">
+                                <input class="product_size__input" type="radio" name="productSize" value="">
+                                <span class="product_size__text">l</span>
+                            </label>
+                            <label class="product_size__label">
+                                <input class="product_size__input" type="radio" name="productSize" value="" checked>
+                                <span class="product_size__text">xl</span>
+                            </label>
+                            <label class="product_size__label">
+                                <input class="product_size__input" type="radio" name="productSize" value="">
+                                <span class="product_size__text">xxl</span>
+                            </label>
+                        </div>
+                        <div class="block_quantity">
+                            <p class="block_quantity__text">Количество:</p>
+                            <div class="block_quantity__box">
+                                <button class="block_quantity__minus">-</button>
+                                <input class="block_quantity__input" type="text" value="1">
+                                <button class="block_quantity__plus">+</button>
+                            </div>
+                        </div>
+                        <div class="bl_description">
+                            <p class="bl_description__text">Краткое описание:</p>
+                            <div class="bl_description__box">
+                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    When an unknown printer took a galley of type.
+                                </span>
+                            </div>
+                        </div>
+
+                        <button class="btn_buy"><span class="btn_buy__text">Купить</span></button>
+                        <div class="bl_buyOneClick">
+                            <p class="bl_buyOneClick__text">
+                                Купить в 1 клик:
+                            </p>
+                            <div class="bl_wrappen">
+                                <input class="btn_buy__input" type="text">
+                                <button class="btn_buy__wrappen"></button>
+                            </div>
+                        </div>
+
+                        <div class="bl_delivery">
+                            <p class="bl_delivery__text bl_delivery__text_mainText">Способы доставки:</p>
+                            <p class="bl_delivery__text">Самовывоз: <span class="bl_delivery__text_free">БЕСПЛАТНО</span></p>
+                            <p class="bl_delivery__text">Курьером: <span class="bl_delivery__text_free">БЕСПЛАТНО</span></p>
+                            <p class="bl_delivery__text">
+                                <span class="bl_delivery__text_valueDelivery">Пункт «Нова Пошта»:</span> <span class="bl_delivery__text_simplePrice">35 грн</span> <span class="bl_delivery__text_city">(Киев)</span></p>
+                        </div>
 
 
+                    </div>
 
+
+                </div>
+            </div>
 
 
         </div>

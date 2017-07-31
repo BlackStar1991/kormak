@@ -154,6 +154,40 @@ $(document).ready(function () {
         }
     });
 
+//    probuct_image__slider - SLIDER for Product
+
+    $(".probuct_image__slider").owlCarousel({
+        items: 2,
+        loop: true,
+        nav: true,
+        navText: false,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 15,
+        center: true,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 3
+            },
+            550: {
+                items: 2
+            },
+            320: {
+                items: 1,
+                center: true
+            }
+
+        }
+    });
+
+
+
+
 ////hover sliders srrows navigations
 
     function hoverArrows(sliderBox, arrowPrev, arrowNext, changedClass) {
