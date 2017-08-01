@@ -165,28 +165,17 @@
                     <h2 class="bl_fullProduct__title">712001-S Костюм зимний Norfin Hunting Wild Passion (-30°)</h2>
                     <div class="bl_raiting">
                         <button class="bl_raiting__button">Оценить товар</button>
-                        <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="1" checked>
-                            <span class="bl_raiting__star"></span>
-                        </label>
-                        <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="2">
-                            <span class="bl_raiting__star"></span>
-                        </label>
-                        <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="3">
-                            <span class="bl_raiting__star"></span>
-                        </label>
-                        <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="4">
-                            <span class="bl_raiting__star"></span>
-                        </label>
-                        <label class="bl_raiting__label">
-                            <input class="bl_raiting__chackbox" type="radio" name="raiting" value="5">
-                            <span class="bl_raiting__star"></span>
-                        </label>
 
-
+                        <input class="bl_raiting__chackbox" id="raiting5" type="radio" name="raiting" value="5">
+                        <label class="bl_raiting__label" for="raiting5"></label>
+                        <input class="bl_raiting__chackbox" id="raiting4" type="radio" name="raiting" value="4">
+                        <label class="bl_raiting__label" for="raiting4"></label>
+                        <input class="bl_raiting__chackbox" id="raiting3" type="radio" name="raiting" value="3">
+                        <label class="bl_raiting__label" for="raiting3"></label>
+                        <input class="bl_raiting__chackbox" id="raiting2" type="radio" name="raiting" value="2">
+                        <label class="bl_raiting__label" for="raiting2"></label>
+                        <input class="bl_raiting__chackbox" id="raiting1" type="radio" name="raiting" value="1">
+                        <label class="bl_raiting__label" for="raiting1"></label>
                     </div>
                 </div>
 
@@ -198,28 +187,28 @@
                         <div class="product_image">
                             <div class="bl_wrappen">
 
-                                    <div class="product_image__scaleIcon"></div>
-                                    <div class="product_image__mainBlock">
-                                        <img class="product_image__img" src="image/Products/product_2.jpg" alt="">
-                                    </div>
-                                    <ul class="product_image__slider owl-carousel">
-                                        <li class="product_image__item">
-                                            <img class="product_image__sliderImg" src="image/Products/product_1.jpg"
-                                                 alt="">
-                                        </li>
-                                        <li class="product_image__item">
-                                            <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
-                                                 alt="">
-                                        </li>
-                                        <li class="product_image__item">
-                                            <img class="product_image__sliderImg" src="image/Products/product_small_2.jpg"
-                                                 alt="">
-                                        </li>
-                                        <li class="product_image__item">
-                                            <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
-                                                 alt="">
-                                        </li>
-                                    </ul>
+                                <div class="product_image__scaleIcon"></div>
+                                <div class="product_image__mainBlock">
+                                    <img class="product_image__img" src="image/Products/product_2.jpg" alt="">
+                                </div>
+                                <ul class="product_image__slider owl-carousel">
+                                    <li class="product_image__item">
+                                        <img class="product_image__sliderImg" src="image/Products/product_1.jpg"
+                                             alt="">
+                                    </li>
+                                    <li class="product_image__item">
+                                        <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
+                                             alt="">
+                                    </li>
+                                    <li class="product_image__item">
+                                        <img class="product_image__sliderImg" src="image/Products/product_small_2.jpg"
+                                             alt="">
+                                    </li>
+                                    <li class="product_image__item">
+                                        <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
+                                             alt="">
+                                    </li>
+                                </ul>
 
                             </div>
                         </div>
@@ -244,23 +233,23 @@
                             <div class="product_size">
                                 <p class="product_size__text">Размер:</p>
                                 <label class="product_size__label">
-                                    <input class="product_size__input" type="radio" name="productSize" value="">
+                                    <input class="product_size__input" id="size_s" type="radio" name="productSize" value="" checked>
                                     <span class="product_size__text">s</span>
                                 </label>
                                 <label class="product_size__label">
-                                    <input class="product_size__input" type="radio" name="productSize" value="">
+                                    <input class="product_size__input" id="size_m" type="radio" name="productSize" value="">
                                     <span class="product_size__text">m</span>
                                 </label>
                                 <label class="product_size__label">
-                                    <input class="product_size__input" type="radio" name="productSize" value="">
+                                    <input class="product_size__input" id="size_l" type="radio" name="productSize" value="">
                                     <span class="product_size__text">l</span>
                                 </label>
                                 <label class="product_size__label">
-                                    <input class="product_size__input" type="radio" name="productSize" value="" checked>
+                                    <input class="product_size__input" id="size_xl" type="radio" name="productSize" value="" >
                                     <span class="product_size__text">xl</span>
                                 </label>
                                 <label class="product_size__label">
-                                    <input class="product_size__input" type="radio" name="productSize" value="">
+                                    <input class="product_size__input" id="size_xxl" type="radio" name="productSize" value="">
                                     <span class="product_size__text">xxl</span>
                                 </label>
                             </div>
@@ -274,13 +263,31 @@
                             </div>
                             <div class="bl_description">
                                 <p class="bl_description__text">Краткое описание:</p>
-                                <p class="bl_description__box">
-                                <span>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    When an unknown printer took a galley of type.
-                                </span>
-                                </p>
+                                <div class="bl_description__box">
+                                    <label class="label_field" for="size_s">
+                                        <span>sssssssssssssssss s sssss s s s  s ss  s s sssssssssss
+                                        sssssssssssssssssssss s ssssssssssssss s s ss sssssssssssssss s ssss s ss
+                                        </span>
+                                    </label>
+                                    <label class="label_field" for="size_m">
+                                        <span>aaaaaaaaaaaaa aaaaaaaa a a aaaaaaaaaaaaaa aaaaaaa Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ad aperiam eum fugiat nulla tempore. Dolore fugiat necessitatibus officiis veritatis. A assumenda, eos id ipsam iure magni
+                                            officiis reiciendis totam voluptate?
+                                        </span>
+                                    </label>
+                                    <label class="label_field" for="size_l">
+                                        <span>fdfdfds d fds fdsf sdf sdf df sdf Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deserunt, natus non perspiciatis qui suscipit.    s
+                                        </span>
+                                    </label>
+                                    <label class="label_field" for="size_xl">
+                                        <span> xl xl xl xl lx lx lxl xl lxl lx lx Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores atque consectetur deserunt expedita quibusdam? Magni?
+                                        </span>
+                                    </label>
+                                    <label class="label_field" for="size_xxl">
+                                        <span>xx xx x xxxxxxxxxxx x x x xxxxxxxxxxxx Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci fuga laudantium praesentium qui unde, veniam.
+                                        </span>
+                                    </label>
+                                </div>
                             </div>
 
                             <button class="button_kormat"><span class="button_kormat__text">Купить</span></button>
@@ -558,25 +565,27 @@
                                         <div class="bl_review__raiting">
                                             <span class="review_text">Оценить товар</span>
 
-                                            <input class="bl_raiting__chackbox" id="review_star1" type="radio"
-                                                   name="raiting" value="1" checked>
-                                            <label class="bl_raiting__label" for="review_star1"></label>
+                                            <div class="bl_review__raitingFull">
+                                                <input class="bl_raiting__chackbox" id="review_star5" type="radio"
+                                                       name="raiting" value="5">
+                                                <label class="bl_raiting__label" for="review_star5"></label>
 
-                                            <input class="bl_raiting__chackbox" id="review_star2" type="radio"
-                                                   name="raiting" value="2">
-                                            <label class="bl_raiting__label" for="review_star2"></label>
+                                                <input class="bl_raiting__chackbox" id="review_star4" type="radio"
+                                                       name="raiting" value="4">
+                                                <label class="bl_raiting__label" for="review_star4"></label>
 
-                                            <input class="bl_raiting__chackbox" id="review_star3" type="radio"
-                                                   name="raiting" value="3">
-                                            <label class="bl_raiting__label" for="review_star3"></label>
+                                                <input class="bl_raiting__chackbox" id="review_star3" type="radio"
+                                                       name="raiting" value="3">
+                                                <label class="bl_raiting__label" for="review_star3"></label>
 
-                                            <input class="bl_raiting__chackbox" id="review_star4" type="radio"
-                                                   name="raiting" value="4">
-                                            <label class="bl_raiting__label" for="review_star4"></label>
+                                                <input class="bl_raiting__chackbox" id="review_star2" type="radio"
+                                                       name="raiting" value="2">
+                                                <label class="bl_raiting__label" for="review_star2"></label>
 
-                                            <input class="bl_raiting__chackbox" id="review_star5" type="radio"
-                                                   name="raiting" value="5">
-                                            <label class="bl_raiting__label" for="review_star5"></label>
+                                                <input class="bl_raiting__chackbox" id="review_star1" type="radio"
+                                                       name="raiting" value="1">
+                                                <label class="bl_raiting__label" for="review_star1"></label>
+                                            </div>
                                         </div>
 
 
