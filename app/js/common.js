@@ -157,7 +157,7 @@ $(document).ready(function () {
 //    probuct_image__slider - SLIDER for Product
 
     $(".product_image__slider").owlCarousel({
-        items: 2,
+        items: 3,
         loop: true,
         nav: true,
         navText: false,
@@ -185,10 +185,75 @@ $(document).ready(function () {
         }
     });
 
+/////// slider_withThisProductBuy - С этим товаром покупают:
 
+    $(".slider_withThisProductBuy").owlCarousel({
+        items: 4,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 0,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            992: {
+                items: 3,
+                center: true
+            },
+            550: {
+                items: 2
+            },
+            320: {
+                items: 1,
+                center: true
+            }
 
+        }
+    });
 
-////hover sliders srrows navigations
+//// slider_youViewed  - Вы смотрели:
+
+    $(".slider_youViewed").owlCarousel({
+        items: 4,
+        loop: true,
+        nav: true,
+        navText: true,
+        dots: false,
+        autoplay: false,
+        stopOnHover: true,
+        margin: 0,
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 4000, //Время смены слайда
+        pagination: false,
+        responsiveClass: true,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            992: {
+                items: 3,
+                center: true
+            },
+            550: {
+                items: 2
+            },
+            320: {
+                items: 1,
+                center: true
+            }
+
+        }
+    });
+
+//// hover sliders srrows navigations
 
     function hoverArrows(sliderBox, arrowPrev, arrowNext, changedClass) {
 
@@ -210,10 +275,21 @@ $(document).ready(function () {
         arrowPrev_newProducts = $(".slider_newProducts.owl-carousel .owl-prev"),
         arrowNext_newProducts = $(".slider_newProducts.owl-carousel .owl-next"),
 
+        blockWithThisProductBuy = $(".bl_withThisProductBuy"),
+        arrowPrev_WithThisProductBuy = $(".slider_withThisProductBuy.owl-carousel .owl-prev"),
+        arrowNext_WithThisProductBuy = $(".slider_withThisProductBuy.owl-carousel .owl-next"),
+
+        blockYouViewed = $(".bl_youViewed"),
+        arrowPrev_youViewed = $(".slider_youViewed.owl-carousel .owl-prev"),
+        arrowNext_youViewed = $(".slider_youViewed.owl-carousel .owl-next"),
+
+
         hover_arrowsClass = "arrow-prev__hover";
 
     hoverArrows(blockPopular, arrowPrev_popular, arrowNext_popular, hover_arrowsClass);
     hoverArrows(blockNewProducts, arrowPrev_newProducts, arrowNext_newProducts, hover_arrowsClass);
+    hoverArrows(blockWithThisProductBuy ,arrowPrev_WithThisProductBuy, arrowNext_WithThisProductBuy, hover_arrowsClass);
+    hoverArrows(blockYouViewed, arrowPrev_youViewed, arrowNext_youViewed, hover_arrowsClass);
 
 
 // Ancor to top
@@ -223,6 +299,36 @@ $(document).ready(function () {
         var id = $(this).attr('href'),
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
+    });
+
+// FILTER for telephone number
+
+    var telephonseInput = $("input[type='tel']");
+
+    telephonseInput.on("change keyup input click", function() {
+        if (this.value.match(/[^0-9]/g)) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        }
+    });
+
+////// Product quantity
+
+var quantityProduct = $(".block_quantity__input"),
+    plusProduct = $(".block_quantity__plus"),
+    minusProduct = $(".block_quantity__minus");
+
+    plusProduct.on("click", function () {
+        quantityProduct.val( Number(quantityProduct.val()) + 1);
+    });
+
+    minusProduct.on("click", function () {
+
+        if (quantityProduct.val()>1){
+            quantityProduct.val( Number(quantityProduct.val()) - 1);
+        }
+        else {
+            quantityProduct.val( 1 );
+        }
     });
 
 
