@@ -162,6 +162,10 @@ $(document).ready(function () {
         nav: true,
         navText: false,
         dots: false,
+
+        mouseDrag: false,
+        touchDrag: false,
+
         autoplay: false,
         stopOnHover: true,
         margin: 15,
@@ -175,7 +179,8 @@ $(document).ready(function () {
                 items: 3
             },
             550: {
-                items: 2
+                items: 2,
+                center: false
             },
             320: {
                 items: 1,
@@ -253,7 +258,7 @@ $(document).ready(function () {
         }
     });
 
-//// hover sliders srrows navigations
+//// hover sliders arrows navigations
 
     function hoverArrows(sliderBox, arrowPrev, arrowNext, changedClass) {
 
@@ -290,6 +295,19 @@ $(document).ready(function () {
     hoverArrows(blockNewProducts, arrowPrev_newProducts, arrowNext_newProducts, hover_arrowsClass);
     hoverArrows(blockWithThisProductBuy ,arrowPrev_WithThisProductBuy, arrowNext_WithThisProductBuy, hover_arrowsClass);
     hoverArrows(blockYouViewed, arrowPrev_youViewed, arrowNext_youViewed, hover_arrowsClass);
+
+
+//// Img for main product slider
+
+    $('.product_image__slider').on('click', ".product_image__sliderImg",  function() {
+        var currentSrc = $(this).attr('src');
+
+        $('.product_image__img').attr('src', currentSrc);
+
+        console.log("OK");
+
+    });
+
 
 
 // Ancor to top
