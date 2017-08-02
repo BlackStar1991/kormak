@@ -1899,6 +1899,7 @@ button {
 
 .bl_breadcrumbs {
   margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%; }
   .bl_breadcrumbs__item {
     position: relative;
@@ -1932,7 +1933,6 @@ button {
   width: 100%; }
 
 .bl_productName {
-  margin-top: 20px;
   padding-bottom: 21px;
   width: 100%;
   background-color: #fff;
@@ -2495,6 +2495,22 @@ button {
   text-decoration: underline; }
   .bl_advantages__link:hover {
     color: #0160ac; }
+
+.bl_video {
+  width: 100%;
+  padding: 10px; }
+
+.bl_video__text {
+  display: inline-block;
+  font-size: 22px;
+  font-family: "TahomaBold", sans-serif;
+  padding: 0; }
+
+.bl_video_videoAboutProduct {
+  display: block;
+  object-fit: contain;
+  max-width: 320px;
+  height: 100%; }
 
 .inf_product {
   width: 100%;

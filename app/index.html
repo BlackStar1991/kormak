@@ -167,14 +167,18 @@
 <main class="main">
     <div class="mainWrapper">
 
+<div class="container correct_left correct_left">
+        <div class="col-xs-12">
         <ul class="bl_breadcrumbs">
             <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
             <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Название категории</a></li>
             <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link bl_breadcrumbs__active"
                                                 href="#">Название товара</a></li>
         </ul>
+        </div>
+</div>
 
-        <div class="container block_white">
+        <div class="container clearfix block_white">
 
 
 
@@ -204,7 +208,9 @@
 
                                 <div class="product_image__scaleIcon"></div>
                                 <div class="product_image__mainBlock">
-                                    <img class="product_image__img" src="image/Products/product_2.jpg" alt="">
+                                    <a href="image/Products/big/product_2-big.jpg" class="highslide" onclick="return hs.expand(this)">
+                                        <img class="product_image__img highslide" src="image/Products/product_2.jpg" alt="">
+                                    </a>
                                 </div>
 
                                 <!-- В слайдер должны добавлятся полномасштабные фото! -->
@@ -292,9 +298,9 @@
                             </div>
 
 
-                            <div class="bl_description__box">
+                            <div class="bl_description__box">   <!-- количество div зависит от количества input class="product_size__input"  JS //// Short description -->
                                 <div class="product_sizeDescription">
-                                    <!-- количество div зависит от количества input class="product_size__input" JS //// Short description -->
+
                                     <p>sssssssssssssssss s sssss s s s s ss s s sssssssssss
                                         sssssssssssssssssssss s ssssssssssssss s s ss sssssssssssssss s ssss s ss
                                     </p>
@@ -364,7 +370,7 @@
         </div>
 
         <div class="container correct_right correct_left">
-            <div class="col-xs-12 ">
+            <div class="col-xs-12 correct_left correct_right">
 
                 <div class="bl_productAdvantages">
                     <div class="bl_productAdvantagesDelivery">
@@ -416,7 +422,7 @@
 
 
         
-            <div class="col-xs-12">
+            <div class="col-xs-12 correct_left correct_right">
                 <div class="inf_product">
 
                     <ul class="nav nav-tabs inf_product__tabs">
@@ -428,7 +434,12 @@
                             <a href="#tab-specification" data-toggle="tab">Характеристики</a>
                         </li>
 
-                        <li class="inf_product__item active">
+                        <li class="inf_product__item active ">   <!-- Выводить только если для товара есть видио -->
+                            <a href="#tab-video" data-toggle="tab">Видео</a>
+                        </li>
+                        <!-- end -->
+
+                        <li class="inf_product__item ">
                             <a href="#tab-review" data-toggle="tab">Отзывы</a>
                         </li>
                     </ul>
@@ -534,7 +545,20 @@
                         </div>
 
 
-                        <div class="tab-pane active" id="tab-review">
+                        <div class="tab-pane active" id="tab-video">   <!-- Выводить только если для товара есть видио -->
+                          <div class="bl_video">
+
+                              <p class="bl_video__text">Видио о товаре</p>
+                              <h2 class="bl_video__text">Костюм зимний Norfin Hunting Wild Passion</h2>
+
+                              <iframe width="560" height="315" class="bl_video_videoAboutProduct"  src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0" allowfullscreen></iframe>
+
+                          </div>
+                        </div>
+
+                        <!-- end -->
+
+                        <div class="tab-pane" id="tab-review">
 
                             <div class="review_allReview">
 
@@ -998,6 +1022,7 @@
 
 
 <script src="libs/highslide/highslide-full.min.js"></script>
+
 <script src="js/common.js"></script>
 <!-- endbuild -->
 
