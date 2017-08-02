@@ -308,6 +308,35 @@ $(document).ready(function () {
 
     });
 
+//// Short description
+
+    var sizeDescription = $(".product_sizeDescription"),
+        labelSize = $('.product_size__label'),
+       fullSizeRadioButtons =$(".product_size__input"),
+       blockWoodBeHidden =$(".bl_minInformationAboutProduct");
+
+    fullSizeRadioButtons.on("click", function(){
+
+        blockWoodBeHidden.addClass("hidden");
+
+        var index = 0;
+        var count = 0;
+
+        labelSize.each(function(){
+            count ++;
+            if($(this).children('input').prop('checked')==true){
+                index = count;
+            }
+        });
+
+        sizeDescription.removeClass("product_sizeDescription__showed");
+        sizeDescription.eq(index -1 ).addClass("product_sizeDescription__showed");
+
+    });
+
+
+
+
 
 
 // Ancor to top
