@@ -27,10 +27,13 @@
 
     <link rel="stylesheet" href="bower/owl.carousel/dist/assets/owl.carousel.min.css">
 
+    <link rel="stylesheet" href="bower/fancybox/dist/jquery.fancybox.min.css">
+
+
+
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
 
-    <link rel="stylesheet" href="libs/highslide/highslide.css">
 
     <link rel="stylesheet" href="css/main.css">
     <!-- endbuild -->
@@ -208,9 +211,10 @@
 
                                 <div class="product_image__scaleIcon"></div>
                                 <div class="product_image__mainBlock">
-                                    <a href="image/Products/big/product_2-big.jpg" class="highslide" onclick="return hs.expand(this)">
-                                        <img class="product_image__img highslide" src="image/Products/product_2.jpg" alt="">
+                                    <a  class="fancybox-animated"  href="image/Products/big/product_2-big.jpg"  title="ggg" >
+                                        <img class="product_image__img" src="image/Products/product_2.jpg" alt="" title="kkk">
                                     </a>
+
                                 </div>
 
                                 <!-- В слайдер должны добавлятся полномасштабные фото! -->
@@ -551,7 +555,10 @@
                               <p class="bl_video__text">Видио о товаре</p>
                               <h2 class="bl_video__text">Костюм зимний Norfin Hunting Wild Passion</h2>
 
-                              <iframe width="560" height="315" class="bl_video_videoAboutProduct"  src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0" allowfullscreen></iframe>
+                              <div class="bl_video_wrapper">
+                                  <iframe  class="bl_video_videoAboutProduct"  src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0" allowfullscreen></iframe>
+                              </div>
+
 
                           </div>
                         </div>
@@ -1017,14 +1024,19 @@
 
 <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="bower/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="bower/fancybox/dist/jquery.fancybox.min.js"></script>
+
+
 <!-- endbuild -->
 <!-- build:js js/common.min.js -->
 
 
-<script src="libs/highslide/highslide-full.min.js"></script>
-
 <script src="js/common.js"></script>
 <!-- endbuild -->
+
+
+
+
 
 </body>
 

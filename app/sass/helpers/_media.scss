@@ -189,6 +189,23 @@
     top: 40px;
     right: 0;
   }
+
+
+  .inf_product__tabs{
+    flex-direction: column;
+    width: 100%;
+  }
+  li.inf_product__item{
+    width: 100%;
+    
+  }
+
+  .inf_product__tabs .inf_product__item.active a{
+    border-top: none;
+    background-color: $color_blue;
+    color: #fff;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {

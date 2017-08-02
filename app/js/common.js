@@ -1,5 +1,36 @@
 $(document).ready(function () {
 
+
+
+/// buttons must work only  $(window).width() <=991px
+
+
+    function liveScopeOfButtons() {
+
+        if ($(window).width() <= 991) {
+
+            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
+            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
+            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
+            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
+            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
+
+
+        } else {
+            return false;
+        }
+
+    }
+
+    liveScopeOfButtons();
+
+
+
+
+
+
+
+
 //MENU
     var headerPage = $('.header');
 
@@ -308,6 +339,36 @@ $(document).ready(function () {
 
     });
 
+
+
+//  Fancybox - увеличение главной фотки товара по клику
+
+
+
+
+
+        $('.fancybox-animated').fancybox({
+            youtube : {
+                controls : 0,
+                showinfo : 0
+            },
+            vimeo : {
+                color : 'f00'
+            },
+            arrows : true
+
+
+
+
+
+
+
+    });
+
+
+
+
+
 //// Short description
 
     var sizeDescription = $(".product_sizeDescription"),
@@ -379,30 +440,10 @@ var quantityProduct = $(".block_quantity__input"),
     });
 
 
-/// buttons must work only  $(window).width() <=991px
-
-
-    function liveScopeOfButtons() {
-
-        if ($(window).width() <= 991) {
-
-            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
-            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
-            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
-            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
-            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-
-
-        } else {
-            return false;
-        }
-
-    }
-
-    liveScopeOfButtons();
 
 
 
+});
 
 // Showed ancor only when scrolling > scrineSize
 
@@ -448,7 +489,7 @@ $(window).resize(function () {
         fieldAdress = $(".code_adress__full");
 
 
-     var buttonsWorkRight = liveScopeOfButtons();      ///////////// Эта хрень не работает =(
+     // var buttonsWorkRight = liveScopeOfButtons();      ///////////// Эта хрень не работает =(
 
 
     if (body.width() >= 1200) {
@@ -497,4 +538,4 @@ $(window).resize(function () {
 $(window).resize();
 
 
-});
+
