@@ -2,29 +2,6 @@ $(document).ready(function () {
 
 
 
-/// buttons must work only  $(window).width() <=991px
-
-
-    function liveScopeOfButtons() {
-
-        if ($(window).width() <= 991) {
-
-            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
-            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
-            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
-            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
-            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-
-
-        } else {
-            return false;
-        }
-
-    }
-
-    liveScopeOfButtons();
-
-
 
 
 
@@ -91,6 +68,40 @@ $(document).ready(function () {
 
     hideShowEffect(buttonLanguage, fieldWithOtherLanguage);
     hideShowEffect(buttonChooseRigthLanguage, fieldWithOtherLanguage);
+
+
+
+
+
+/// buttons must work only  $(window).width() <=991px
+
+
+    function liveScopeOfButtons() {
+
+        if ($(window).width() <= 991) {
+
+            sliderEffectForButtons(buttonRubrics, fieldRubrics, 600);
+            sliderEffectForButtons(buttonCategories, fieldCategories, 600);
+            sliderEffectForButtons(buttonInformation, fieldInformation, 600);
+            sliderEffectForButtons(buttonContacts, fieldContacts, 600);
+            sliderEffectForButtons(buttonAdress, fieldAdress, 600);
+
+
+        } else {
+            return false;
+        }
+
+    }
+
+    liveScopeOfButtons();
+
+
+
+
+
+
+
+
 
 
     //// Main-slider
@@ -333,9 +344,19 @@ $(document).ready(function () {
     $('.product_image__slider').on('click', ".product_image__sliderImg",  function() {
         var currentSrc = $(this).attr('src');
 
+        var hrefForFancybox = currentSrc.split(".").join("-big.");
+
+
         $('.product_image__img').attr('src', currentSrc);
 
-        console.log("OK");
+        // add Big photo for fancybox
+        $(".fancybox-animated").attr("href", hrefForFancybox);
+
+
+
+
+
+
 
     });
 

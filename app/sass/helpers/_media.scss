@@ -204,6 +204,14 @@
     border-top: none;
     background-color: $color_blue;
     color: #fff;
+    &:hover,
+    &:focus,
+    &:active {
+      border: none;
+      background-color: $color_blue;
+      color: #fff;
+    }
+
   }
 
 }
@@ -243,6 +251,10 @@
     font-size: 2em;
   }
 
+
+  .bl_productAdvantages{
+    display: none;
+  }
 
 }
 

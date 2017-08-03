@@ -194,9 +194,10 @@
 
                                 <div class="product_image__scaleIcon"></div>
                                 <div class="product_image__mainBlock">
-                                    <a href="image/Products/big/product_2-big.jpg" class="highslide" onclick="return hs.expand(this)">
-                                        <img class="product_image__img highslide" src="image/Products/product_2.jpg" alt="">
+                                    <a  class="fancybox-animated"  href="image/Products/product_2-big.jpg"  title="" >   <!-- фото товара большого размера для fancybox. должны лежать в той же папке что и обычные фото, иначе JS не сработает  -->
+                                        <img class="product_image__img" src="image/Products/product_2.jpg" alt="" title="">
                                     </a>
+
                                 </div>
 
                                 <!-- В слайдер должны добавлятся полномасштабные фото! -->
@@ -537,7 +538,10 @@
                               <p class="bl_video__text">Видио о товаре</p>
                               <h2 class="bl_video__text">Костюм зимний Norfin Hunting Wild Passion</h2>
 
-                              <iframe width="560" height="315" class="bl_video_videoAboutProduct"  src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0" allowfullscreen></iframe>
+                              <div class="bl_video_wrapper">
+                                  <iframe  class="bl_video_videoAboutProduct"  src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0" allowfullscreen></iframe>  <!-- видио кото -->
+                              </div>
+
 
                           </div>
                         </div>
@@ -1001,6 +1005,10 @@
 
 <script src="js/libs.min.js"></script>
 <script src="js/common.min.js"></script>
+
+
+
+
 
 </body>
 

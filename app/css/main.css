@@ -2515,6 +2515,7 @@ button {
   padding-bottom: 56.25%; }
 
 .bl_video_videoAboutProduct {
+  margin-top: 10px;
   display: block;
   object-fit: contain;
   position: absolute;
@@ -2868,7 +2869,11 @@ li.inf_product__item {
   .inf_product__tabs .inf_product__item.active a {
     border-top: none;
     background-color: #0160ac;
-    color: #fff; } }
+    color: #fff; }
+    .inf_product__tabs .inf_product__item.active a:hover, .inf_product__tabs .inf_product__item.active a:focus, .inf_product__tabs .inf_product__item.active a:active {
+      border: none;
+      background-color: #0160ac;
+      color: #fff; } }
 
 @media only screen and (max-width: 600px) {
   .bl_mainSlider__sale {
@@ -2887,6 +2892,8 @@ li.inf_product__item {
   .bl_mainSlider__sale {
     top: 30px; }
   .bl_mainSlider__sale_text {
-    font-size: 2em; } }
+    font-size: 2em; }
+  .bl_productAdvantages {
+    display: none; } }
 
 /* Custom, iPhone Retina 320px */
