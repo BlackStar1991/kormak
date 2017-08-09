@@ -302,46 +302,58 @@ $(document).ready(function () {
 
 //// hover sliders arrows navigations
 
-    function hoverArrows(sliderBox, arrowPrev, arrowNext, changedClass) {
+    // function hoverArrows(sliderBox, arrowPrev, arrowNext, changedClass) {
+    //
+    //     sliderBox.hover(function () {
+    //             arrowPrev.addClass(changedClass);
+    //             arrowNext.addClass(changedClass);
+    //         },
+    //         function () {
+    //             arrowPrev.removeClass(changedClass);
+    //             arrowNext.removeClass(changedClass);
+    //         });
+    // }
+
+    function hoverArrows(sliderBox, fullArrows, changedClass) {
 
         sliderBox.hover(function () {
-                arrowPrev.addClass(changedClass);
-                arrowNext.addClass(changedClass);
+                fullArrows.addClass(changedClass);
+
             },
             function () {
-                arrowPrev.removeClass(changedClass);
-                arrowNext.removeClass(changedClass);
+                fullArrows.removeClass(changedClass);
             });
     }
 
+
+
     var blockPopular = $(".bl_popular"),
-        arrowPrev_popular = $(".slider_popular.owl-carousel .owl-prev"),
-        arrowNext_popular = $(".slider_popular.owl-carousel .owl-next"),
+        allPopularArrows = $(".slider_popular.owl-carousel .owl-prev, .slider_popular.owl-carousel .owl-next"),
+
 
         blockNewProducts = $(".bl_newProducts"),
-        arrowPrev_newProducts = $(".slider_newProducts.owl-carousel .owl-prev"),
-        arrowNext_newProducts = $(".slider_newProducts.owl-carousel .owl-next"),
+        allNewProductsArrows=$(".slider_newProducts.owl-carousel .owl-prev, .slider_newProducts.owl-carousel .owl-next"),
+
 
         blockWithThisProductBuy = $(".bl_withThisProductBuy"),
-        arrowPrev_WithThisProductBuy = $(".slider_withThisProductBuy.owl-carousel .owl-prev"),
-        arrowNext_WithThisProductBuy = $(".slider_withThisProductBuy.owl-carousel .owl-next"),
+        allWithThisProductBuyArrows=$(".slider_withThisProductBuy.owl-carousel .owl-prev, .slider_withThisProductBuy.owl-carousel .owl-next"),
 
         blockYouViewed = $(".bl_youViewed"),
-        arrowPrev_youViewed = $(".slider_youViewed.owl-carousel .owl-prev"),
-        arrowNext_youViewed = $(".slider_youViewed.owl-carousel .owl-next"),
+        allYouViewedArrows=$(".slider_youViewed.owl-carousel .owl-prev, .slider_youViewed.owl-carousel .owl-next"),
 
 
         hover_arrowsClass = "arrow-prev__hover";
 
-    hoverArrows(blockPopular, arrowPrev_popular, arrowNext_popular, hover_arrowsClass);
-    hoverArrows(blockNewProducts, arrowPrev_newProducts, arrowNext_newProducts, hover_arrowsClass);
-    hoverArrows(blockWithThisProductBuy ,arrowPrev_WithThisProductBuy, arrowNext_WithThisProductBuy, hover_arrowsClass);
-    hoverArrows(blockYouViewed, arrowPrev_youViewed, arrowNext_youViewed, hover_arrowsClass);
+    hoverArrows(blockPopular, allPopularArrows, hover_arrowsClass);
+    hoverArrows(blockNewProducts, allNewProductsArrows, hover_arrowsClass);
+    hoverArrows(blockWithThisProductBuy, allWithThisProductBuyArrows, hover_arrowsClass);
+    hoverArrows(blockYouViewed, allYouViewedArrows, hover_arrowsClass);
+
 
 
 //// Img for main product slider
 
-    $('.product_image__slider').on('click', ".product_image__sliderImg",  function() {
+    $('.product_image__slider').on("click", ".product_image__sliderImg",  function() {
         var currentSrc = $(this).attr('src');
 
         var hrefForFancybox = currentSrc.split(".").join("-big.");
