@@ -1661,8 +1661,10 @@ li.inf_product__item {
 
 
 .rubric__title {
-  margin: 19px auto 0;
+  margin: 23px auto 0;
   width: 100%;
+  border-bottom: 1px solid #eee;
+
 
   &:hover {
     .rubric__title_button {
@@ -1718,10 +1720,12 @@ li.inf_product__item {
 .rubric__title_text {
   display: inline-block;
   text-align: left;
-  font-family: $Tahoma;
+  font-family: $TahomaBold;
+  color: $color_grey2;
   font-size: 24px;
-  font-weight: 700;
-  line-height: 20px;
+  line-height: 36px;
+
+
 }
 
 .rubric__title_decorate {
@@ -1729,45 +1733,44 @@ li.inf_product__item {
 }
 
 .rubric__title_margin {
-  margin-left: -3px;
+  padding-left: 20px;
 }
 
 .rubric__title_margin__filters {
-  margin-left: 24px;
+  width: 100%;
+  text-align: center;
 }
 
 .bl_filters {
   position: relative;
-  //width: 232px;
-  margin-top: 20px;
-  font-family: $Tahoma;
+  padding-left: 20px;
+  padding-right: 10px;
   box-sizing: border-box;
-  //border: 1px solid red;
 }
 
 .bl_filters__caterogyName,
 .bl_filters__caterogyName_active {
   position: relative;
-  font-size: 14px;
-  color: #000;
-  line-height: 24px;
+  margin: 0;
+  color: $color_grey2;
+  font-size: 16px;
+  line-height: 36px;
   cursor: pointer;
   &:hover {
-    color: $color_pink;
+    color: $color_blue;
     transition: all 0.2s;
   }
 }
 
 .bl_filters__caterogyName_active {
-  color: $color_pink;
-  font-size: 14px;
+  color: $color_red;
 }
 
 .filter_name {
   position: relative;
   font-size: 16px;
   line-height: 30px;
-  color: $color_pink;
+  color: $color_blue;
   font-weight: bold;
   cursor: pointer;
 }
@@ -1775,32 +1778,67 @@ li.inf_product__item {
 .decor_triangle {
   position: relative;
 
-  &:before {
-    font-size: 16px;
-    color: inherit;
+  &:after {
+    font-size: 14px;
+    color: $color_blue;
+    font-weight: 400;
     position: absolute;
-    left: -15px;
+    right: 0;
     top: 0;
-    content: "\f0da";
+    content: "\f054";
     font-family: $FontAwesom;
     transition: all 0.2s;
   }
 
   &__active {
     position: relative;
-    &:before {
-      font-size: 16px;
-      color: inherit;
+    &:after {
+      font-size: 14px;
+      color: $color_red;
+      font-weight: 400;
       position: absolute;
-      left: -15px;
+      right: 0;
       top: 0;
-      content: "\f0da";
+      content: "\f078";
       font-family: $FontAwesom;
-      transform: rotate(90deg);
       transition: all 0.2s;
     }
   }
 }
+
+
+.decor_leftTriangle {
+  position: relative;
+
+  &:after {
+    font-size: 16px;
+    color: inherit;
+    position: absolute;
+    left: -14px;
+    top: 0;
+    content: "\f0da";
+    font-family: $FontAwesom;
+    transform-origin: left 50%;
+    transition: all 0.2s;
+  }
+
+  &__active {
+    position: relative;
+
+    &:after {
+      top: -2px;
+
+      transition: all 0.2s;
+      transform: rotate(90deg);
+    }
+  }
+}
+
+
+
+
+
+
 
 .decor_triangle__socButton{
   position: relative;
@@ -1820,6 +1858,116 @@ li.inf_product__item {
 
 
 
+
+.bl_filters__item {
+  position: relative;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $color_grey2;
+  cursor: pointer;
+  &:hover {
+    color: $color_blue;
+    transition: all 0.2s;
+  }
+}
+
+
+.bl_filters__subName{
+
+}
+
+.bl_filters__subName_active{
+  color: $color_blue;
+}
+
+
+.bl_filters__productsFilters{
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+
+
+
+.decor_circle{
+
+  &:before {
+
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 35%;
+    left: 0;
+    border-radius: 50%;
+    background-color: $color_blue;
+    text-shadow: 0.5px 0.9px 3px rgba(0, 0, 0, 0.2);
+    line-height: 36px;
+  }
+}
+
+.bl_filter__checkbox {
+  position: absolute;
+  opacity: 0;
+  //z-index: 99;
+}
+
+.bl_filter__label input:checked + .decor_lickCheckbox:after {
+  position: absolute;
+  left: -11px;
+  content: "\f00c";
+  width: 100%;
+  height: 100%;
+  font-family: $FontAwesom;
+  font-size: 14px;
+  font-weight: 400;
+  color: $color_red;
+  z-index: 4;
+}
+
+.decor_lickCheckbox {
+  position: relative;
+
+  &:before{
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -15px;
+
+    width: 20px;
+    height: 20px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    z-index: 3;
+  }
+
+}
+
+.filter_text {
+  position: relative;
+  display: inline-block;
+
+  padding-left: 30px;
+
+
+  margin-left: 15px;
+  line-height: 17px; ////////
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+  &__active {
+    transition: all 0.2s;
+    color: $color_pink;
+  }
+
+  &:hover {
+    color: $color_pink;
+    transition: all 0.2s;
+  }
+}
 
 
 

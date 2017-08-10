@@ -2612,8 +2612,9 @@ li.inf_product__item {
   padding: 25px 20px 20px; }
 
 .rubric__title {
-  margin: 19px auto 0;
-  width: 100%; }
+  margin: 23px auto 0;
+  width: 100%;
+  border-bottom: 1px solid #eee; }
   .rubric__title:hover .rubric__title_button {
     color: #f00; }
   .rubric__title:hover .rubric__title_text {
@@ -2651,75 +2652,98 @@ li.inf_product__item {
 .rubric__title_text {
   display: inline-block;
   text-align: left;
-  font-family: "Tahoma", sans-serif;
+  font-family: "TahomaBold", sans-serif;
+  color: #333;
   font-size: 24px;
-  font-weight: 700;
-  line-height: 20px; }
+  line-height: 36px; }
 
 .rubric__title_decorate {
   letter-spacing: 2px; }
 
 .rubric__title_margin {
-  margin-left: -3px; }
+  padding-left: 20px; }
 
 .rubric__title_margin__filters {
-  margin-left: 24px; }
+  width: 100%;
+  text-align: center; }
 
 .bl_filters {
   position: relative;
-  margin-top: 20px;
-  font-family: "Tahoma", sans-serif;
+  padding-left: 20px;
+  padding-right: 10px;
   box-sizing: border-box; }
 
 .bl_filters__caterogyName,
 .bl_filters__caterogyName_active {
   position: relative;
-  font-size: 14px;
-  color: #000;
-  line-height: 24px;
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 36px;
   cursor: pointer; }
   .bl_filters__caterogyName:hover,
   .bl_filters__caterogyName_active:hover {
-    color: #f00;
+    color: #0160ac;
     transition: all 0.2s; }
 
 .bl_filters__caterogyName_active {
-  color: #f00;
-  font-size: 14px; }
+  color: #de0914; }
 
 .filter_name {
   position: relative;
   font-size: 16px;
   line-height: 30px;
-  color: #f00;
+  color: #0160ac;
   font-weight: bold;
   cursor: pointer; }
 
 .decor_triangle {
   position: relative; }
-  .decor_triangle:before {
-    font-size: 16px;
-    color: inherit;
+  .decor_triangle:after {
+    font-size: 14px;
+    color: #0160ac;
+    font-weight: 400;
     position: absolute;
-    left: -15px;
+    right: 0;
     top: 0;
-    content: "\f0da";
+    content: "\f054";
     font-family: "FontAwesome";
     transition: all 0.2s; }
   .decor_triangle__active {
     position: relative; }
-    .decor_triangle__active:before {
-      font-size: 16px;
-      color: inherit;
+    .decor_triangle__active:after {
+      font-size: 14px;
+      color: #de0914;
+      font-weight: 400;
       position: absolute;
-      left: -15px;
+      right: 0;
       top: 0;
-      content: "\f0da";
+      content: "\f078";
       font-family: "FontAwesome";
+      transition: all 0.2s; }
+
+.decor_leftTriangle {
+  position: relative; }
+  .decor_leftTriangle:after {
+    font-size: 16px;
+    color: inherit;
+    position: absolute;
+    left: -14px;
+    top: 0;
+    content: "\f0da";
+    font-family: "FontAwesome";
+    -webkit-transform-origin: left 50%;
+        -ms-transform-origin: left 50%;
+            transform-origin: left 50%;
+    transition: all 0.2s; }
+  .decor_leftTriangle__active {
+    position: relative; }
+    .decor_leftTriangle__active:after {
+      top: -2px;
+      transition: all 0.2s;
       -webkit-transform: rotate(90deg);
           -ms-transform: rotate(90deg);
-              transform: rotate(90deg);
-      transition: all 0.2s; }
+              transform: rotate(90deg); }
 
 .decor_triangle__socButton {
   position: relative; }
@@ -2737,6 +2761,82 @@ li.inf_product__item {
     border-bottom: 3px solid transparent;
     border-right: 6px solid #ccc;
     z-index: 5; }
+
+.bl_filters__item {
+  position: relative;
+  padding-left: 15px;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #333;
+  cursor: pointer; }
+  .bl_filters__item:hover {
+    color: #0160ac;
+    transition: all 0.2s; }
+
+.bl_filters__subName_active {
+  color: #0160ac; }
+
+.bl_filters__productsFilters {
+  padding-left: 20px;
+  padding-right: 10px; }
+
+.decor_circle:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  top: 35%;
+  left: 0;
+  border-radius: 50%;
+  background-color: #0160ac;
+  text-shadow: 0.5px 0.9px 3px rgba(0, 0, 0, 0.2);
+  line-height: 36px; }
+
+.bl_filter__checkbox {
+  position: absolute;
+  opacity: 0; }
+
+.bl_filter__label input:checked + .decor_lickCheckbox:after {
+  position: absolute;
+  left: -11px;
+  content: "\f00c";
+  width: 100%;
+  height: 100%;
+  font-family: "FontAwesome";
+  font-size: 14px;
+  font-weight: 400;
+  color: #de0914;
+  z-index: 4; }
+
+.decor_lickCheckbox {
+  position: relative; }
+  .decor_lickCheckbox:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+    z-index: 3; }
+
+.filter_text {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  margin-left: 15px;
+  line-height: 17px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .filter_text__active {
+    transition: all 0.2s;
+    color: #f00; }
+  .filter_text:hover {
+    color: #f00;
+    transition: all 0.2s; }
 
 /*********************************************/
 /*FOOTER*/
