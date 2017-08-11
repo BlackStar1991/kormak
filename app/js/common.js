@@ -391,17 +391,28 @@ $(document).ready(function () {
 
             $(this).next().toggleClass("hidden");
             $(this).toggleClass("decor_leftTriangle__active");
-        })
-
-        var filterValue = $(".filters_item");
-
-        filterValue.on("click", function(){
+        });
 
 
-            $(this).find(".filter_text").addClass("filter_text__active");
-        })
 
     }
+
+
+    $(".bl_filter__label").on("click", function(event){
+
+        $(this).find(".filter_text").toggleClass("filter_text__active");
+
+            if ($(this).find(".bl_filter__checkbox").prop("checked") === true){
+                $(this).find(".bl_filter__checkbox").prop("checked", false);
+            }else{
+                $(this).find(".bl_filter__checkbox").prop("checked", true);
+            }
+
+
+        event.preventDefault();
+
+    });
+
 
     sliderShowForAllCategories();
 
