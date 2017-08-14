@@ -30,6 +30,13 @@ $(document).ready(function () {
         fieldAdress = $(".code_adress__full");
 
 
+    var buttonFilterCategories =$(".rubric__title_button__categories"),
+        fieldFilterCategories = $(".bl_filters");
+
+    var buttonAllFilters = $(".rubric__title_button__filters"),
+        fieldAllFilters = $(".bl_filters__productsFilters");
+
+
 //////////////////////////////////////////
 
 
@@ -74,7 +81,8 @@ $(document).ready(function () {
             sliderEffectForButtons(buttonInformation, fieldInformation, 600);
             sliderEffectForButtons(buttonContacts, fieldContacts, 600);
             sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-
+            sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
+            sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
 
         } else {
             return false;
@@ -412,16 +420,16 @@ $(document).ready(function () {
 //  Fancybox - увеличение главной фотки товара по клику ////////////////////
 
 
-    // $('.fancybox-animated').fancybox({
-    //     youtube: {
-    //         controls: 0,
-    //         showinfo: 0
-    //     },
-    //     vimeo: {
-    //         color: 'f00'
-    //     },
-    //     arrows: true
-    // });
+    $('.fancybox-animated').fancybox({
+        youtube: {
+            controls: 0,
+            showinfo: 0
+        },
+        vimeo: {
+            color: 'f00'
+        },
+        arrows: true
+    });
 
 
 //// Short description
@@ -566,6 +574,9 @@ $(window).resize(function () {
         fieldContacts.css({"display": "block"});
         fieldAdress.css({"display": "block"});
 
+        $(".bl_filters").css({"display": "block"});
+        $(".bl_filters__productsFilters").css({"display": "block"});
+
 
         return false;
 
@@ -577,6 +588,9 @@ $(window).resize(function () {
         fieldContacts.css({"display": "none"});
         fieldAdress.css({"display": "none"});
 
+
+        $(".bl_filters").css({"display": "none"});
+        $(".bl_filters__productsFilters").css({"display": "none"});
 
     }
 

@@ -481,30 +481,58 @@ $minSliderHeight: 555px; /// 578
   margin: 20px 18px 20px 22px;
 }
 
-.sale_mark {
+.bl_mark{
   position: absolute;
   top: -24px;
   left: -18px;
 
   width: 113px;
   height: 126px;
-  background: url("../image/fish_hit.svg") 0 50% no-repeat;
+
+
+
+  &__hit{
+    background: url("../image/fish_hit.svg") 0 50% no-repeat;
+  }
+
+  &__action{
+    background: url("../image/fish_action.svg") 0 50% no-repeat;
+  }
+
+  &__new{
+    background: url("../image/fish_new.svg") 0 50% no-repeat;
+  }
+
 }
 
-.sale_mark__text {
+
+
+
+.bl_mark__text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -25%);
 
   color: #fff;
-  font-family: "Arial Narrow", arial, sans-serif;
+  font-family: "Arial Narrow", Arial, sans-serif;
 
   font-size: 24px;
   font-weight: 400;
   line-height: 87px;
   text-transform: uppercase;
+
+  &_action{
+    font-size: 22px;
+  }
+
 }
+
+
+
+
+
+
 
 .product_sliderCart__link {
 
@@ -799,20 +827,23 @@ $minSliderHeight: 555px; /// 578
     font-weight: 400;
     text-decoration: underline;
 
-    &:not(:nth-of-type(1)):before {
+    &:not(:last-child):after {
       content: "";
       position: absolute;
       top: 5px;
-      left: -35px;
-
+      right: 10px;
+      z-index: 3;
       @include sprite($fish-breadcrumb);
-
     }
   }
   &__link {
-
+    position: relative;
     display: block;
     width: 100%;
+
+
+
+
 
     &:hover {
       color: #000;
@@ -1052,6 +1083,8 @@ $minProductHeight: 610px; /////////////////////////////////
   height: 500px; ////////////////////////////
   text-align: center;
   object-fit: contain;
+
+
 }
 
 .product_image__item {
@@ -1171,6 +1204,14 @@ $minProductHeight: 610px; /////////////////////////////////
   height: 40px;
   background-color: white;
   border: 1px solid $color_lightGrey;
+
+  &:hover{
+    border-color: $color_blue;
+
+    .product_size__text{
+      color: $color_blue;
+    }
+  }
 
   &:last-child {
     margin-right: 0;
@@ -1673,16 +1714,13 @@ li.inf_product__item {
 
 
 .rubric__title {
+  position: relative;
   margin: 23px auto 0;
   width: 100%;
   border-bottom: 1px solid #eee;
 
 
   &:hover {
-    .rubric__title_button {
-      color: $color_pink;
-    }
-
     .rubric__title_text {
       text-decoration: underline;
     }
@@ -1691,32 +1729,35 @@ li.inf_product__item {
 }
 
 .rubric__title_button {
-  position: relative;
-  display: inline-block;
-  vertical-align: top;
+  position: absolute;
+  top: 25%;
+  left:25%;
 
-
-
-  width: 24px;
-  height: 24px;
-  padding: 5px;
+  width: 40px;
+  height: 40px;
   border: 1px solid black;
+  background-color: $color_blue;
+  color: #fff;
+}
 
+.rubric__title_button__categories{
   &:after {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    font-size: 24px;
+    font-size: 36px;
     content: "\f0c9";
     font-family: $FontAwesom;
     background: none;
 
   }
 }
+
+
 
 .rubric__title_button__filters {
   &:after {
@@ -1725,11 +1766,9 @@ li.inf_product__item {
   }
 }
 
-.rubric__title_button.rubric__title_buttonHidden {
-  display: none;
-}
 
 .rubric__title_text {
+  width: 100%;
   display: inline-block;
   text-align: left;
   font-family: $TahomaBold;
@@ -1895,6 +1934,10 @@ li.inf_product__item {
 }
 
 
+
+
+
+
 .bl_filters__productsFilters{
   padding-left: 20px;
   padding-right: 10px;
@@ -2034,7 +2077,7 @@ li.inf_product__item {
 .bl_view {
 
   width: 100%;
-
+  padding: 0 15px;
 }
 
 .bl_view__text {
@@ -2125,10 +2168,11 @@ li.inf_product__item {
   }
 }
 
-.bl_fullProducts{
+.bl_catalog__fullProducts{
   width: 100%;
   height: 100%;
   margin-top: 16px;
+  padding-top: 15px;
 }
 
 ///// COLUMNS VIEW
@@ -2140,6 +2184,12 @@ li.inf_product__item {
 
 .bl_products{
   margin-top: 20px;
+
+}
+
+.bl_products__border{
+  border-top: 1px solid $color_lightGrey;
+  border-left: 1px solid $color_lightGrey;
 }
 
 
@@ -2154,8 +2204,24 @@ li.inf_product__item {
 
   box-sizing: border-box;
 
-  border: 1px solid green;
+
 }
+
+.bl_fullProducts__item_border{
+  border-right: 1px solid $color_lightGrey;
+  border-bottom:1px solid $color_lightGrey;
+
+}
+
+
+.bl_fullProducts__item_border.col-md-4 .bl_fullProducts__item_border:nth-of-type(3){
+  border-right: none;
+  /* Данный стиль актуальный только если у bl_fullProducts__item есть col-md-4 */
+}
+
+
+
+
 
 .bl_fullProducts__imageWrapper {
   margin: 0 auto;
@@ -2181,7 +2247,6 @@ li.inf_product__item {
 
 .bl_fullProducts__price{
   color: $color_grey2;
-
   line-height: 33px;
   width: 100%;
 }
