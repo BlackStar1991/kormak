@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-
-
-
-
-
-
-
-
 //MENU
     var headerPage = $('.header');
 
@@ -348,7 +340,7 @@ $(document).ready(function () {
 
         $('.product_image__img').attr('src', currentSrc);
 
-        // add Big photo for fancybox
+        // add Big photo for fancybox  ///////////////////////////////
         $(".fancybox-animated").attr("href", hrefForFancybox);
 
 
@@ -417,19 +409,19 @@ $(document).ready(function () {
     sliderShowForAllCategories();
 
 
-//  Fancybox - увеличение главной фотки товара по клику
+//  Fancybox - увеличение главной фотки товара по клику ////////////////////
 
 
-    $('.fancybox-animated').fancybox({
-        youtube: {
-            controls: 0,
-            showinfo: 0
-        },
-        vimeo: {
-            color: 'f00'
-        },
-        arrows: true
-    });
+    // $('.fancybox-animated').fancybox({
+    //     youtube: {
+    //         controls: 0,
+    //         showinfo: 0
+    //     },
+    //     vimeo: {
+    //         color: 'f00'
+    //     },
+    //     arrows: true
+    // });
 
 
 //// Short description
