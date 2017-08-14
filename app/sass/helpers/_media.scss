@@ -59,8 +59,16 @@
     width: 50%;
     float: left;
     margin-top: 30px;
-
   }
+
+  .rubric__title_text{
+    text-align: center;
+  }
+
+  .rubric__title_margin{
+    padding: 0;
+  }
+
 
   .bl_fullCategories__field{
 
@@ -113,6 +121,33 @@
 }
 
 
+  .bl_filters, .bl_filters__productsFilters{
+    display: none;
+  }
+
+  .bl_filters__caterogyName{
+    text-align: center;
+  }
+
+  .decor_leftTriangle{
+    width: 100%;
+
+  }
+
+  .filter_name{
+    font-size: 20px;
+    text-align: center;
+
+    margin-top: 10px;
+
+    background-color: $color_blue;
+    color: #fff;
+  }
+
+
+  .bl_filters__fullRubric{
+    margin-top: 25px;
+  }
 
   .likeButton_circle{
     margin-left: 0;
@@ -162,6 +197,14 @@
   .footer_firstPart{
   margin-bottom: 10px;
 }
+
+
+  .bl_breadcrumbs__item{
+    &:not(:last-child):after{
+      right: 4px;
+    }
+  }
+
 
 }
 
@@ -214,6 +257,13 @@
 
   }
 
+
+
+.rubric__title_text{
+  font-size: 20px;
+}
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -224,6 +274,10 @@
   }
   .bl_mainSlider__sale_text{
     font-size: 3em;
+  }
+
+  .rubric__title_button{
+    left: 15%;
   }
 
 }
@@ -254,6 +308,10 @@
 
   .bl_productAdvantages{
     display: none;
+  }
+
+  .rubric__title_button{
+    left: 5%;
   }
 
 }
