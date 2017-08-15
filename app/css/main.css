@@ -3019,13 +3019,31 @@ li.inf_product__item {
   text-align: center;
   font-size: 24px; }
 
-.view_list__STYLE .bl_products__img {
-  margin: 0 auto; }
+.view_list__STYLE .bl_fullProducts__imageWrapper {
+  margin: 0 auto;
+  width: auto; }
 
 .view_list__STYLE .bl_products__center__wrapper {
   height: 100%;
   vertical-align: middle;
   display: block !important; }
+
+.view_list__STYLE .bl_fullProducts__title {
+  margin: 0;
+  color: #333;
+  font-family: "TahomaBold", sans-serif;
+  font-size: 18px;
+  text-align: left; }
+
+.view_list__STYLE .product_info__id,
+.view_list__STYLE .product_info__productAvailability {
+  display: block;
+  margin-top: 0;
+  text-align: left;
+  font-size: 16px; }
+
+.view_list__STYLE .bl_fullProducts__listStyle {
+  max-width: 250px; }
 
 .bl_pagination {
   text-align: center;
@@ -3094,8 +3112,7 @@ li.inf_product__item {
   border: 2px solid #fff;
   border-radius: 50% !important;
   background-image: linear-gradient(to top, #0160ac 0%, #1d82d3 100%); }
-  line-height
-.pagination a.bl_pagination__link_number__active:focus, .pagination a.bl_pagination__link_number__active:active, line-height
+  .pagination a.bl_pagination__link_number__active:focus, .pagination a.bl_pagination__link_number__active:active,
   .pagination .active a.bl_pagination__link_number__active:focus,
   .pagination .active a.bl_pagination__link_number__active:active {
     background-color: #f00;
@@ -3331,7 +3348,10 @@ li.inf_product__item {
   .bl_filters, .bl_filters__productsFilters {
     display: none; }
   .bl_filters__caterogyName {
-    text-align: center; }
+    text-align: center;
+    font-size: 21px; }
+  .bl_filters__subName {
+    font-size: 16px; }
   .decor_leftTriangle {
     width: 100%; }
   .filter_name {

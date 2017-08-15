@@ -202,10 +202,6 @@ $minSliderHeight: 555px; /// 578
 
 }
 
-
-
-
-
 .mainSlider__fullBlock {
   width: 100%;
   min-height: $minSliderHeight;
@@ -402,7 +398,7 @@ $minSliderHeight: 555px; /// 578
       background: url("../image/arrow_left_bloсk.svg") 50% 50% no-repeat;
     }
 
-    &:hover{
+    &:hover {
       background-color: $color_blue2;
     }
 
@@ -481,7 +477,7 @@ $minSliderHeight: 555px; /// 578
   margin: 20px 18px 20px 22px;
 }
 
-.bl_mark{
+.bl_mark {
   position: absolute;
   top: -24px;
   left: -18px;
@@ -489,24 +485,19 @@ $minSliderHeight: 555px; /// 578
   width: 113px;
   height: 126px;
 
-
-
-  &__hit{
+  &__hit {
     background: url("../image/fish_hit.svg") 0 50% no-repeat;
   }
 
-  &__action{
+  &__action {
     background: url("../image/fish_action.svg") 0 50% no-repeat;
   }
 
-  &__new{
+  &__new {
     background: url("../image/fish_new.svg") 0 50% no-repeat;
   }
 
 }
-
-
-
 
 .bl_mark__text {
   position: absolute;
@@ -522,17 +513,11 @@ $minSliderHeight: 555px; /// 578
   line-height: 87px;
   text-transform: uppercase;
 
-  &_action{
+  &_action {
     font-size: 22px;
   }
 
 }
-
-
-
-
-
-
 
 .product_sliderCart__link {
 
@@ -841,10 +826,6 @@ $minSliderHeight: 555px; /// 578
     display: block;
     width: 100%;
 
-
-
-
-
     &:hover {
       color: #000;
     }
@@ -952,73 +933,64 @@ $minSliderHeight: 555px; /// 578
   }
 }
 
-
-.review_item{
+.review_item {
   margin-top: 10px;
   width: 100%;
-  padding:10px;
+  padding: 10px;
   box-sizing: border-box;
   border-left: 1px solid $color_blue;
 }
 
-.review_item__userName{
+.review_item__userName {
   display: inline-block;
   padding-bottom: 4px;
   border-bottom: 2px solid $color_blue;
-  font-family:$TahomaBold;
+  font-family: $TahomaBold;
   color: $color_grey2;
   font-size: 18px;
 }
 
-.review_item__time{
+.review_item__time {
   float: right;
   display: inline-block;
 }
 
-.review_item__raiting{
+.review_item__raiting {
   margin-top: 10px;
   text-decoration: underline;
 }
 
-
-
-.personal-form-review{
+.personal-form-review {
   clear: both;
   margin-top: 15px;
 }
 
-.review_item__fullReview{
+.review_item__fullReview {
   margin-top: 10px;
 }
 
-.review_product{
+.review_product {
   width: 100%;
   margin: 24px auto 0;
   text-align: center;
 }
 
-.review_product__title{
+.review_product__title {
   display: inline;
   font-family: $Tahoma;
   font-size: 24px;
 
+}
+
+.review_product__title__bold {
+
+  font-family: $TahomaBold;
 
 }
 
-.review_product__title__bold{
-
-  font-family:$TahomaBold;
-
-}
-
-
-
-
-
-.bl_review__raitingFull{
+.bl_review__raitingFull {
   display: inline-block;
 }
-
 
 .bl_review__raitingFull input:checked ~ label:before {
   background: url("../image/star_full.svg") 50% 50% no-repeat;
@@ -1083,7 +1055,6 @@ $minProductHeight: 610px; /////////////////////////////////
   height: 500px; ////////////////////////////
   text-align: center;
   object-fit: contain;
-
 
 }
 
@@ -1205,10 +1176,10 @@ $minProductHeight: 610px; /////////////////////////////////
   background-color: white;
   border: 1px solid $color_lightGrey;
 
-  &:hover{
+  &:hover {
     border-color: $color_blue;
 
-    .product_size__text{
+    .product_size__text {
       color: $color_blue;
     }
   }
@@ -1229,25 +1200,21 @@ $minProductHeight: 610px; /////////////////////////////////
   color: $color_red;
 }
 
-
-.product_sizeDescription{
+.product_sizeDescription {
   display: none;
 
-  p{
+  p {
     line-height: 1.2;
   }
 
-  &__showed{
+  &__showed {
     display: block;
   }
 }
 
-
-
 .product_info .product_size__input:checked ~ .label_field {
   display: block;
 }
-
 
 .product_size__text {
 
@@ -1259,7 +1226,7 @@ $minProductHeight: 610px; /////////////////////////////////
   text-transform: uppercase;
   cursor: pointer;
 
-  &_min{
+  &_min {
     text-transform: none;
   }
 
@@ -1360,7 +1327,7 @@ $minProductHeight: 610px; /////////////////////////////////
 
 .button_buy {
   display: block;
-  margin: 8px auto 0;  ////26px
+  margin: 8px auto 0; ////26px
   text-align: center;
   width: 250px;
   height: 50px;
@@ -1379,11 +1346,10 @@ $minProductHeight: 610px; /////////////////////////////////
 
 }
 
-.bl_fullProducts__item .button_buy{
+.bl_fullProducts__item .button_buy {
   margin: 16px auto 0;
   width: 100%;
 }
-
 
 .button_buy__text {
 
@@ -1565,28 +1531,26 @@ $minProductHeight: 610px; /////////////////////////////////
   }
 }
 
-
-.bl_video{
+.bl_video {
   width: 100%;
   padding: 10px;
 }
 
-.bl_video__text{
+.bl_video__text {
   display: inline-block;
   font-size: 22px;
   font-family: $TahomaBold;
   padding: 0;
 }
 
-
-.bl_video_wrapper{
+.bl_video_wrapper {
   margin-top: 10px;
   position: relative;
   height: 0;
   padding-bottom: 56.25%;
 }
 
-.bl_video_videoAboutProduct{
+.bl_video_videoAboutProduct {
   margin-top: 10px;
   display: block;
   object-fit: contain;
@@ -1596,20 +1560,17 @@ $minProductHeight: 610px; /////////////////////////////////
   height: 100%;
 }
 
-
-div#theCaption{
-  display:none;
-}
-.control:link{
-  font-size:120%;
+div#theCaption {
+  display: none;
 }
 
-.highslide-caption{
-  background-color:#6699cc;
+.control:link {
+  font-size: 120%;
 }
 
-
-
+.highslide-caption {
+  background-color: #6699cc;
+}
 
 ////// information about product
 
@@ -1709,16 +1670,13 @@ li.inf_product__item {
   padding: 25px 20px 20px;
 }
 
-
 //// CATEGORIES PRODUCT
-
 
 .rubric__title {
   position: relative;
   margin: 23px auto 0;
   width: 100%;
   border-bottom: 1px solid #eee;
-
 
   &:hover {
     .rubric__title_text {
@@ -1731,7 +1689,7 @@ li.inf_product__item {
 .rubric__title_button {
   position: absolute;
   top: 25%;
-  left:25%;
+  left: 25%;
 
   width: 40px;
   height: 40px;
@@ -1740,7 +1698,7 @@ li.inf_product__item {
   color: #fff;
 }
 
-.rubric__title_button__categories{
+.rubric__title_button__categories {
   &:after {
     position: absolute;
     width: 100%;
@@ -1757,15 +1715,12 @@ li.inf_product__item {
   }
 }
 
-
-
 .rubric__title_button__filters {
   &:after {
     content: "\f0b0";
     font-family: $FontAwesom;
   }
 }
-
 
 .rubric__title_text {
   width: 100%;
@@ -1775,7 +1730,6 @@ li.inf_product__item {
   color: $color_grey2;
   font-size: 24px;
   line-height: 36px;
-
 
 }
 
@@ -1857,7 +1811,6 @@ li.inf_product__item {
   }
 }
 
-
 .decor_leftTriangle {
   position: relative;
 
@@ -1885,30 +1838,19 @@ li.inf_product__item {
   }
 }
 
-
-
-
-
-
-
-.decor_triangle__socButton{
+.decor_triangle__socButton {
   position: relative;
 
-
-  &:before{
+  &:before {
     position: absolute;
     left: -6px;
     top: 8px;
     content: "";
     @include triangle(left, 6px, #ccc);
-    z-index:5;
+    z-index: 5;
   }
 
-
 }
-
-
-
 
 .bl_filters__item {
   position: relative;
@@ -1924,29 +1866,20 @@ li.inf_product__item {
   }
 }
 
-
-.bl_filters__subName{
+.bl_filters__subName {
 
 }
 
-.bl_filters__subName_active{
+.bl_filters__subName_active {
   color: $color_blue;
 }
 
-
-
-
-
-
-.bl_filters__productsFilters{
+.bl_filters__productsFilters {
   padding-left: 20px;
   padding-right: 10px;
 }
 
-
-
-
-.decor_circle{
+.decor_circle {
 
   &:before {
 
@@ -1985,7 +1918,7 @@ li.inf_product__item {
 .decor_lickCheckbox {
   position: relative;
 
-  &:before{
+  &:before {
     content: "";
     position: absolute;
 
@@ -2007,7 +1940,6 @@ li.inf_product__item {
 
   padding-left: 30px;
 
-
   margin-left: 15px;
   line-height: 17px; ////////
   color: #333;
@@ -2026,36 +1958,36 @@ li.inf_product__item {
 
 /////
 
-.bl_subCategories{
+.bl_subCategories {
 
   width: 100%;
 }
 
-.bl_subCategories__item{
+.bl_subCategories__item {
 
   box-sizing: border-box;
 
 }
 
-.bl_subCategories__link{
+.bl_subCategories__link {
   display: block;
   text-align: center;
   width: 100%;
 
-  &:hover .bl_subCategories__text{
+  &:hover .bl_subCategories__text {
     color: $color_red;
     text-decoration: none;
     transition: 0.2s color;
   }
 }
 
-.bl_subCategories__image{
+.bl_subCategories__image {
   margin: 14px auto 0;
-  height: 120px;////////
+  height: 120px; ////////
   display: block;
 }
 
-.bl_subCategories__text{
+.bl_subCategories__text {
 
   color: $color_blue;
   font-family: $Tahoma;
@@ -2066,10 +1998,7 @@ li.inf_product__item {
   text-decoration: underline;
 }
 
-
-
-
-.bl_fullProducts{
+.bl_fullProducts {
   margin-top: 16px;
   padding: 20px 15px;
 }
@@ -2168,30 +2097,28 @@ li.inf_product__item {
   }
 }
 
-.bl_catalog__fullProducts{
+.bl_catalog__fullProducts {
   width: 100%;
   height: 100%;
   margin-top: 16px;
   padding-top: 15px;
 }
 
-///// COLUMNS VIEW
+///// GRID VIEW
 
-.view_columns__STYLE{
-
+.view_columns__GRID {
 
 }
 
-.bl_products{
+.bl_products {
   margin-top: 20px;
 
 }
 
-.bl_products__border{
+.bl_products__border {
   border-top: 1px solid $color_lightGrey;
   border-left: 1px solid $color_lightGrey;
 }
-
 
 .bl_fullProducts__item {
   position: relative;
@@ -2199,29 +2126,22 @@ li.inf_product__item {
   height: 100%;
   min-height: 380px; ///////////////
 
-
   padding: 16px 20px 23px 20px;
 
   box-sizing: border-box;
 
-
 }
 
-.bl_fullProducts__item_border{
+.bl_fullProducts__item_border {
   border-right: 1px solid $color_lightGrey;
-  border-bottom:1px solid $color_lightGrey;
+  border-bottom: 1px solid $color_lightGrey;
 
 }
 
-
-.bl_fullProducts__item_border.col-md-4 .bl_fullProducts__item_border:nth-of-type(3){
+.bl_fullProducts__item_border.col-md-4 .bl_fullProducts__item_border:nth-of-type(3) {
   border-right: none;
   /* Данный стиль актуальный только если у bl_fullProducts__item есть col-md-4 */
 }
-
-
-
-
 
 .bl_fullProducts__imageWrapper {
   margin: 0 auto;
@@ -2245,41 +2165,36 @@ li.inf_product__item {
 
 }
 
-.bl_fullProducts__price{
+.bl_fullProducts__price {
   color: $color_grey2;
   line-height: 33px;
   width: 100%;
 }
 
-.bl_fullProducts__oldPrice{
+.bl_fullProducts__oldPrice {
   text-align: left;
   font-size: 18px;
 
 }
 
-.bl_fullProducts__newPrice{
+.bl_fullProducts__newPrice {
 
   float: right;
   font-size: 24px;
   font-family: $TahomaBold;
 }
 
-
-.bl_fullProducts__normal{
+.bl_fullProducts__normal {
   width: 100%;
   text-align: center;
   font-size: 24px;
 }
 
-
-
-
-
-
 //////  LIST VIEW
 
-.view_list__STYLE .bl_products__img {
+.view_list__STYLE .bl_fullProducts__imageWrapper {
   margin: 0 auto;
+  width: auto;
 }
 
 .view_list__STYLE .bl_products__center__wrapper {
@@ -2288,12 +2203,28 @@ li.inf_product__item {
   display: block !important;
 }
 
+.view_list__STYLE .bl_fullProducts__title {
+  margin: 0;
+  color: #333;
+  font-family: $TahomaBold;
+  font-size: 18px;
+  text-align: left;
+}
+
+.view_list__STYLE .product_info__id,
+.view_list__STYLE .product_info__productAvailability{
+  display: block;
+  margin-top: 0;
+  text-align: left;
+  font-size: 16px;
+}
 
 
 
 
-
-
+.view_list__STYLE .bl_fullProducts__listStyle {
+  max-width: 250px;
+}
 
 // PAGINATION
 
@@ -2333,7 +2264,7 @@ li.inf_product__item {
     line-height: 34px;
 
     &:hover,
-    &:focus{
+    &:focus {
       border-color: #000;
       background-color: inherit;
       color: #000 !important;
@@ -2377,17 +2308,15 @@ li.inf_product__item {
   a.bl_pagination__link_number__active,
   .active a.bl_pagination__link_number__active {
 
-
-      position: relative;
-      color: #fff;
-      width: 34px;
-      height: 34px;
-      vertical-align: top;
-      box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.17);
-      border: 2px solid #fff;
-      border-radius: 50% !important;
-      background-image: linear-gradient(to top, #0160ac 0%, #1d82d3 100%);
-
+    position: relative;
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    vertical-align: top;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.17);
+    border: 2px solid #fff;
+    border-radius: 50% !important;
+    background-image: linear-gradient(to top, #0160ac 0%, #1d82d3 100%);
 
     &:focus,
     &:active {
@@ -2397,25 +2326,24 @@ li.inf_product__item {
   }
 }
 
-
 // Article
 
-.catalog_article{
+.catalog_article {
   margin-top: 10px;
-  padding:23px 20px;
+  padding: 23px 20px;
   width: 100%;
 
   background-color: #fff;
 }
 
-.catalog_article__title{
+.catalog_article__title {
   color: #333;
   font-family: $TahomaBold;
   font-size: 18px;
   line-height: 24px;
 }
 
-.catalog_article__paragraf{
+.catalog_article__paragraf {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 0;
@@ -2424,13 +2352,11 @@ li.inf_product__item {
   line-height: 24px;
 }
 
-
-.catalog_article__image{
+.catalog_article__image {
   float: left;
   margin-right: 16px;
   width: 162px;
 }
-
 
 /*********************************************/
 /*FOOTER*/

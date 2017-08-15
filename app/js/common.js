@@ -291,18 +291,6 @@ $(document).ready(function () {
 
 //// hover sliders arrows navigations
 
-    // function hoverArrows(sliderBox, arrowPrev, arrowNext, changedClass) {
-    //
-    //     sliderBox.hover(function () {
-    //             arrowPrev.addClass(changedClass);
-    //             arrowNext.addClass(changedClass);
-    //         },
-    //         function () {
-    //             arrowPrev.removeClass(changedClass);
-    //             arrowNext.removeClass(changedClass);
-    //         });
-    // }
-
     function hoverArrows(sliderBox, fullArrows, changedClass) {
 
         sliderBox.hover(function () {
@@ -430,6 +418,29 @@ $(document).ready(function () {
         },
         arrows: true
     });
+
+////// GRID / LIST view - switch
+
+    var buttonGridView = $(".code_grid"),
+        buttonListView = $(".code_list"),
+
+        classGrid = "view_grid__STYLE",
+        classList = "view_list__STYLE",
+
+        allProducts = $(".bl_products");
+
+    buttonGridView.on("click", function(){
+        allProducts.removeClass(classList);
+        allProducts.addClass(classGrid);
+    });
+
+    buttonListView.on("click", function(){
+        allProducts.removeClass(classGrid);
+
+        allProducts.addClass(classList);
+    });
+
+
 
 
 //// Short description
