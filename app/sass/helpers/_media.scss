@@ -17,6 +17,10 @@
     margin-left: 1%;
   }
 
+  .view_list__STYLE .bl_fullProducts__imageWrapper{
+    width: 33%;
+  }
+
 
 }
 
@@ -136,7 +140,15 @@
 
   .decor_leftTriangle{
     width: 100%;
+  }
 
+  .bl_filters__productsFilters .decor_leftTriangle:after{
+    left: 50%;
+    transform-origin: 50% 50%;
+  }
+  .bl_filters__productsFilters .decor_leftTriangle__active:after{
+    top: 0;
+    z-index:2;
   }
 
   .filter_name{
@@ -263,8 +275,16 @@
   }
 
 
+  .view_list__STYLE .bl_fullProducts__imageWrapper{
+    min-width:200px;
+  }
 
-.rubric__title_text{
+  .bl_fullProducts__item .button_buy{
+    max-width: 250px;
+  }
+
+
+  .rubric__title_text{
   font-size: 20px;
 }
 
@@ -323,5 +343,9 @@
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {
+
+  .rubric__title_button{
+    left: 0;
+  }
 
 }

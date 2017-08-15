@@ -427,17 +427,39 @@ $(document).ready(function () {
         classGrid = "view_grid__STYLE",
         classList = "view_list__STYLE",
 
+        bl_fullProducts__item =$(".bl_fullProducts__item"),
+
+        code_listView1 = $(".code_listView1"),
+        code_listView2 = $(".code_listView2"),
+        code_listView3 = $(".code_listView3"),
+        code_listView4 = $(".code_listView4"),
+
+
+
         allProducts = $(".bl_products");
 
     buttonGridView.on("click", function(){
         allProducts.removeClass(classList);
         allProducts.addClass(classGrid);
+
+        bl_fullProducts__item.addClass("col-md-4 col-sm-6 col-xs-12");
+        code_listView1.removeClass("col-xs-12");
+        code_listView2.removeClass("col-xs-4");
+        code_listView3.removeClass("col-xs-8");
+        code_listView4.removeClass("bl_fullProducts__listStyle");
     });
 
     buttonListView.on("click", function(){
         allProducts.removeClass(classGrid);
-
         allProducts.addClass(classList);
+
+        bl_fullProducts__item.removeClass("col-md-4 col-sm-6 col-xs-12");
+        code_listView1.addClass("col-xs-12");
+        code_listView2.addClass("col-xs-4");
+        code_listView3.addClass("col-xs-8");
+        code_listView4.addClass("bl_fullProducts__listStyle");
+
+
     });
 
 
@@ -482,12 +504,58 @@ $(document).ready(function () {
 // FILTER for telephone number
 
     var telephonseInput = $("input[type='tel']");
+    telephonseInput.mask( "+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
 
-    telephonseInput.on("change keyup input click", function () {
-        if (this.value.match(/[^0-9]/g)) {
-            this.value = this.value.replace(/[^0-9]/g, '');
+
+/// Success Buying
+//  Если пользователю удалось отправить номер своего мобильного продавцу должна отрабатывать эта функция
+
+
+    function successfulPurchasePassed() {
+
+        var blackWrapper = $(".blackWrapper"),
+            blSuccsess = $(".bl_successBuying"),
+            buttonClose = $(".bl_successBuying__close");
+
+
+        setTimeout(showBlock, 200);
+
+        buttonClose.on("click", hideBlock);
+        blackWrapper.on("click", hideBlock);
+
+
+        function showBlock() {
+
+           blackWrapper.removeClass("hidden");
+           blackWrapper.animate({opacity: 0.6}, 300);
+
+            blSuccsess.removeClass("hidden");
+            blSuccsess.removeClass("bounceOutUp");
+            blSuccsess.addClass("animated bounceInDown");
         }
-    });
+
+        function hideBlock() {
+            blSuccsess.removeClass("bounceInDown");
+            blSuccsess.addClass("bounceOutUp");
+            blackWrapper.animate({opacity: 0}, 400);
+
+
+            setTimeout(function(){
+                blackWrapper.addClass("hidden");
+                blSuccsess.addClass("hidden");
+            },1000);
+        }
+
+
+
+
+    }
+
+
+
+    $(".btn_buy__send").on("click", successfulPurchasePassed); //// Заменить нажатие на кнопку на обработку события
+
+
 
 ////// Product quantity
 

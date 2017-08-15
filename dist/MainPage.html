@@ -32,13 +32,13 @@
 <!--======================================  HEADER ==========================================================-->
 <header id="header" class="header">
     <div class="mainWrapper">
-        <div class="bl_fullNavigation bl_fullNavigation_mobile">
+        <div class="bl_fullNavigation">   <!-- bl_nav__mobile closeMenu  -->
             <div class="container">
 
 
-                <div class="col-xs-6 col-md-7 correct_left ">
-                    <button class="hidden-lg open-menu-min">Menu</button>
-                    <nav class="bl_nav">        <!-- bl_nav__mobile closeMenu  -->
+                <div class="col-md-7 col-xs-6 correct_left ">
+                    <button class="open-menu-min hidden-lg ">Menu</button>
+                    <nav class="bl_nav">
                         <ul class="bl_nav__fullItems">
                             <li class="bl_nav__item"><a href="#" class="bl_nav__link">Оплата и доставка</a></li>
                             <li class="bl_nav__item"><a href="#" class="bl_nav__link">Гарантия</a></li>
@@ -233,10 +233,34 @@
                             <ul class="slider_popular owl-carousel">
                                 <li class="product_sliderCart__item">
                                     <div class="product_sliderCart__item_wrapper">
-                                        <div class="sale_mark">
-                                            <div class="wrapperBlock">
-                                                <span class="sale_mark__text">хит</span>
-                                            </div>
+
+                                        <!-- Лейба Хит продаж, для всех страниц-->
+                                        <div class="bl_mark bl_mark__hit">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
+                                        </div>
+                                        <!-- -->
+
+                                        <a href="#" class="product_sliderCart__link">
+                                            <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
+                                                 alt="">
+                                            <h2 class="product_sliderCart__name">
+                                                Рюкзак тактический Norfin TACTIC 45 45л / NF
+                                            </h2>
+                                        </a>
+
+                                        <div class="product_sliderCart__price clearfix">
+                                            <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
+                                            <span class="product_sliderCart__price_newPrice">100 грн.</span>
+                                            <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
+                                        </div>
+                                        <button type="button" class="product_sliderCart__buy"><span
+                                                class="product_sliderCart__buy_text">Купить</span></button>
+                                    </div>
+                                </li>
+                                <li class="product_sliderCart__item">
+                                    <div class="product_sliderCart__item_wrapper">
+                                        <div class="bl_mark bl_mark__hit">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
                                         </div>
                                         <a href="#" class="product_sliderCart__link">
                                             <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
@@ -257,10 +281,8 @@
                                 </li>
                                 <li class="product_sliderCart__item">
                                     <div class="product_sliderCart__item_wrapper">
-                                        <div class="sale_mark">
-                                            <div class="wrapperBlock">
-                                                <span class="sale_mark__text">хит</span>
-                                            </div>
+                                        <div class="bl_mark bl_mark__hit">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
                                         </div>
                                         <a href="#" class="product_sliderCart__link">
                                             <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
@@ -281,10 +303,8 @@
                                 </li>
                                 <li class="product_sliderCart__item">
                                     <div class="product_sliderCart__item_wrapper">
-                                        <div class="sale_mark">
-                                            <div class="wrapperBlock">
-                                                <span class="sale_mark__text">хит</span>
-                                            </div>
+                                       <div class="bl_mark bl_mark__hit">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
                                         </div>
                                         <a href="#" class="product_sliderCart__link">
                                             <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
@@ -305,34 +325,8 @@
                                 </li>
                                 <li class="product_sliderCart__item">
                                     <div class="product_sliderCart__item_wrapper">
-                                        <div class="sale_mark">
-                                            <div class="wrapperBlock">
-                                                <span class="sale_mark__text">хит</span>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="product_sliderCart__link">
-                                            <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                                 alt="">
-                                            <h2 class="product_sliderCart__name">
-                                                Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                            </h2>
-                                        </a>
-
-                                        <div class="product_sliderCart__price clearfix">
-                                            <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                            <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                            <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                        </div>
-                                        <button type="button" class="product_sliderCart__buy"><span
-                                                class="product_sliderCart__buy_text">Купить</span></button>
-                                    </div>
-                                </li>
-                                <li class="product_sliderCart__item">
-                                    <div class="product_sliderCart__item_wrapper">
-                                        <div class="sale_mark">
-                                            <div class="wrapperBlock">
-                                                <span class="sale_mark__text">хит</span>
-                                            </div>
+                                       <div class="bl_mark bl_mark__hit">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
                                         </div>
                                         <a href="#" class="product_sliderCart__link">
                                             <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
@@ -647,10 +641,15 @@
     </div>
 </div>
 
+<div class="blackWrapper hidden"></div>
+
+
 <script src="libs/jquery.min.js"></script>
 
 <script src="js/libs.min.js"></script>
 <script src="js/common.min.js"></script>
+
+
 
 </body>
 
