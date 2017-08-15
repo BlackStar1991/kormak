@@ -2026,6 +2026,9 @@ button {
   box-sizing: border-box;
   border-left: 1px solid #0160ac; }
 
+.review_text {
+  vertical-align: top; }
+
 .review_item__userName {
   display: inline-block;
   padding-bottom: 4px;
@@ -2061,6 +2064,9 @@ button {
 
 .review_product__title__bold {
   font-family: "TahomaBold", sans-serif; }
+
+.bl_review__raiting {
+  margin-top: 4px; }
 
 .bl_review__raitingFull {
   display: inline-block; }

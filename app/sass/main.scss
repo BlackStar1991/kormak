@@ -958,6 +958,10 @@ $minSliderHeight: 555px; /// 578
   border-left: 1px solid $color_blue;
 }
 
+.review_text{
+  vertical-align: top;
+}
+
 .review_item__userName {
   display: inline-block;
   padding-bottom: 4px;
@@ -1003,6 +1007,10 @@ $minSliderHeight: 555px; /// 578
 
   font-family: $TahomaBold;
 
+}
+
+.bl_review__raiting{
+  margin-top: 4px;
 }
 
 .bl_review__raitingFull {
