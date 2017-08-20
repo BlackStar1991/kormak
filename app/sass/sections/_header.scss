@@ -268,6 +268,7 @@ $marginTopItem: 30px;
   position: relative;
   width: 100%;
   top: 4px;
+  overflow: hidden;
 }
 
 .bl_search__field {
@@ -300,13 +301,31 @@ $marginTopItem: 30px;
 
 .bl_search__button {
   position: absolute;
-  top: 34px;
-  right: 16px;
+  top: 0;
+  right: 0;
 
-  width: 16px;
-  height: 16px;
+    display: block;
 
-  background: url("../image/search.svg") 50% 50% no-repeat;
+
+    background: none;
+    border: none;
+
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    z-index: 15;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      width: 16px;
+      height: 16px;
+      background: url("../../image/search.svg") 50% 50% no-repeat;
+      background-size: cover;
+    }
+
 }
 
 .bl_currency {
