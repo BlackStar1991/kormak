@@ -1146,7 +1146,8 @@ button {
 .bl_search {
   position: relative;
   width: 100%;
-  top: 4px; }
+  top: 4px;
+  overflow: hidden; }
 
 .bl_search__field {
   width: 100%;
@@ -1186,11 +1187,24 @@ button {
 
 .bl_search__button {
   position: absolute;
-  top: 34px;
-  right: 16px;
-  width: 16px;
-  height: 16px;
-  background: url("../image/search.svg") 50% 50% no-repeat; }
+  top: 0;
+  right: 0;
+  display: block;
+  background: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  z-index: 15; }
+  .bl_search__button:after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 16px;
+    height: 16px;
+    background: url("../../image/search.svg") 50% 50% no-repeat;
+    background-size: cover; }
 
 .bl_currency {
   position: relative;
@@ -2712,7 +2726,7 @@ li.inf_product__item {
   position: relative;
   margin: 0;
   color: #333;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 36px;
   cursor: pointer; }
   .bl_filters__caterogyName:hover,
