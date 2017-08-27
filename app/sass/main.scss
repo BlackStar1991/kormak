@@ -1441,22 +1441,19 @@ $minProductHeight: 610px; /////////////////////////////////
   }
 }
 
-.btn_buy__send_icon {
+.icon_buy {
   position: absolute;
   top: 50%;
   left: 50%;
   vertical-align: middle;
-
-
-  -ms-transform: translate(-50%, -25%);
-  -moz-transform: translate(-50%, -25%);
   transform: translate(-50%, -50%);
-
   width: 20px;
   height: 20px;
   background: url("../image/buy.svg") 50% 50% no-repeat;
+  background-size: cover;
   z-index: 4;
 }
+
 
 .bl_productDelivery {
   width: 100%;
