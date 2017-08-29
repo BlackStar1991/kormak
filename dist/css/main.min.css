@@ -1679,7 +1679,9 @@ button {
   width: 113px;
   height: 126px; }
   .bl_mark__hit {
-    background: url("../image/fish_hit.svg") 0 50% no-repeat; }
+    background: url("../image/fish_hit.svg") 0 50% no-repeat; 
+	background-size: contain;
+}
   .bl_mark__action {
     background: url("../image/fish_action.svg") 0 50% no-repeat; }
   .bl_mark__new {
