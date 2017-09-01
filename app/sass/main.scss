@@ -13,6 +13,7 @@
 @include font-face("Tahoma", "../fonts/Tahoma/Tahoma", 400, normal, eot ttf woff);
 @include font-face("TahomaBold", "../fonts/TahomaBold/Tahoma-Bold", 700, normal, eot ttf woff);
 @include font-face("CalibriBold", "../fonts/CalibriBold/CalibriBold", 700, normal, eot ttf woff);
+@include font-face("FontAwesome", "../fonts/FontAwesome/FontAwesome", 400, normal, eot ttf woff woff2);
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -2211,7 +2212,7 @@ li.inf_product__item {
   padding: 16px 20px 23px 20px;
 
   box-sizing: border-box;
-
+  overflow: hidden;
 }
 
 .bl_fullProducts__item_border {
@@ -2233,16 +2234,16 @@ li.inf_product__item {
 }
 
 .bl_fullProducts__title {
-
+  position: relative;
   margin-top: 34px;
-  height: 44px;
+  height: 52px;
+
 
   text-align: center;
   color: $color_grey2;
   font-size: 16px;
-
-
-
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .bl_fullProducts__link{
@@ -2256,8 +2257,9 @@ li.inf_product__item {
 
 .bl_fullProducts__price {
   color: $color_grey2;
+  box-sizing: border-box;
   line-height: 33px;
-  width: 100%;
+  width: 99%;
 }
 
 .bl_fullProducts__oldPrice {

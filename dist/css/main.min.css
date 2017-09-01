@@ -833,6 +833,12 @@ hr {
   font-weight: 700;
   src: url("../fonts/CalibriBold/CalibriBold.eot?") format("eot"), url("../fonts/CalibriBold/CalibriBold.ttf") format("truetype"), url("../fonts/CalibriBold/CalibriBold.woff") format("woff"); }
 
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FontAwesome/FontAwesome.eot?") format("eot"), url("../fonts/FontAwesome/FontAwesome.ttf") format("truetype"), url("../fonts/FontAwesome/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome/FontAwesome.woff2") format("woff2"); }
+
 /*********************************************/
 /*MAIN STYLES*/
 /*********************************************/
@@ -1679,9 +1685,7 @@ button {
   width: 113px;
   height: 126px; }
   .bl_mark__hit {
-    background: url("../image/fish_hit.svg") 0 50% no-repeat; 
-	background-size: contain;
-}
+    background: url("../image/fish_hit.svg") 0 50% no-repeat; }
   .bl_mark__action {
     background: url("../image/fish_action.svg") 0 50% no-repeat; }
   .bl_mark__new {
@@ -3049,7 +3053,8 @@ li.inf_product__item {
   height: 100%;
   min-height: 380px;
   padding: 16px 20px 23px 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow: hidden; }
 
 .bl_fullProducts__item_border {
   border-right: 1px solid #f1f1f1;
@@ -3077,8 +3082,9 @@ li.inf_product__item {
 
 .bl_fullProducts__price {
   color: #333;
+  box-sizing: border-box;
   line-height: 33px;
-  width: 100%; }
+  width: 99%; }
 
 .bl_fullProducts__oldPrice {
   text-align: left;
