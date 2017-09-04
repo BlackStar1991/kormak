@@ -2,6 +2,7 @@ $(document).ready(function () {
 
 //MENU
     var headerPage = $('.header');
+    var blackWrapper = $(".blackWrapper");
 
     $('.open-menu-min').on("click", function () {
         $(this).toggleClass('close-menu-min');
@@ -507,14 +508,48 @@ $(document).ready(function () {
     telephonseInput.mask( "+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
 
 
+/// POPUP BIFORE ADD TO SHOPBAG
+
+   function popupWindowBiforeAddToShopBag() {
+
+       var TESTBUTTON = $(".TEST_BUTTON");
+
+       var popupWindow = $(".popup_likeShopbag"),
+           buttonClose = $(".popup_likeShopbag__close"),
+           buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
+
+
+       TESTBUTTON.on("click", function () {
+
+           popupWindow.removeClass("hidden");
+           blackWrapper.removeClass("hidden");
+           blackWrapper.animate({opacity: 0.6}, 300);
+       });
+
+        function closePopupWindow(btn) {
+            btn.on("click", function () {
+                popupWindow.addClass("hidden");
+                blackWrapper.addClass("hidden");
+                blackWrapper.animate({opacity: 0}, 400);
+            })
+        }
+        closePopupWindow(buttonClose);
+        closePopupWindow(buttonContinueBuying);
+        closePopupWindow(blackWrapper);
+
+
+
+   } popupWindowBiforeAddToShopBag();
+
+
+
 /// Success Buying
 //  Если пользователю удалось отправить номер своего мобильного продавцу должна отрабатывать эта функция
 
 
     function successfulPurchasePassed() {
 
-        var blackWrapper = $(".blackWrapper"),
-            blSuccsess = $(".bl_successBuying"),
+        var blSuccsess = $(".bl_successBuying"),
             buttonClose = $(".bl_successBuying__close");
 
 
