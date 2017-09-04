@@ -195,7 +195,7 @@ $minSliderHeight: 555px; /// 578
 
 .bl_catalogProducts__item {
   margin-top: 23px;
-  width: 100%;
+  width: 110%;
 
   &:nth-of-type(1) {
     margin-top: 0;
@@ -432,6 +432,15 @@ $minSliderHeight: 555px; /// 578
   top: -36px;
 }
 
+
+.owl-wrapper-outer {
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+
+
 // OWL END
 
 .bl_popular {
@@ -439,7 +448,6 @@ $minSliderHeight: 555px; /// 578
   margin-top: 36px;
   position: relative;
   width: 100%;
-  min-height: 570px;
   background-color: #fff;
 }
 
@@ -448,7 +456,6 @@ $minSliderHeight: 555px; /// 578
   margin-top: 36px;
   position: relative;
   width: 100%;
-  min-height: 570px;
   background-color: #fff;
 }
 
@@ -539,6 +546,8 @@ $minSliderHeight: 555px; /// 578
 
 .product_sliderCart__link {
 
+
+
   &:hover .product_sliderCart__name {
     text-decoration: underline;
   }
@@ -554,7 +563,7 @@ $minSliderHeight: 555px; /// 578
   display: block;
   margin: 30px auto 0;
   text-align: center;
-  width: 154px;
+  //width: 154px;
   color: $color_grey2;
   font-family: $Tahoma;
   font-size: 16px;
@@ -2449,7 +2458,7 @@ li.inf_product__item {
 
   a.bl_pagination__firstPage {
     padding-right: 18px;
-    border-right: 1px solid #333;
+    border-right: 1px solid #c4c4c4;
   }
 
   a.bl_pagination__decorLine {
@@ -2467,8 +2476,8 @@ li.inf_product__item {
     }
   }
 
-  a.bl_pagination__link_number__active,
-  .active a.bl_pagination__link_number__active {
+  span.bl_pagination__link_number__active,
+  .active span.bl_pagination__link_number__active {
 
     position: relative;
     color: #fff;
@@ -2482,7 +2491,7 @@ li.inf_product__item {
 
     &:focus,
     &:active {
-      background-color: $color_pink;
+      background-color: $color_blue2;
       color: #000 !important;
     }
   }
@@ -2505,7 +2514,7 @@ li.inf_product__item {
   line-height: 24px;
 }
 
-.catalog_article__paragraf {
+.catalog_article p {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 0;
@@ -2514,7 +2523,7 @@ li.inf_product__item {
   line-height: 24px;
 }
 
-.catalog_article__image {
+.catalog_article img {
   float: left;
   margin-right: 16px;
   width: 162px;

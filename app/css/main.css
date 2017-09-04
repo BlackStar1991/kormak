@@ -1300,6 +1300,7 @@ button {
 
 .bl_personalRoom__text {
   display: inline-block;
+  min-width: 100px;
   text-align: center; }
 
 .bl_fullCategories {
@@ -1438,7 +1439,7 @@ button {
 
 .bl_catalogProducts__item {
   margin-top: 23px;
-  width: 100%; }
+  width: 110%; }
   .bl_catalogProducts__item:nth-of-type(1) {
     margin-top: 0; }
   .bl_catalogProducts__item:hover {
@@ -1634,12 +1635,16 @@ button {
 .bl_youViewed .owl-carousel .owl-nav {
   top: -36px; }
 
+.owl-wrapper-outer {
+  border: none;
+  border-radius: 0 !important;
+  box-shadow: none !important; }
+
 .bl_popular {
   clear: both;
   margin-top: 36px;
   position: relative;
   width: 100%;
-  min-height: 570px;
   background-color: #fff; }
 
 .bl_newProducts {
@@ -1647,7 +1652,6 @@ button {
   margin-top: 36px;
   position: relative;
   width: 100%;
-  min-height: 570px;
   background-color: #fff; }
 
 .bl_popular__title {
@@ -1718,7 +1722,6 @@ button {
   display: block;
   margin: 30px auto 0;
   text-align: center;
-  width: 154px;
   color: #333;
   font-family: "Tahoma", sans-serif;
   font-size: 16px;
@@ -3224,7 +3227,7 @@ li.inf_product__item {
 
 .pagination a.bl_pagination__firstPage {
   padding-right: 18px;
-  border-right: 1px solid #333; }
+  border-right: 1px solid #c4c4c4; }
 
 .pagination a.bl_pagination__decorLine {
   border: none;
@@ -3237,8 +3240,8 @@ li.inf_product__item {
   border-bottom: none;
   background-color: #f00; }
 
-.pagination a.bl_pagination__link_number__active,
-.pagination .active a.bl_pagination__link_number__active {
+.pagination span.bl_pagination__link_number__active,
+.pagination .active span.bl_pagination__link_number__active {
   position: relative;
   color: #fff;
   width: 34px;
@@ -3248,10 +3251,10 @@ li.inf_product__item {
   border: 2px solid #fff;
   border-radius: 50% !important;
   background-image: linear-gradient(to top, #0160ac 0%, #1d82d3 100%); }
-  .pagination a.bl_pagination__link_number__active:focus, .pagination a.bl_pagination__link_number__active:active,
-  .pagination .active a.bl_pagination__link_number__active:focus,
-  .pagination .active a.bl_pagination__link_number__active:active {
-    background-color: #f00;
+  .pagination span.bl_pagination__link_number__active:focus, .pagination span.bl_pagination__link_number__active:active,
+  .pagination .active span.bl_pagination__link_number__active:focus,
+  .pagination .active span.bl_pagination__link_number__active:active {
+    background-color: #0d8dd2;
     color: #000 !important; }
 
 .catalog_article {
@@ -3266,14 +3269,14 @@ li.inf_product__item {
   font-size: 18px;
   line-height: 24px; }
 
-.catalog_article__paragraf {
+.catalog_article p {
   width: 100%;
   margin-top: 10px;
   margin-bottom: 0;
   color: #333;
   line-height: 24px; }
 
-.catalog_article__image {
+.catalog_article img {
   float: left;
   margin-right: 16px;
   width: 162px; }
