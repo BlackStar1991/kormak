@@ -5,6 +5,7 @@
 }
 
 .footer_secondPart{
+  position: relative;
   width: 100%;
   min-height: 50px;
   background-color: #191a1d;
@@ -106,6 +107,32 @@
   }
 }
 
+// MOTTO
+
+.motto_block{
+  position: absolute;
+
+  top: 10px;
+  left: 20px;
+}
+
+.motto_block__link{
+  color: #fff;
+  transition: all 0.2s;
+  &:hover,
+  &:focus,
+  &:active{
+    transition: all 0.2s;
+    color: $color_blue;
+  }
+}
+
+.motto_block__text{
+
+}
+
+
+// ANCOR
 
 .bl_ancor{
 
