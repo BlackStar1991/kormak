@@ -381,9 +381,6 @@ $(document).ready(function () {
             $(this).next().toggleClass("hidden");
             $(this).toggleClass("decor_leftTriangle__active");
         });
-
-
-
     }
 
 

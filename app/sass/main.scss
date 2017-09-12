@@ -1920,6 +1920,11 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 }
 
+.bl_filters__subList{
+  padding-left: 15px;
+}
+
+
 .bl_filters__subName_active {
   color: $color_blue;
 }
@@ -3077,7 +3082,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 .button_buyProduct__text {
   display: block;
   padding: 4px 6px;
-  width: 100%;
+  //width: 100%;
   text-align: center;
   color: #fff;
   line-height: 2;
@@ -3088,22 +3093,6 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 }
 
-//.button_buyProduct {
-//  margin-top: 18px;
-//  width: 100%;
-//  height: 35px;
-//  color: #fff;
-//  text-transform: uppercase;
-//  background-color: $color_blue;
-//  border: 1px solid $color_blue2;
-//  box-sizing: border-box;
-//  transition: all .3s;
-//
-//  &:hover {
-//    color: black;
-//    transition: all .3s;
-//  }
-//}
 
 .decor_line {
   position: relative;
