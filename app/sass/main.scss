@@ -422,9 +422,20 @@ $minSliderHeight: 555px; /// 578
 
     z-index: 11;
     &:before {
-      width: 16px;
-      height: 30px;
-      background: url("../image/arrow_left_bloсk.svg") 50% 50% no-repeat;
+      position: absolute;
+      content: "\f104";
+      font-family:$FontAwesom;
+      //width: 100%;
+      height: 100%;
+
+      left: 50%;
+      top: 50%;
+
+      transform: translate(-50%, -50%);
+
+      font-size:48px;
+      color: #e5e5e5;
+      background: none;
     }
 
     &:hover {
@@ -436,7 +447,10 @@ $minSliderHeight: 555px; /// 578
   .owl-next {
     float: right;
     &:before {
-      background: url("../image/arrow_right_bloсk.svg") 50% 50% no-repeat;
+      content: "\f105";
+      top: 33%;
+
+      background: none;
     }
   }
 }
@@ -575,7 +589,7 @@ $minSliderHeight: 555px; /// 578
   margin: 30px auto 0;
   text-align: center;
   //width: 154px;
-  height: 32px;
+  height: 82px;
 
   color: $color_grey2;
   font-family: $Tahoma;
@@ -583,7 +597,7 @@ $minSliderHeight: 555px; /// 578
   font-weight: 400;
 
   overflow: hidden;
-  white-space: pre-wrap;
+  //white-space: pre-wrap;
   text-overflow: ellipsis;
 
 }

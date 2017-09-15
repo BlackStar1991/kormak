@@ -186,7 +186,7 @@
     margin-top: 0;
     padding: 10px;
     border-bottom: 2px solid $color_blue;
-    //color: #fff;
+
     &:after{
 
       position: absolute;
@@ -289,6 +289,10 @@
 }
 
 
+  li.inf_product__item.inf_product__item_correctForTwo{
+    width: 100%;
+  }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -318,10 +322,6 @@
     display: block;
   }
 
-  .bl_search__button{
-    top: 14px;
-  }
-
   .bl_mainSlider__sale{
     top: 30px;
   }
@@ -338,6 +338,11 @@
   .rubric__title_button{
     left: 5%;
   }
+
+  .bl_article .bl_topic__text{
+    margin-left: 0;
+  }
+
 
 }
 
