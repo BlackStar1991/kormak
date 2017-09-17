@@ -36,7 +36,8 @@
     color: white;
     font-size: 14px;
 
-    &:hover {
+    &:hover,
+    &:focus{
       color: #fff;
       text-decoration: underline;
     }
@@ -394,6 +395,7 @@ $marginTopItem2: 22px;
 .bl_shoppingCart {
   //min-width:80px;
   float: right;
+  text-align: center;
   margin-top: $marginTopItem2; ////////////
 }
 

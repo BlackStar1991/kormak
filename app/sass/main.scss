@@ -2472,9 +2472,9 @@ li.inf_product__item.inf_product__item_correctForThree {
 
     &:hover,
     &:focus {
-      border-color: #ddd;
+      border-color: #000;
       background-color: inherit;
-      color: #fff !important;
+      color: #000 !important;
     }
 
   }
@@ -2508,7 +2508,6 @@ li.inf_product__item.inf_product__item_correctForThree {
       border-radius: 0;
       border-top: none;
       border-bottom: none;
-      background-color: $color_pink;
     }
   }
 
