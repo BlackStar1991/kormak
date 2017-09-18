@@ -82,7 +82,7 @@ $(document).ready(function () {
             sliderEffectForButtons(buttonInformation, fieldInformation, 600);
             sliderEffectForButtons(buttonContacts, fieldContacts, 600);
             sliderEffectForButtons(buttonAdress, fieldAdress, 600);
-            sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
+
             sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
 
         } else {
@@ -92,6 +92,8 @@ $(document).ready(function () {
     }
 
     liveScopeOfButtons();
+
+    sliderEffectForButtons(buttonFilterCategories, fieldFilterCategories, 600);
 
 
     //// Main-slider
@@ -347,7 +349,6 @@ $(document).ready(function () {
     // SLIDER for categories show
 
     function sliderShowForAllCategories() {
-
 //////Categories Filter
 
         var sliderName = $(".code_sliderName");
@@ -685,8 +686,8 @@ $(window).resize(function () {
         fieldContacts.css({"display": "block"});
         fieldAdress.css({"display": "block"});
 
-        $(".bl_filters").css({"display": "block"});
-        $(".bl_filters__productsFilters").css({"display": "block"});
+        // $(".bl_filters").css({"display": "block"});
+        // $(".bl_filters__productsFilters").css({"display": "block"});
 
 
         return false;
@@ -700,8 +701,8 @@ $(window).resize(function () {
         fieldAdress.css({"display": "none"});
 
 
-        $(".bl_filters").css({"display": "none"});
-        $(".bl_filters__productsFilters").css({"display": "none"});
+        // $(".bl_filters").css({"display": "none"});
+        // $(".bl_filters__productsFilters").css({"display": "none"});
 
     }
 

@@ -521,7 +521,7 @@ $minSliderHeight: 555px; /// 578
   position: relative;
   max-width: 250px;
   text-align: center;
-  margin: 20px 18px 20px 22px;
+  margin: 20px 12px 20px 22px;
 }
 
 // MARK (layba)
@@ -1785,27 +1785,30 @@ li.inf_product__item.inf_product__item_correctForThree {
 .rubric__title_button {
   position: absolute;
   top: 25%;
-  left: 25%;
+  left: 20px;
 
   width: 40px;
   height: 40px;
   border: 1px solid black;
-  background-color: $color_blue;
+  background-color: transparent;
   color: #fff;
 }
 
-.rubric__title_button__categories {
+.rubric__title_button__categories,
+.rubric__title_button__filters {
+
   &:after {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 35%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    font-size: 36px;
+    font-size: 20px;
     content: "\f0c9";
     font-family: $FontAwesom;
+    color: #333;
     background: none;
 
   }
@@ -1813,14 +1816,11 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 .rubric__title_button__filters {
   &:after {
+
     content: "\f0b0";
     font-family: $FontAwesom;
   }
 }
-
-//.rubric__title_button.rubric__title_buttonHidden {
-//  display: none;
-//}
 
 .rubric__title_text {
   width: 100%;
@@ -1841,12 +1841,19 @@ li.inf_product__item.inf_product__item_correctForThree {
   padding-left: 20px;
 }
 
+.rubric__title_catalog{
+  padding-left: 64px;
+  font-size: 20px;
+}
+
+
 .rubric__title_margin__filters {
   width: 100%;
   text-align: center;
 }
 
 .bl_filters {
+  display: none;
   position: relative;
   padding-left: 20px;
   padding-right: 10px;
@@ -2003,7 +2010,6 @@ li.inf_product__item.inf_product__item_correctForThree {
 .bl_filter__checkbox {
   position: absolute;
   opacity: 0;
-  //z-index: 99;
 }
 
 .bl_filter__label input:checked + .decor_lickCheckbox:after {
@@ -3223,9 +3229,8 @@ li.inf_product__item.inf_product__item_correctForThree {
     left: 37%;
     width: 15px;
     height: 270px;
-    z-index: 999998;
-    /*background-image: url(../image/hook_min.png);*/
-    background-repeat: no-repeat;
+    z-index: 100;
+    background-image: url(../image/hook_min.png) 50% 50% no-repeat;
     transform: rotate(37deg);
     -moz-transform: rotate(37deg);
     -webkit-transform: rotate(37deg);
