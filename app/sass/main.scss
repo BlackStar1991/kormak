@@ -524,6 +524,11 @@ $minSliderHeight: 555px; /// 578
   margin: 20px 12px 20px 22px;
 }
 
+
+.slider_youViewed .product_sliderCart__item_wrapper{
+  margin-right: 20px;
+}
+
 // MARK (layba)
 
 .bl_mark {
@@ -1404,16 +1409,18 @@ $minProductHeight: 610px; /////////////////////////////////
   line-height: 50px;
 
   box-sizing: border-box;
-  color: white;
   transition: all 0.2s;
-  background-color: $color_blue;
   border: 1px solid $color_blue;
+
+  background-color: #fff;
+  color: $color_blue;
+
   border-radius: 24px;
 
   &:hover {
     transition: all 0.2s;
-    background-color: #fff;
-    color: $color_blue;
+    color: white;
+    background-color: $color_blue;
   }
 
 }
@@ -1543,8 +1550,8 @@ $minProductHeight: 610px; /////////////////////////////////
   flex-wrap: wrap;
 
   margin-top: 33px;
-  padding-top: 44px;
-  padding-bottom: 36px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   text-align: center;
 
@@ -1588,7 +1595,7 @@ $minProductHeight: 610px; /////////////////////////////////
 }
 
 .bl_advantages__title {
-  margin-top: 32px;
+  margin-top: 10px;
 
   color: $color_grey2;
   font-family: $TahomaBold;
@@ -1597,7 +1604,7 @@ $minProductHeight: 610px; /////////////////////////////////
 }
 
 .bl_advantages__allVariants {
-  margin: 22px auto 0;
+  margin: 10px auto 0;
   max-width: 248px;
   box-sizing: border-box;
 
@@ -2097,6 +2104,16 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 .bl_filters__allFilters .noUi-origin {
   margin-top: 4px;
+}
+
+
+.bl_filters__allFilters .btn-danger{
+  background-color: $color_blue;
+  border-color: $color_blueDark;
+}
+
+.bl_filters__allFilters .ocfilter-option .fa-times{
+  color: $color_red;
 }
 
 /////

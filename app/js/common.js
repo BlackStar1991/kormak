@@ -43,13 +43,9 @@ $(document).ready(function () {
 
 //   sliderEffect
     function sliderEffectForButtons(button, element, duration) {
-
-        // return function () {
         button.click(function () {
             element.slideToggle(duration);
         });
-        // }(button, element, duration);
-
     }
 
 
