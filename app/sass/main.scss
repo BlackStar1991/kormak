@@ -115,6 +115,32 @@ button {
   margin: 0;
 }
 
+/// Input
+
+input,
+textarea{
+
+  &:focus {
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  &::placeholder {
+    color: $color_blue;
+    opacity: 1;
+    transition: opacity .3s;
+  }
+
+  &::-moz-focus-outer,
+  &::-moz-focus-inner {
+    border: 0;
+    outline: none;
+  }
+
+}
+
+
 .correct_right {
   padding-right: 0 !important;
 }
@@ -905,7 +931,12 @@ $minSliderHeight: 555px; /// 578
 .bl_fullProduct {
   position: relative;
   width: 100%;
+
+  min-height:650px;
+
 }
+
+
 
 .bl_productName {
   //margin-top: 20px; //////////
@@ -1305,12 +1336,29 @@ $minProductHeight: 610px; /////////////////////////////////
 
 }
 
+.block_quantity__full{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  &.block_quantity__full_ifWeHaveSize{
+    width:auto!important;
+  }
+}
+
 .block_quantity {
   display: inline-block;
   vertical-align: top;
-  float: right;
+  margin: 0 auto;
   text-align: center;
-  min-width: 100px;
+  width: 100px;
+}
+
+.block_quantity__full_ifWeHaveSize .block_quantity{
+  display: inline-block;
+  float: right;
+  margin: 0;
 }
 
 .block_quantity__text {
@@ -2595,7 +2643,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 /// success Buying
 
-.bl_successBuying {
+.bl_successBuying{
   position: fixed;
   width: 300px;
   min-height: 50px;
@@ -2628,7 +2676,9 @@ li.inf_product__item.inf_product__item_correctForThree {
   }
 }
 
-.bl_successBuying__close {
+.bl_successBuying__close,
+.bl_map__close,
+.bl_callback__close{
   position: absolute;
   top: -8px;
   right: -4px;
@@ -3308,8 +3358,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   .fishtank_wrap {
     width: 850px;
     height: 400px;
-    margin: auto;
-    margin-top: 0;
+    margin: 0 auto auto;
     position: relative;
     overflow: hidden;
 
@@ -4843,13 +4892,12 @@ li.inf_product__item.inf_product__item_correctForThree {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 
-    -moz-transform-origin: center bottom;
     -moz-animation-name: l_plant;
     -moz-animation-duration: 15s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: linear;
 
-    -webkit-transform-origin: center bottom;
+
     -webkit-animation-name: l_plant;
     -webkit-animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
@@ -5247,7 +5295,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   @-moz-keyframes bubbles {
@@ -5338,7 +5386,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       left: 37px;
     }
     to {
-      top: 0px;
+      top: 0;
       left: 60px;
     }
   }
@@ -5363,7 +5411,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   @-moz-keyframes bubbles {
@@ -5371,7 +5419,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   @-webkit-keyframes bubbles {
@@ -5379,7 +5427,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   .b5 {
@@ -5403,7 +5451,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   @-moz-keyframes bubbles {
@@ -5411,7 +5459,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   @-webkit-keyframes bubbles {
@@ -5419,7 +5467,7 @@ li.inf_product__item.inf_product__item_correctForThree {
       top: 260px;
     }
     to {
-      top: 0px;
+      top: 0;
     }
   }
   /*tail bubbles*/
@@ -6801,6 +6849,75 @@ li.inf_product__item.inf_product__item_correctForThree {
   font-family: 'TahomaBold', sans-serif;
   color: #0160ac;
 }
+
+/////// CALLBACK
+
+.bl_callback{
+  position: relative;
+  width: 320px;
+
+
+  display: block;
+  margin: 10px auto;
+
+  padding: 10px;
+
+
+  background-color: #fff;
+  border: 2px solid $color_blue;
+  text-align: center;
+
+
+  .bl_callback__close{
+    top: 5px;
+    right: 10px;
+  }
+
+  .bl_callback__input:focus + .bl_callback__text,
+  .bl_callback__field:focus + .bl_callback__text{
+    top: -10px;
+    transition: all .2s;
+  }
+
+}
+
+.bl_callback__label{
+  display: block;
+  margin: 12px auto;
+}
+
+
+.bl_callback__title{
+  font-size: 22px;
+  text-align: center;
+}
+.bl_callback__input{
+  position: relative;
+  z-index: 2;
+  text-indent: 4px;
+}
+
+.bl_callback__field{
+  position: relative;
+  z-index: 2;
+  text-indent: 4px;
+}
+
+.bl_callback__label{
+  position: relative;
+  padding-top: 10px;
+
+  cursor: pointer;
+}
+.bl_callback__text{
+  position: absolute;
+  top: 13px;
+  left: 62px;
+  color: $color_blue;
+  transition: all .2s;
+}
+
+
 
 /*********************************************/
 /*FOOTER*/

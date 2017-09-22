@@ -63,6 +63,7 @@
                             <a class="bl_itemPrice__download" href="#">Прайс</a>
                         </div>
                         <span class="bl_adress">Киев, ул. Красноткацкая 43</span>
+                        <button type="button" class="button_map hidden-xs">Карта проезда</button>
                     </div>
                 </div>
             </div>
@@ -153,206 +154,208 @@
 <main class="main">
     <div class="mainWrapper">
 
-<div class="container correct_left correct_left">
-        <div class="col-xs-12">
-        <ul class="bl_breadcrumbs">
-            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
-            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Название категории</a></li>
-            <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link bl_breadcrumbs__active"
-                                                href="#">Название товара</a></li>
-        </ul>
+        <div class="container correct_left correct_left">
+            <div class="col-xs-12">
+                <ul class="bl_breadcrumbs">
+                    <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
+                    <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Название категории</a>
+                    </li>
+                    <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link bl_breadcrumbs__active"
+                                                        href="#">Название товара</a></li>
+                </ul>
+            </div>
         </div>
-</div>
 
         <div class="container clearfix block_white">
 
 
+            <div class="bl_productName">
+                <h2 class="bl_fullProduct__title">712001-S Костюм зимний Norfin Hunting Wild Passion (-30°)</h2>
+                <div class="bl_raiting">
+                    <button class="bl_raiting__button">Оценить товар</button>
 
-                <div class="bl_productName">
-                    <h2 class="bl_fullProduct__title">712001-S Костюм зимний Norfin Hunting Wild Passion (-30°)</h2>
-                    <div class="bl_raiting">
-                        <button class="bl_raiting__button">Оценить товар</button>
+                    <input class="bl_raiting__chackbox" id="raiting5" type="radio" name="raiting" value="5">
+                    <label class="bl_raiting__label" for="raiting5"></label>
+                    <input class="bl_raiting__chackbox" id="raiting4" type="radio" name="raiting" value="4">
+                    <label class="bl_raiting__label" for="raiting4"></label>
+                    <input class="bl_raiting__chackbox" id="raiting3" type="radio" name="raiting" value="3">
+                    <label class="bl_raiting__label" for="raiting3"></label>
+                    <input class="bl_raiting__chackbox" id="raiting2" type="radio" name="raiting" value="2">
+                    <label class="bl_raiting__label" for="raiting2"></label>
+                    <input class="bl_raiting__chackbox" id="raiting1" type="radio" name="raiting" value="1">
+                    <label class="bl_raiting__label" for="raiting1"></label>
+                </div>
+            </div>
 
-                        <input class="bl_raiting__chackbox" id="raiting5" type="radio" name="raiting" value="5">
-                        <label class="bl_raiting__label" for="raiting5"></label>
-                        <input class="bl_raiting__chackbox" id="raiting4" type="radio" name="raiting" value="4">
-                        <label class="bl_raiting__label" for="raiting4"></label>
-                        <input class="bl_raiting__chackbox" id="raiting3" type="radio" name="raiting" value="3">
-                        <label class="bl_raiting__label" for="raiting3"></label>
-                        <input class="bl_raiting__chackbox" id="raiting2" type="radio" name="raiting" value="2">
-                        <label class="bl_raiting__label" for="raiting2"></label>
-                        <input class="bl_raiting__chackbox" id="raiting1" type="radio" name="raiting" value="1">
-                        <label class="bl_raiting__label" for="raiting1"></label>
+
+            <div class="col-md-7 block_white">
+
+                <div class="product_image">
+                    <div class="bl_wrappen">
+
+                        <div class="product_image__scaleIcon"></div>
+                        <div class="product_image__mainBlock">
+                            <a class="fancybox-animated" href="image/Products/product_2-big.jpg" title="">
+                                <!-- фото товара большого размера для fancybox. должны лежать в той же папке что и обычные фото, иначе JS не сработает  -->
+                                <img class="product_image__img" src="image/Products/product_2.jpg" alt="" title="">
+                            </a>
+
+                        </div>
+
+                        <!-- В слайдер должны добавлятся полномасштабные фото! -->
+                        <ul class="product_image__slider owl-carousel">
+                            <li class="product_image__item">
+                                <img class="product_image__sliderImg" src="image/Products/product_1.jpg"
+                                     alt="">
+                            </li>
+                            <li class="product_image__item">
+                                <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
+                                     alt="">
+                            </li>
+                            <li class="product_image__item">
+                                <img class="product_image__sliderImg" src="image/Products/product_small_2.jpg"
+                                     alt="">
+                            </li>
+                            <li class="product_image__item">
+                                <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
+                                     alt="">
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
-            
 
-                <div class="col-md-7 block_white">
+            </div>
+            <div class="col-md-5 block_white">
+                <div class="product_info">
+                    <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                    </p>
+                    <p class="product_info__productAvailability">На складе:
+                        <span class="product_info__productAvailability__yes">есть в наличии</span>
+                        <!--  выводи если товар есть -->
+                        <span class="product_info__productAvailability__no hidden">временно нету</span>
+                        <!--  выводи если товара нет -->
+                    </p>
 
-                        <div class="product_image">
-                            <div class="bl_wrappen">
+                    <div class="bl_price">
+                        <span class="bl_price__newPrice hidden">10 328 грн</span>
+                        <span class="bl_price__oldPrice hidden">11 138 грн</span>
 
-                                <div class="product_image__scaleIcon"></div>
-                                <div class="product_image__mainBlock">
-                                    <a  class="fancybox-animated"  href="image/Products/product_2-big.jpg"  title="" >   <!-- фото товара большого размера для fancybox. должны лежать в той же папке что и обычные фото, иначе JS не сработает  -->
-                                        <img class="product_image__img" src="image/Products/product_2.jpg" alt="" title="">
-                                    </a>
+                        <span class="bl_price__normal">11 138 грн</span>  <!-- выводить когда нету акций -->
+                    </div>
+                    <div class="product_size">
+                        <p class="product_size__text product_size__text_min">Размер:</p>
+                        <label class="product_size__label">
+                            <input class="product_size__input" id="size_s" type="radio" name="productSize" value="">
+                            <span class="product_size__text">s</span>
+                        </label>
+                        <label class="product_size__label">
+                            <input class="product_size__input" id="size_m" type="radio" name="productSize" value="">
+                            <span class="product_size__text">m</span>
+                        </label>
+                        <label class="product_size__label">
+                            <input class="product_size__input" id="size_l" type="radio" name="productSize" value="">
+                            <span class="product_size__text">l</span>
+                        </label>
+                        <label class="product_size__label">
+                            <input class="product_size__input" id="size_xl" type="radio" name="productSize"
+                                   value="">
+                            <span class="product_size__text">xl</span>
+                        </label>
+                        <label class="product_size__label">
+                            <input class="product_size__input" id="size_xxl" type="radio" name="productSize"
+                                   value="">
+                            <span class="product_size__text">xxl</span>
+                        </label>
+                    </div>
+                    <div class="block_quantity">
+                        <p class="block_quantity__text">Количество:</p>
+                        <div class="block_quantity__box">
+                            <button class="block_quantity__minus"><span>-</span></button>
+                            <input class="block_quantity__input" type="text" value="1">
+                            <button class="block_quantity__plus"><span>+</span></button>
+                        </div>
+                    </div>
+                    <div class="bl_description">
+                        <p class="bl_description__text">Краткое описание:</p>
 
-                                </div>
-
-                                <!-- В слайдер должны добавлятся полномасштабные фото! -->
-                                <ul class="product_image__slider owl-carousel">
-                                    <li class="product_image__item">
-                                        <img class="product_image__sliderImg" src="image/Products/product_1.jpg"
-                                             alt="">
-                                    </li>
-                                    <li class="product_image__item">
-                                        <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
-                                             alt="">
-                                    </li>
-                                    <li class="product_image__item">
-                                        <img class="product_image__sliderImg" src="image/Products/product_small_2.jpg"
-                                             alt="">
-                                    </li>
-                                    <li class="product_image__item">
-                                        <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
-                                             alt="">
-                                    </li>
-                                </ul>
-
-                            </div>
+                        <div class="bl_minInformationAboutProduct">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequuntur doloribus eius enim, eos expedita incidunt laborum
+                                nesciunt nobis odit saepe.
+                            </p>
                         </div>
 
-                </div>
-                <div class="col-md-5 block_white">
-                    <div class="product_info">
-                        <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
-                        </p>
-                        <p class="product_info__productAvailability">На складе:
-                            <span class="product_info__productAvailability__yes">есть в наличии</span>
-                            <!--  выводи если товар есть -->
-                            <span class="product_info__productAvailability__no hidden">временно нету</span>
-                            <!--  выводи если товара нет -->
-                        </p>
 
-                        <div class="bl_price">
-                            <span class="bl_price__newPrice hidden">10 328 грн</span>
-                            <span class="bl_price__oldPrice hidden">11 138 грн</span>
+                        <div class="bl_description__box">
+                            <!-- количество div зависит от количества input class="product_size__input"  JS //// Short description -->
+                            <div class="product_sizeDescription">
 
-                            <span class="bl_price__normal">11 138 грн</span>  <!-- выводить когда нету акций -->
-                        </div>
-                        <div class="product_size">
-                            <p class="product_size__text product_size__text_min">Размер:</p>
-                            <label class="product_size__label">
-                                <input class="product_size__input" id="size_s" type="radio" name="productSize" value="">
-                                <span class="product_size__text">s</span>
-                            </label>
-                            <label class="product_size__label">
-                                <input class="product_size__input" id="size_m" type="radio" name="productSize" value="">
-                                <span class="product_size__text">m</span>
-                            </label>
-                            <label class="product_size__label">
-                                <input class="product_size__input" id="size_l" type="radio" name="productSize" value="">
-                                <span class="product_size__text">l</span>
-                            </label>
-                            <label class="product_size__label">
-                                <input class="product_size__input" id="size_xl" type="radio" name="productSize"
-                                       value="">
-                                <span class="product_size__text">xl</span>
-                            </label>
-                            <label class="product_size__label">
-                                <input class="product_size__input" id="size_xxl" type="radio" name="productSize"
-                                       value="">
-                                <span class="product_size__text">xxl</span>
-                            </label>
-                        </div>
-                        <div class="block_quantity">
-                            <p class="block_quantity__text">Количество:</p>
-                            <div class="block_quantity__box">
-                                <button class="block_quantity__minus"><span>-</span></button>
-                                <input class="block_quantity__input" type="text" value="1">
-                                <button class="block_quantity__plus"><span>+</span></button>
-                            </div>
-                        </div>
-                        <div class="bl_description">
-                            <p class="bl_description__text">Краткое описание:</p>
-
-                            <div class="bl_minInformationAboutProduct">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Consequuntur doloribus eius enim, eos expedita incidunt laborum
-                                    nesciunt nobis odit saepe.
+                                <p>sssssssssssssssss s sssss s s s s ss s s sssssssssss
+                                    sssssssssssssssssssss s ssssssssssssss s s ss sssssssssssssss s ssss s ss
                                 </p>
                             </div>
-
-
-                            <div class="bl_description__box">   <!-- количество div зависит от количества input class="product_size__input"  JS //// Short description -->
-                                <div class="product_sizeDescription">
-
-                                    <p>sssssssssssssssss s sssss s s s s ss s s sssssssssss
-                                        sssssssssssssssssssss s ssssssssssssss s s ss sssssssssssssss s ssss s ss
-                                    </p>
-                                </div>
-                                <div class="product_sizeDescription">
-                                    <p>aaaaaaaaaaaaa aaaaaaaa a a aaaaaaaaaaaaaa aaaaaaa Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit.
-                                        Ad aperiam eum fugiat nulla tempore. Dolore fugiat necessitatibus officiis
-                                        veritatis. A assumenda, eos id ipsam iure magni
-                                        officiis reiciendis totam voluptate?
-                                    </p>
-                                </div>
-                                <div class="product_sizeDescription">
-                                    <p>L L L L fdfdfds d fds fdsf sdf sdf df sdf Lorem ipsum dolor sit amet, consectetur
-                                        adipisicing elit. Delectus deserunt, natus non perspiciatis qui suscipit. s</p>
-                                </div>
-                                <div class="product_sizeDescription">
-                                    <p> xl xl xl xl lx lx lxl xl lxl lx lx Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit. Asperiores atque consectetur deserunt expedita
-                                        quibusdam? Magni?</p>
-                                </div>
-                                <div class="product_sizeDescription">
-                                    <p>XXL XLXLLL xx x xxxxxxxxxxx x x x xxxxxxxxxxxx Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit. Adipisci fuga laudantium praesentium qui unde,
-                                        veniam.</p>
-                                </div>
+                            <div class="product_sizeDescription">
+                                <p>aaaaaaaaaaaaa aaaaaaaa a a aaaaaaaaaaaaaa aaaaaaa Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit.
+                                    Ad aperiam eum fugiat nulla tempore. Dolore fugiat necessitatibus officiis
+                                    veritatis. A assumenda, eos id ipsam iure magni
+                                    officiis reiciendis totam voluptate?
+                                </p>
+                            </div>
+                            <div class="product_sizeDescription">
+                                <p>L L L L fdfdfds d fds fdsf sdf sdf df sdf Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Delectus deserunt, natus non perspiciatis qui suscipit. s</p>
+                            </div>
+                            <div class="product_sizeDescription">
+                                <p> xl xl xl xl lx lx lxl xl lxl lx lx Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Asperiores atque consectetur deserunt expedita
+                                    quibusdam? Magni?</p>
+                            </div>
+                            <div class="product_sizeDescription">
+                                <p>XXL XLXLLL xx x xxxxxxxxxxx x x x xxxxxxxxxxxx Lorem ipsum dolor sit amet,
+                                    consectetur adipisicing elit. Adipisci fuga laudantium praesentium qui unde,
+                                    veniam.</p>
                             </div>
                         </div>
+                    </div>
 
-                        <button class="button_buy"><span class="button_buy__text">Купить</span></button>
+                    <button class="button_buy"><span class="button_buy__text">Купить</span></button>
 
 
-                        <div class="bl_buyOneClick">
-                            <p class="bl_buyOneClick__text">
-                                Купить в 1 клик:
-                            </p>
-                            <div class="btn_buy__overflow">
-                                <input class="btn_buy__input" type="tel" placeholder="+38 (0XX) XXX-XX-XX">
-                                <button class="btn_buy__send">
-                                        <i class="icon_buy"></i>
-                                </button>
-                            </div>
-                            <span class="error_text hidden">Введите, пожалуйста, номер своего мобильного телефона</span>
-
+                    <div class="bl_buyOneClick">
+                        <p class="bl_buyOneClick__text">
+                            Купить в 1 клик:
+                        </p>
+                        <div class="btn_buy__overflow">
+                            <input class="btn_buy__input" type="tel" placeholder="+38 (0XX) XXX-XX-XX">
+                            <button class="btn_buy__send">
+                                <i class="icon_buy"></i>
+                            </button>
                         </div>
+                        <span class="error_text hidden">Введите, пожалуйста, номер своего мобильного телефона</span>
 
-                        <div class="bl_productDelivery">
-                            <p class="bl_productDelivery__text bl_productDelivery__text_mainText">Способы
-                                доставки:</p>
-                            <p class="bl_productDelivery__text">Самовывоз: <span class="color_red">БЕСПЛАТНО</span>
-                            </p>
-                            <p class="bl_productDelivery__text">Курьером: <span class="color_red">БЕСПЛАТНО</span>
-                            </p>
-                            <p class="bl_productDelivery__text">
-                                <span class="bl_productDelivery__text_valueDelivery">Пункт «Нова Пошта»:</span>
-                                <span
-                                        class="bl_productDelivery__text_simplePrice">35 грн</span> <span
-                                    class="bl_productDelivery__text_city">(Киев)</span></p>
-                        </div>
+                    </div>
 
-
+                    <div class="bl_productDelivery">
+                        <p class="bl_productDelivery__text bl_productDelivery__text_mainText">Способы
+                            доставки:</p>
+                        <p class="bl_productDelivery__text">Самовывоз: <span class="color_red">БЕСПЛАТНО</span>
+                        </p>
+                        <p class="bl_productDelivery__text">Курьером: <span class="color_red">БЕСПЛАТНО</span>
+                        </p>
+                        <p class="bl_productDelivery__text">
+                            <span class="bl_productDelivery__text_valueDelivery">Пункт «Нова Пошта»:</span>
+                            <span
+                                    class="bl_productDelivery__text_simplePrice">35 грн</span> <span
+                                class="bl_productDelivery__text_city">(Киев)</span></p>
                     </div>
 
 
                 </div>
+
+
+            </div>
         </div>
 
         <div class="container correct_right correct_left">
@@ -406,8 +409,6 @@
             </div>
 
 
-
-        
             <div class="col-xs-12 correct_left correct_right">
                 <div class="inf_product">
 
@@ -476,11 +477,18 @@
                                 <tbody>
                                 <tr>
                                     <td>Бренд:</td>
-                                    <td>Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid aperiam asperiores culpa delectus deleniti eligendi eum, hic, incidunt ipsa iure iusto libero molestiae natus nemo neque, non numquam obcaecati repellat soluta ullam velit voluptate voluptates? Ipsam recusandae rem tempore.</td>
+                                    <td>Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                        aliquid aperiam asperiores culpa delectus deleniti eligendi eum, hic, incidunt
+                                        ipsa iure iusto libero molestiae natus nemo neque, non numquam obcaecati
+                                        repellat soluta ullam velit voluptate voluptates? Ipsam recusandae rem tempore.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Серия:</td>
-                                    <td>Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores assumenda cumque earum eligendi eveniet molestias officiis quae quasi tempora.</td>
+                                    <td>Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+                                        asperiores assumenda cumque earum eligendi eveniet molestias officiis quae quasi
+                                        tempora.
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Длина:</td>
@@ -532,17 +540,18 @@
 
 
                         <div class="tab-pane " id="tab-video">   <!-- Выводить только если для товара есть видио -->
-                          <div class="bl_video">
+                            <div class="bl_video">
 
-                              <p class="bl_video__text">Видио о товаре</p>
-                              <h2 class="bl_video__text">Костюм зимний Norfin Hunting Wild Passion</h2>
+                                <p class="bl_video__text">Видио о товаре</p>
+                                <h2 class="bl_video__text">Костюм зимний Norfin Hunting Wild Passion</h2>
 
-                              <div class="bl_video_wrapper">
-                                  <iframe src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0" allowfullscreen></iframe>  <!-- видио кото -->
-                              </div>
+                                <div class="bl_video_wrapper">
+                                    <iframe src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0"
+                                            allowfullscreen></iframe>  <!-- видио кото -->
+                                </div>
 
 
-                          </div>
+                            </div>
                         </div>
 
                         <!-- end -->
@@ -912,7 +921,7 @@
 
             </div>
 
-    </div>
+        </div>
 
 
     </div>
@@ -1015,17 +1024,58 @@
 </div>
 
 
+<!-- ROAD MAP-->
+
+<div class="bl_map hidden">
+    <div class="bl_wrappen">
+        <button class="bl_map__close">
+            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
+        </button>
+        <p class="bl_map__title">Карта проезда</p>
+        <!--сюда скриптом запихивается карта-->
+    </div>
+</div>
 
 
+<!-- Call Back -->
+<div class="bl_callback hidden-xs">
+    <div class="bl_wrappen">
+        <button class="bl_callback__close">
+            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
+        </button>
+
+        <p class="bl_callback__title"> Обратный звонок</p>
+        <form class="bl_callback__field" action="">
+
+            <label class="bl_callback__label" for="">
+                <input class="bl_callback__input bl_callback__name" placeholder="Name" type="text" required>
+                <span class="bl_callback__text">Name</span>
+            </label>
+
+            <label class="bl_callback__label" for="">
+                <input class="bl_callback__input bl_callback__tel" placeholder="Telephone" type="tel" required>
+                <span class="bl_callback__text">Telephone</span>
+            </label>
+            <label class="bl_callback__label" for="">
+                <input class="bl_callback__input bl_callback__email" placeholder="Email" type="email" required>
+                <span class="bl_callback__text">Email</span>
+            </label>
+
+            <label class="bl_callback__label" for="">
+                <textarea class="bl_callback__field" placeholder="Напиши что-то умное..." name="" id="" cols="30"
+                          rows="5" required></textarea>
+                <span class="bl_callback__text">Напиши что-то умное...</span>
+            </label>
+            <button type="submit" class="btn btn-primary bl_callback__submit ">Отправить запрос</button>
+        </form>
+    </div>
+</div>
 
 
 <div class="blackWrapper hidden"></div>
 <script src="libs/jquery.min.js"></script>
 <script src="js/libs.min.js"></script>
 <script src="js/common.min.js"></script>
-
-
-
 
 
 </body>
