@@ -2,7 +2,7 @@
   position: relative;
   width: 100%;
   background-color: $color_blue;
-  min-height: 35px;
+  min-height: 28px;
   color: #fff;
 }
 
@@ -143,7 +143,7 @@
 .bl_language__variables {
 
   position: absolute;
-  top: 120%;
+  top: 101%;
   left: 0;
   width: 50px;
   min-height: 30px;
@@ -225,15 +225,15 @@
 .bl_fullControlsMenu {
   width: 100%;
   background-color: #fff;
-
-  padding-bottom: 16px; ////////////
+  box-shadow: 0 5px 13px 0 rgba(0,0,0,.12);
+  padding-bottom: 14px; ////////////
 }
 
-$marginTopItem: 30px;
+$marginTopItem: 16px;
 
 .bl_logo__link {
   display: block;
-  margin-top: $marginTopItem; ////////
+  margin-top: 23px;
 }
 
 .bl_logo__image {
@@ -398,7 +398,7 @@ $marginTopItem2: 22px;
   //min-width:80px;
   float: right;
   text-align: center;
-  margin-top: $marginTopItem2; ////////////
+  margin-top: 18px; ////////////
 }
 
 .bl_shoppingCart__icon {
@@ -421,7 +421,7 @@ $marginTopItem2: 22px;
 .bl_personalRoom {
   float: right;
   width: 100px;
-  margin-top: $marginTopItem2; //////////////
+  margin-top: 22px; //////////////
   margin-right: 5%;
 
 }
