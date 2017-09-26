@@ -451,9 +451,19 @@ $marginTopItem2: 22px;
 .bl_fullCategories {
   width: 100%;
   min-height: 50px;
+  background-color: transparent;
+  border-top: 3px solid #0160ac;
 
-  background-color: $color_blue;
 }
+
+#top_menu {
+  background-color: #0160ac;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, .21);
+}
+
+
+
 
 .bl_fullCategories__field {
 

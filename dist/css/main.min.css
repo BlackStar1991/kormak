@@ -1361,7 +1361,13 @@ textarea::-moz-focus-inner {
 .bl_fullCategories {
   width: 100%;
   min-height: 50px;
-  background-color: #0160ac; }
+  background-color: transparent;
+  border-top: 3px solid #0160ac; }
+
+#top_menu {
+  background-color: #0160ac;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.21); }
 
 .bl_fullCategories__field {
   text-align: justify; }
@@ -1955,32 +1961,29 @@ textarea::-moz-focus-inner {
   .likeButton_circle:hover {
     box-shadow: none; }
 
-.likeButton_circle:after {
+.bl_advantages__wrapper .likeButton_circle:after {
+  content: '';
   pointer-events: none;
   position: absolute;
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  content: '';
   box-sizing: content-box;
   top: -7px;
   left: -7px;
   padding: 7px;
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   -webkit-transform: scale(0.95);
-  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
-  -moz-transform: scale(0.95);
-  -ms-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
   transition: opacity 0.2s, -webkit-transform 0.2s;
   transition: transform 0.2s, opacity 0.2s;
-  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s;
-  transform: scale(0.95); }
+  transition: transform 0.2s, opacity 0.2s, -webkit-transform 0.2s; }
 
-.likeButton_circle:hover:after {
+.bl_advantages__wrapper .likeButton_circle:hover:after {
   box-shadow: 1px 2px 9px rgba(1, 1, 1, 0.14);
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   opacity: 1; }
 
 .likeButton_icon-car:after {
@@ -2133,7 +2136,7 @@ textarea::-moz-focus-inner {
   .bl_breadcrumbs__active {
     display: inline-block;
     text-decoration: none;
-    font-weight: bold; }
+    font-family: "TahomaBold", sans-serif; }
 
 .bl_fullProduct {
   position: relative;
@@ -2955,7 +2958,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   position: relative;
   font-size: 16px;
   line-height: 30px;
-  color: #0160ac;
+  color: #000;
   font-weight: bold;
   cursor: pointer; }
 
@@ -2987,13 +2990,13 @@ li.inf_product__item.inf_product__item_correctForTwo {
 .decor_leftTriangle {
   position: relative; }
   .decor_leftTriangle:after {
-    font-size: 16px;
-    color: inherit;
+    content: "\f0da";
     position: absolute;
+    font-family: "FontAwesome";
+    font-size: 16px;
+    color: #0160ac;
     left: -14px;
     top: 0;
-    content: "\f0da";
-    font-family: "FontAwesome";
     -webkit-transform-origin: left 50%;
         -ms-transform-origin: left 50%;
             transform-origin: left 50%;
@@ -3135,6 +3138,9 @@ li.inf_product__item.inf_product__item_correctForTwo {
 
 .bl_filters__allFilters .ocfilter-option .fa-times {
   color: #de0914; }
+
+.ocfilter-option {
+  margin-bottom: 30px; }
 
 .bl_subCategories {
   width: 100%; }
@@ -3650,11 +3656,12 @@ li.inf_product__item.inf_product__item_correctForTwo {
   width: 100%;
   max-width: 628px;
   min-height: 250px;
-  padding: 10px;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   background-color: #fff;
+  border: 2px solid #0160ac;
+  padding: 20px 20px;
   z-index: 1080; }
 
 .popup_likeShopbag__close {
@@ -3670,11 +3677,6 @@ li.inf_product__item.inf_product__item_correctForTwo {
   z-index: 4; }
   .popup_likeShopbag__close:hover {
     color: #f00; }
-
-.popup_likeShopbag {
-  border: 2px solid #0160ac;
-  padding: 0 20px 20px;
-  min-height: initial; }
 
 .popup_likeShopbag__text_main {
   display: inline-block;
@@ -6770,12 +6772,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .likeButton_circle {
     margin-left: 1%; }
   .bl_fullCategories {
-    background-color: transparent;
-    border-top: 3px solid #0160ac; }
-  #top_menu {
-    background-color: #0160ac;
-    border-radius: 0 0 4px 4px;
-    box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.21); }
+    background-color: white; }
   .view_list__STYLE .bl_fullProducts__imageWrapper {
     width: 33%; }
   .button_map {
