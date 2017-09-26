@@ -219,15 +219,18 @@ $minSliderHeight: 555px; /// 578
 .bl_catalogProducts__title {
   display: block;
   width: 100%;
-  line-height: 36px;
-  padding: 20px;
+  line-height: 35px;
+  padding: 15px 5px 15px 20px;
   border-bottom: 1px solid #eee;
+  font-size: 24px;
+  font-family: "TahomaBold", sans-serif;
 }
 
 .bl_catalogProducts__full {
+
   display: block;
   width: 100%;
-  padding: 0 20px;
+  padding: 13px 20px 0 20px;
 }
 
 .bl_catalogProducts__item {
@@ -248,7 +251,8 @@ $minSliderHeight: 555px; /// 578
   display: block;
   width: 100%;
   height: 100%;
-
+  font-family: "TahomaBold", sans-serif;
+  font-size: 15px;
 }
 
 .mainSlider__fullBlock {
@@ -412,7 +416,6 @@ $minSliderHeight: 555px; /// 578
       position: absolute;
       content: "\f104";
       font-family: $FontAwesom;
-      //width: 100%;
       height: 100%;
 
       left: 50%;
@@ -508,6 +511,11 @@ $minSliderHeight: 555px; /// 578
   border: none;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+
+.slider_popular,
+.slider_newProducts {
+  margin-top: 0;
 }
 
 // OWL END
@@ -622,9 +630,7 @@ $minSliderHeight: 555px; /// 578
   display: block;
   margin: 30px auto 0;
   text-align: center;
-  //width: 154px;
   height: 82px;
-
   color: $color_blue;
   text-decoration: underline;
   font-family: $Tahoma;
@@ -701,7 +707,6 @@ $minSliderHeight: 555px; /// 578
 
 .bl_advantages {
   margin-top: 30px;
-
   min-height: 138px;
   background-color: #fff;
 }
@@ -712,6 +717,17 @@ $minSliderHeight: 555px; /// 578
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.bl_advantages__wrapper .likeButton_circle {
+  position: relative;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .bl_delivery,
@@ -1229,10 +1245,6 @@ $minProductHeight: 610px; /////////////////////////////////
   }
 }
 
-.view_grid__STYLE .product_info__id {
-  display: block;
-}
-
 .product_info__productAvailability {
   display: block;
   text-align: center;
@@ -1519,8 +1531,6 @@ $minProductHeight: 610px; /////////////////////////////////
   color: inherit;
   font-family: $TahomaBold;
   font-size: 16px;
-
-  //line-height: 50px;
 }
 
 .bl_buyOneClick {
@@ -2389,7 +2399,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 ///// GRID VIEW
 
 .view_grid__STYLE .product_info__id {
-  display: none;
+  display: block;
 }
 
 .bl_products {
@@ -2880,7 +2890,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 .button_buyProduct {
   background-color: $color_blue;
   min-height: 30px;
-  &:hover{
+  &:hover {
     background-color: #157dd0;
   }
 }
@@ -2917,11 +2927,11 @@ li.inf_product__item.inf_product__item_correctForThree {
   margin-top: 32px;
   padding: 10px 65px;
   height: 100%;
-  min-height: 310px;
+  min-height: 500px;
   background-color: #fff;
 
-  .text_title{
-    color: #0160ac;
+  .text_title {
+    color: $color_blue;
     padding-bottom: 6px;
     border-bottom: 1px solid #eee;
   }
@@ -2961,6 +2971,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   margin: 0;
   padding: 0;
   font-family: $TahomaBold;
+  color: #333;
   font-size: 13px;
   line-height: 30px;
 }
@@ -3046,6 +3057,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 .shoppingBasket_product {
   clear: both;
   width: 100%;
+  margin-top: 0;
 }
 
 .boredr_bottom {
@@ -3069,9 +3081,8 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .shoppingBasket_product__good {
-  padding-bottom: 8px;
   border-bottom: 1px solid #eee;
-  padding-top: 8px;
+  padding: 8px 0;
 }
 
 .shoppingBasket_product__title {
@@ -3241,7 +3252,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   background-color: $color_blue;
   transition: all .3s;
 
-  &:hover{
+  &:hover {
     transition: all .3s;
     background-color: #157dd0;
   }
@@ -3298,6 +3309,41 @@ li.inf_product__item.inf_product__item_correctForThree {
   padding-top: 15px;
   margin-top: 20px;
   padding-bottom: 28px;
+}
+
+.coupon-block__fullBlock {
+  position: relative;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.coupon-block__button {
+
+  display: inline-block;
+  width: 190px;
+  text-align: center;
+  min-height: 35px;
+  box-sizing: border-box;
+  background-color: #0160ac;
+  transition: all .3s;
+  color: #fff;
+  border: none;
+  line-height: 2;
+}
+
+.coupon-block__button:hover {
+  transition: all .3s;
+  background-color: #157dd0;
+}
+
+.coupon-block__fildForCoupon {
+  display: inline-block;
+  max-width: 300px;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid #0160ac;
 }
 
 // PAGE 404
@@ -3408,8 +3454,6 @@ li.inf_product__item.inf_product__item_correctForThree {
     background-image: url(../image/hook_min.png);
   }
 
-  /* end of globals */
-  /* start of wrap */
   #wrap {
     width: 970px;
     margin: auto;
@@ -3421,7 +3465,6 @@ li.inf_product__item.inf_product__item_correctForThree {
   }
   /* end of wrap */
   .window {
-    /*border:1px solid #191919;*/
     width: 950px;
     height: 500px;
     position: relative;
@@ -3711,7 +3754,6 @@ li.inf_product__item.inf_product__item_correctForThree {
     top: -147px;
     width: 125px;
   }
-  /*end of rocks*/
   /*plants*/
   .plant_1_wrap {
     position: absolute;
@@ -3913,7 +3955,6 @@ li.inf_product__item.inf_product__item_correctForThree {
     top: 19px;
     width: 2px;
   }
-  /**/
   /*start of long plant*/
   .long_plant2 {
     transform: rotate(13deg);
@@ -6492,7 +6533,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 .page404_text {
   margin-top: 0;
-  color: #0160ac;
+  color: $color_blue;
   text-align: center;
 }
 

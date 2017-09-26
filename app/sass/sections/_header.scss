@@ -281,7 +281,7 @@ $marginTopItem: 16px;
   background-color: #fff;
   border: 1px solid $color_grey3;
   border-radius: 20px;
-  padding-right: 40px;
+  padding-right: 20px;
   outline: none;
   text-indent: 15px;
 
@@ -395,7 +395,6 @@ $marginTopItem: 16px;
 
 $marginTopItem2: 22px;
 .bl_shoppingCart {
-  //min-width:80px;
   float: right;
   text-align: center;
   margin-top: 18px; ////////////
@@ -418,10 +417,15 @@ $marginTopItem2: 22px;
   color: $color_grey2;
 }
 
+.bl_shoppingCart__text.bl_shoppingCart__fullPrice {
+  display: none;
+}
+
+
 .bl_personalRoom {
   float: right;
   width: 100px;
-  margin-top: 22px; //////////////
+  margin-top: 18px; //////////////
   margin-right: 5%;
 
 }
@@ -553,8 +557,9 @@ $marginTopItem2: 22px;
   width: 150px;
   align-items: center;
   color: #fff;
+  box-sizing: border-box;
   border: 1px solid #fff;
-  background-color: inherit;
+  background-color: $color_blue;
   text-transform: uppercase;
   font-size: 14px;
 }
