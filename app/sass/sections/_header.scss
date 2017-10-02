@@ -244,7 +244,7 @@ $marginTopItem: 16px;
 .bl_phonesSearch {
   width: 100%;
   margin-right: 10%;
-  max-width: 330px;
+  max-width: 360px;
   float: right;
   margin-top: $marginTopItem; ////////
 }
@@ -253,13 +253,32 @@ $marginTopItem: 16px;
   width: 100%;
 }
 
-.bl_phones__left {
+.bl_phones__icon-cell {
   float: left;
+  &:before{
+    content: "";
+    float: left;
+    margin: 3px 5px 0 0;
+    @include sprite($cell-phone);
+
+  }
 }
 
-.bl_phones__right {
+.bl_phones__icon-life {
   float: right;
+
+  &:before{
+    content: "";
+    float: left;
+    margin: 3px 5px 0 0;
+    @include sprite($life);
+  }
 }
+
+
+
+
+
 
 .bl_phones__text {
   color: $color_grey2;

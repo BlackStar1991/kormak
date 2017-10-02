@@ -21,7 +21,6 @@
     background-color: white;
   }
 
-
   .view_list__STYLE .bl_fullProducts__imageWrapper {
     width: 33%;
   }
@@ -35,12 +34,6 @@
 
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
-
-  //.bl_fullCategories{
-  //  background-color: $color_blue;
-  //}
-
-
 
   .bl_logo__image {
     margin: 0 auto;
@@ -99,13 +92,12 @@
     text-transform: uppercase;
   }
 
-  .bl_fullCategories__link{
+  .bl_fullCategories__link {
     color: #fff;
     height: 100%;
     padding: 10px 0;
     border-bottom: 1px solid white;
   }
-
 
   .main_catalogs {
     margin-top: 0;
@@ -140,6 +132,12 @@
     box-sizing: border-box;
 
   }
+
+  .bl_catalogProducts__link{
+    color: #fff;
+    padding: 10px 0;
+  }
+
 
   .bl_filters, .bl_filters__productsFilters {
     display: none;
@@ -265,6 +263,42 @@
     right: 0;
   }
 
+  .content_discount_form{
+    background-image: none;
+  }
+
+  .discount_form__likeTitle {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+  }
+
+  .content_discount__blockTitle {
+    margin: 10px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .discount_form__coverFish{
+    margin: 0 auto;
+  }
+
+  .discount_form__button_text {
+    padding: 0;
+  }
+
+  .discount_form__button {
+    margin: 15px auto;
+  }
+
+  .content_discount_form {
+    display: block;
+  }
+
+
+
+
+
   .inf_product__tabs {
     flex-direction: column;
     width: 100%;
@@ -320,19 +354,18 @@
   }
 
   .coupon-block__fildForCoupon,
-  .coupon-block__button{
+  .coupon-block__button {
     display: block;
     margin: 10px auto;
   }
-
 
 }
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
 
-  .bl_phones__left,
-  .bl_phones__right {
+  .bl_phones__icon-cell,
+  .bl_phones__icon-life {
     float: none;
     display: block;
   }
