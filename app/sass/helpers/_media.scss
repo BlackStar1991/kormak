@@ -35,6 +35,19 @@
 /* Medium Devices, Desktops 992px */
 @media only screen and (max-width: 991px) {
 
+  .bl_control{
+    min-height: 48px;
+  }
+
+  .bl_fullCategories {
+    position: absolute;
+    display: none;
+    left: 0;
+    top: 48px;
+    border-top:none;
+    z-index: 99;
+  }
+
   .bl_logo__image {
     margin: 0 auto;
   }
@@ -241,6 +254,11 @@
 
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
+
+
+  .bl_fullControlsMenu{
+    margin-bottom: 14px;
+  }
 
   .bl_fullNavigation {
     min-height: 50px;
