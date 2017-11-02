@@ -576,10 +576,6 @@ $(document).ready(function () {
 
 
         }
-
-
-
-
     }
 
 
@@ -640,7 +636,57 @@ $(document).ready(function () {
     }roadMap();
 
     
-    
+
+    function showMoreInformation() {
+        var buttonShowMoreInformation = $(".button_showMore"),
+            buttonHeight = buttonShowMoreInformation.outerHeight(true),
+            classShowFullBlock = "full_block";
+
+
+        var heightNewsBlock = $(".bl_shopNews").height();
+            if (heightNewsBlock === undefined){
+                heightNewsBlock = 400; // если блока с новостями нет
+            }
+        var fullBlock = buttonShowMoreInformation.parent(),
+            heightFullBlock = fullBlock.innerHeight(),
+            blockWithCEO = buttonShowMoreInformation.prev(),
+            ceoBlockHeight = blockWithCEO.outerHeight(true),
+            chooseAllElementsBiforeCEOBlock = blockWithCEO.prevAll(),
+            heightChooseAllElementsBiforeCEOBlock = chooseAllElementsBiforeCEOBlock.outerHeight(true),
+            heightOfPaddingsInnerBlock = fullBlock.css("paddingBottom");
+
+        console.log(" heightOfPaddingsInnerBlock = " +  heightOfPaddingsInnerBlock);
+        console.log(" ceoBlockHeight = " +  ceoBlockHeight);
+        console.log(" heightNewsBlock = " +  heightNewsBlock );
+        console.log(" heightFullBlock = " +  heightFullBlock );
+        console.log(" heightChooseAllElementsBiforeCEOBlock = " +  heightChooseAllElementsBiforeCEOBlock );
+
+        var corrected = 20;
+
+        if ( ( ceoBlockHeight <= heightNewsBlock)){
+            buttonShowMoreInformation.remove();
+        }else {
+            fullBlock.css("max-height", (heightNewsBlock) );
+            blockWithCEO.css("max-height", (heightNewsBlock - buttonHeight - heightChooseAllElementsBiforeCEOBlock - corrected) );
+        }
+        console.log(" ceoBlockHeight2 = " +  ceoBlockHeight);
+        console.log(" blockWithCEO2 = " +  blockWithCEO.height());
+        console.log(" heightFullBlock2 = " +  heightFullBlock );
+
+
+        buttonShowMoreInformation.on("click", function () {
+            buttonShowMoreInformation.children().eq(0).toggleClass("hidden");
+            buttonShowMoreInformation.children().eq(1).toggleClass("hidden");
+            fullBlock.toggleClass(classShowFullBlock);
+            blockWithCEO.toggleClass(classShowFullBlock);
+
+        });
+
+
+
+
+
+    }showMoreInformation();
 
 
 });

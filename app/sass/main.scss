@@ -164,6 +164,10 @@ textarea {
   background-color: #fff;
 }
 
+.full_block{
+  max-height: initial!important;
+}
+
 /*********************************************/
 /*TYPOGRAPHY*/
 /*********************************************/
@@ -911,30 +915,51 @@ $minSliderHeight: 555px; /// 578
 
 //
 
-.bl_aboutShop {
+.bl_ceoText {
+  position: relative;
+  height: 100%;
+
   background-color: #fff;
-  padding: 10px 20px;
-  min-height: 400px;
-  margin-top: 30px;
+  padding: 10px 20px 20px;
   width: 100%;
+  margin-top: 30px;
+  overflow: hidden;
 }
 
-.bl_aboutShop__title {
+.bl_ceoText__title {
   padding-top: 22px;
 }
 
-.bl_aboutShop__fullBlock {
+.bl_ceoText__fullBlock {
+  position: relative;
   width: 100%;
+  overflow: hidden;
 }
 
-.bl_aboutShop__paragraph {
-  margin-top: 22px;
+.MsoNormal{
+  //margin-top: 20px;
 }
+
+
+
+.button_showMore{
+  color: $color_blue2;
+  font-size: 16px;
+  background: none;
+  outline:none;
+  box-sizing: border-box;
+  margin-top: 10px;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
 
 //
 
 .bl_shopNews {
-  margin-top: 36px;
+  margin-top: 30px;
   background-color: #fff;
   width: 100%;
   min-height: 400px;
@@ -942,7 +967,6 @@ $minSliderHeight: 555px; /// 578
 }
 
 .bl_shopNews__title {
-  //padding-top:22px;
   line-height: 52px;
   text-align: center;
   text-transform: uppercase;
@@ -1745,6 +1769,7 @@ $minProductHeight: 610px; /////////////////////////////////
 }
 
 .bl_productDelivery {
+
   width: 100%;
   margin-top: 12px;
   border: 1px solid $color_lightGrey;
