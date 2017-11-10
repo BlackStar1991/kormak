@@ -817,27 +817,27 @@ hr {
 /*********************************************/
 @font-face {
   font-family: "Tahoma";
-  font-style: normal;
+  src: url("../fonts/Tahoma/Tahoma.woff2") format("woff2"), url("../fonts/Tahoma/Tahoma.woff") format("woff"), url("../fonts/Tahoma/Tahoma.ttf") format("truetype");
   font-weight: 400;
-  src: url("../fonts/Tahoma/Tahoma.eot?") format("eot"), url("../fonts/Tahoma/Tahoma.ttf") format("truetype"), url("../fonts/Tahoma/Tahoma.woff") format("woff"); }
+  font-style: normal; }
 
 @font-face {
   font-family: "TahomaBold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/TahomaBold/Tahoma-Bold.eot?") format("eot"), url("../fonts/TahomaBold/Tahoma-Bold.ttf") format("truetype"), url("../fonts/TahomaBold/Tahoma-Bold.woff") format("woff"); }
+  src: url("../fonts/TahomaBold/Tahoma-Bold.woff2") format("woff2"), url("../fonts/TahomaBold/Tahoma-Bold.woff") format("woff"), url("../fonts/TahomaBold/Tahoma-Bold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
 @font-face {
   font-family: "CalibriBold";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/CalibriBold/CalibriBold.eot?") format("eot"), url("../fonts/CalibriBold/CalibriBold.ttf") format("truetype"), url("../fonts/CalibriBold/CalibriBold.woff") format("woff"); }
+  src: url("../fonts/CalibriBold/CalibriBold.woff2") format("woff2"), url("../fonts/CalibriBold/CalibriBold.woff") format("woff"), url("../fonts/CalibriBold/CalibriBold.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
 
 @font-face {
   font-family: "FontAwesome";
-  font-style: normal;
+  src: url("../fonts/FontAwesome/FontAwesome.woff2") format("woff2"), url("../fonts/FontAwesome/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome/FontAwesome.ttf") format("truetype");
   font-weight: 400;
-  src: url("../fonts/FontAwesome/FontAwesome.eot?") format("eot"), url("../fonts/FontAwesome/FontAwesome.ttf") format("truetype"), url("../fonts/FontAwesome/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome/FontAwesome.woff2") format("woff2"); }
+  font-style: normal; }
 
 /*********************************************/
 /*MAIN STYLES*/
@@ -1432,7 +1432,8 @@ textarea::-moz-focus-inner {
 
 .bl_map__title {
   margin-top: 10px;
-  font-family: "TahomaBold", sans-serif;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
   text-align: center; }
 
 .bl_map__iframe {
@@ -1910,9 +1911,8 @@ textarea::-moz-focus-inner {
   color: #1162ab;
   transition: all 0.2s; }
   .product_sliderCart__buy_text {
-    font-family: "TahomaBold", sans-serif;
     font-size: 16px;
-    font-weight: 700; }
+    font-family: "TahomaBold", sans-serif; }
   .product_sliderCart__buy:hover, .product_sliderCart__buy:focus {
     background-color: #1162ab;
     color: #fff;
@@ -2529,6 +2529,7 @@ textarea::-moz-focus-inner {
 .block_quantity__text {
   color: #333;
   font-family: "Tahoma", sans-serif;
+  font-weight: 700;
   margin-top: 14px; }
 
 .block_quantity__box {
@@ -3380,28 +3381,23 @@ li.inf_product__item.inf_product__item_correctForTwo {
   display: block; }
 
 .view_grid__STYLE .bl_fullProducts__item {
-  height: 497px; }
+  height: 497px;
+  max-width: 31.8%; }
 
 .bl_products {
   margin-top: 20px; }
-
-.bl_products__border {
-  border-top: 1px solid #f1f1f1;
-  border-left: 1px solid #f1f1f1; }
 
 .bl_fullProducts__item {
   position: relative;
   height: 100%;
   min-height: 380px;
-  padding: 16px 20px 23px 20px;
+  padding: 16px 0 23px;
+  margin: 0  0 10px 10px;
+  border: 1px solid #f1f1f1;
   box-sizing: border-box;
   overflow: hidden; }
 
-.bl_fullProducts__item_border {
-  border-right: 1px solid #f1f1f1;
-  border-bottom: 1px solid #f1f1f1; }
-
-.bl_fullProducts__item_border:hover,
+.bl_fullProducts__item:hover,
 .product_sliderCart__item:hover {
   box-shadow: 0 1px 10px 0 rgba(1, 96, 172, 0.2); }
 
@@ -4581,11 +4577,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
   width: 100%;
   padding: 10px 0;
   margin-top: 30px;
-  background-color: #fff; }
-
-.complex_product_twoProducts {
+  background-color: #fff;
   position: relative;
-  width: 100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4594,7 +4587,22 @@ li.inf_product__item.inf_product__item_correctForTwo {
           flex-direction: row;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.complex_product__result {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2%; }
 
 .complex_product__firstProduct,
 .complex_product__secondProduct {
@@ -4608,7 +4616,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
   text-align: center;
   border: 1px solid #f1f1f1; }
 
-.bl_plus {
+.bl_plus,
+.bl_equally {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4622,6 +4631,9 @@ li.inf_product__item.inf_product__item_correctForTwo {
   font-size: 50px;
   line-height: 1;
   text-shadow: 0 0 5px black; }
+
+.bl_equally {
+  font-size: 74px; }
 
 .complex_product__fullText {
   margin: 10px auto 0;
@@ -4662,7 +4674,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
   margin-top: 26px;
   margin-bottom: 0;
   color: #333;
-  font-family: "TahomaBold", sans-serif;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
   font-size: 16px; }
 
 .footer_fullPages {
@@ -4680,7 +4693,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
 
 .footer_fullPages__contacts {
   color: #333;
-  font-family: "TahomaBold", sans-serif;
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
   font-size: 16px;
   line-height: 32px; }
 
@@ -5008,7 +5022,16 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .rubric__title_button {
     left: 5%; }
   .bl_article .bl_topic__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .complex_product {
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto; }
+  .complex_product__firstProduct,
+  .bl_plus,
+  .complex_product__secondProduct {
+    margin: 0 auto; } }
 
 /* Custom, iPhone Retina 320px */
 @media only screen and (max-width: 320px) {

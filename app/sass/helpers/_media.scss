@@ -407,6 +407,15 @@
   .bl_article .bl_topic__text {
     margin-left: 0;
   }
+  .complex_product{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .complex_product__firstProduct,
+  .bl_plus,
+  .complex_product__secondProduct{
+    margin: 0 auto;
+  }
 
 }
 

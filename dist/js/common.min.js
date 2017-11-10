@@ -655,13 +655,10 @@ $(document).ready(function () {
             heightChooseAllElementsBiforeCEOBlock = chooseAllElementsBiforeCEOBlock.outerHeight(true),
             heightOfPaddingsInnerBlock = fullBlock.css("paddingBottom");
 
-        console.log(" heightOfPaddingsInnerBlock = " +  heightOfPaddingsInnerBlock);
-        console.log(" ceoBlockHeight = " +  ceoBlockHeight);
-        console.log(" heightNewsBlock = " +  heightNewsBlock );
-        console.log(" heightFullBlock = " +  heightFullBlock );
-        console.log(" heightChooseAllElementsBiforeCEOBlock = " +  heightChooseAllElementsBiforeCEOBlock );
 
-        var corrected = 20;
+        var corrected = window.getComputedStyle(blockWithCEO[0]).paddingBottom;
+
+        console.log(" corrected = " +  corrected);
 
         if ( ( ceoBlockHeight <= heightNewsBlock)){
             buttonShowMoreInformation.remove();
