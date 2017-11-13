@@ -1819,6 +1819,22 @@ textarea::-moz-focus-inner {
   text-align: center;
   margin: 20px 12px 20px 22px; }
 
+.bl_mixMobile {
+  clear: both;
+  margin-top: 30px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  background-color: #fff; }
+
+.bl_mixMobile .product_sliderCart__item {
+  display: block;
+  margin: 10px auto;
+  border: none; }
+
+.bl_mixMobile .product_sliderCart__item_wrapper {
+  margin: 0 auto; }
+
 .bl_mark {
   position: absolute;
   top: -24px;
@@ -4842,8 +4858,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
     margin: 0 auto; }
   .bl_shoppingCart {
     width: 50%;
-    float: left;
-    margin-top: 30px; }
+    float: none;
+    margin: 30px auto 0; }
   .rubric__title_text {
     text-align: center; }
   .rubric__title_margin {

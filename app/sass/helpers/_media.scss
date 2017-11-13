@@ -82,8 +82,11 @@
 
   .bl_shoppingCart {
     width: 50%;
-    float: left;
-    margin-top: 30px;
+    //float: left;
+    //margin-top: 30px;
+    float: none;
+    margin: 30px auto 0;
+
   }
 
   .rubric__title_text {

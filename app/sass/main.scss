@@ -645,6 +645,28 @@ $minSliderHeight: 555px; /// 578
   //margin-right: 20px;
 }
 
+
+// block MobileMix
+
+.bl_mixMobile{
+  clear: both;
+  margin-top: 30px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  background-color: #fff;
+}
+
+.bl_mixMobile .product_sliderCart__item{
+  display: block;
+  margin: 10px auto;
+  border: none;
+}
+.bl_mixMobile .product_sliderCart__item_wrapper{
+  margin: 0 auto;
+}
+
+
 // MARK (layba)
 
 .bl_mark {
