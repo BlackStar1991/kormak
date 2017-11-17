@@ -31,7 +31,7 @@ $(document).ready(function () {
         fieldAdress = $(".code_adress__full");
 
 
-    var buttonFilterCategories =$(".rubric__title_button__categories"),
+    var buttonFilterCategories = $(".rubric__title_button__categories"),
         fieldFilterCategories = $(".bl_filters");
 
     var buttonAllFilters = $(".rubric__title_button__filters"),
@@ -79,7 +79,7 @@ $(document).ready(function () {
             sliderEffectForButtons(buttonContacts, fieldContacts, 600);
             sliderEffectForButtons(buttonAdress, fieldAdress, 600);
 
-            sliderEffectForButtons(buttonAllFilters, fieldAllFilters , 600);
+            sliderEffectForButtons(buttonAllFilters, fieldAllFilters, 600);
 
         } else {
             return false;
@@ -381,15 +381,15 @@ $(document).ready(function () {
     }
 
 
-    $(".bl_filter__label").on("click", function(event){
+    $(".bl_filter__label").on("click", function (event) {
 
         $(this).find(".filter_text").toggleClass("filter_text__active");
 
-            if ($(this).find(".bl_filter__checkbox").prop("checked") === true){
-                $(this).find(".bl_filter__checkbox").prop("checked", false);
-            }else{
-                $(this).find(".bl_filter__checkbox").prop("checked", true);
-            }
+        if ($(this).find(".bl_filter__checkbox").prop("checked") === true) {
+            $(this).find(".bl_filter__checkbox").prop("checked", false);
+        } else {
+            $(this).find(".bl_filter__checkbox").prop("checked", true);
+        }
 
 
         event.preventDefault();
@@ -422,7 +422,7 @@ $(document).ready(function () {
         classGrid = "view_grid__STYLE",
         classList = "view_list__STYLE",
 
-        bl_fullProducts__item =$(".bl_fullProducts__item"),
+        bl_fullProducts__item = $(".bl_fullProducts__item"),
 
         code_listView1 = $(".code_listView1"),
         code_listView2 = $(".code_listView2"),
@@ -430,10 +430,9 @@ $(document).ready(function () {
         code_listView4 = $(".code_listView4"),
 
 
-
         allProducts = $(".bl_products");
 
-    buttonGridView.on("click", function(){
+    buttonGridView.on("click", function () {
         allProducts.removeClass(classList);
         allProducts.addClass(classGrid);
 
@@ -444,7 +443,7 @@ $(document).ready(function () {
         code_listView4.removeClass("bl_fullProducts__listStyle");
     });
 
-    buttonListView.on("click", function(){
+    buttonListView.on("click", function () {
         allProducts.removeClass(classGrid);
         allProducts.addClass(classList);
 
@@ -456,8 +455,6 @@ $(document).ready(function () {
 
 
     });
-
-
 
 
 //// Short description
@@ -499,26 +496,26 @@ $(document).ready(function () {
 // FILTER for telephone number
 
     var telephonseInput = $("input[type='tel']");
-    telephonseInput.mask( "+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
+    telephonseInput.mask("+38 (0" + "99) 999-99-99", {placeholder: "+38 (0__) ___+__+__"});
 
 
 /// POPUP BIFORE ADD TO SHOPBAG
 
-   function popupWindowBiforeAddToShopBag() {
+    function popupWindowBiforeAddToShopBag() {
 
-       var TESTBUTTON = $(".TEST_BUTTON");
+        var TESTBUTTON = $(".TEST_BUTTON");
 
-       var popupWindow = $(".popup_likeShopbag"),
-           buttonClose = $(".popup_likeShopbag__close"),
-           buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
+        var popupWindow = $(".popup_likeShopbag"),
+            buttonClose = $(".popup_likeShopbag__close"),
+            buttonContinueBuying = $(".popup_likeShopbag__continueBuying");
 
 
-       TESTBUTTON.on("click", function () {
+        TESTBUTTON.on("click", function () {
 
-           popupWindow.removeClass("hidden");
-           blackWrapper.removeClass("hidden");
-           blackWrapper.animate({opacity: 0.6}, 300);
-       });
+            popupWindow.removeClass("hidden");
+            blackWrapper.removeClass("hidden");
+            blackWrapper.animate({opacity: 0.6}, 300);
+        });
 
         function closePopupWindow(btn) {
             btn.on("click", function () {
@@ -527,25 +524,22 @@ $(document).ready(function () {
                 blackWrapper.animate({opacity: 0}, 400);
             })
         }
+
         closePopupWindow(buttonClose);
         closePopupWindow(buttonContinueBuying);
         closePopupWindow(blackWrapper);
 
 
+    }
 
-   } popupWindowBiforeAddToShopBag();
-
+    popupWindowBiforeAddToShopBag();
 
 
 /// Success Buying
 //  Если пользователю удалось отправить номер своего мобильного продавцу должна отрабатывать эта функция
 
 
-    function successfulPurchasePassed() {
-
-        var blSuccsess = $(".bl_successBuying"),
-            buttonClose = $(".bl_successBuying__close");
-
+    function successfulPurchasePassed(blSuccsess, buttonClose) {
 
         setTimeout(showBlock, 200);
 
@@ -555,8 +549,8 @@ $(document).ready(function () {
 
         function showBlock() {
 
-           blackWrapper.removeClass("hidden");
-           blackWrapper.animate({opacity: 0.6}, 300);
+            blackWrapper.removeClass("hidden");
+            blackWrapper.animate({opacity: 0.6}, 300);
 
             blSuccsess.removeClass("hidden");
             blSuccsess.removeClass("bounceOutUp");
@@ -569,19 +563,23 @@ $(document).ready(function () {
             blackWrapper.animate({opacity: 0}, 400);
 
 
-            setTimeout(function(){
+            setTimeout(function () {
                 blackWrapper.addClass("hidden");
                 blSuccsess.addClass("hidden");
-            },1000);
-
-
+            }, 1000);
         }
     }
 
 
+    $(".btn_buy__send").on("click", function () {
+        successfulPurchasePassed($(".bl_successBuying"), $(".bl_successBuying__close"))
+    }
+);
 
-    $(".btn_buy__send").on("click", successfulPurchasePassed); //// Заменить нажатие на кнопку на обработку события
-
+    $(".btn_miniCallBack").on("click", function () {
+        successfulPurchasePassed($(".bl_miniCallBack"), $(".miniCallBack__close"))
+    }
+    );
 
 
 ////// Product quantity
@@ -606,7 +604,6 @@ $(document).ready(function () {
     });
 
 
-
 // Road Map
 
     function roadMap() {
@@ -618,7 +615,7 @@ $(document).ready(function () {
             blackWrapper.animate({opacity: 0.6}, 300);
             blockMap.removeClass("hidden");
 
-            if ( $(".bl_map__iframe").length == 0){
+            if ($(".bl_map__iframe").length == 0) {
                 $('<iframe class="bl_map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.2340071664594!2d30.62924531598441!3d50.455366979476075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c554bbd79077%3A0x433aacf838798f5b!2z0JrQntCg0JzQkNCa!5e0!3m2!1sru!2sru!4v1496344340189" frameborder="0" style="border:0"></iframe>').insertAfter(".bl_map__title");
             }
         });
@@ -633,9 +630,10 @@ $(document).ready(function () {
             blockMap.addClass("hidden");
         });
 
-    }roadMap();
+    }
 
-    
+    roadMap();
+
 
     function showMoreInformation() {
         var buttonShowMoreInformation = $(".button_showMore"),
@@ -644,9 +642,9 @@ $(document).ready(function () {
 
 
         var heightNewsBlock = $(".bl_shopNews").height();
-            if (heightNewsBlock === undefined){
-                heightNewsBlock = 400; // если блока с новостями нет
-            }
+        if (heightNewsBlock === undefined) {
+            heightNewsBlock = 400; // если блока с новостями нет
+        }
         var fullBlock = buttonShowMoreInformation.parent(),
             heightFullBlock = fullBlock.innerHeight(),
             blockWithCEO = buttonShowMoreInformation.prev(),
@@ -658,17 +656,17 @@ $(document).ready(function () {
 
         var corrected = window.getComputedStyle(blockWithCEO[0]).paddingBottom;
 
-        console.log(" corrected = " +  corrected);
+        console.log(" corrected = " + corrected);
 
-        if ( ( ceoBlockHeight <= heightNewsBlock)){
+        if (( ceoBlockHeight <= heightNewsBlock)) {
             buttonShowMoreInformation.remove();
-        }else {
-            fullBlock.css("max-height", (heightNewsBlock) );
-            blockWithCEO.css("max-height", (heightNewsBlock - buttonHeight - heightChooseAllElementsBiforeCEOBlock - corrected) );
+        } else {
+            fullBlock.css("max-height", (heightNewsBlock));
+            blockWithCEO.css("max-height", (heightNewsBlock - buttonHeight - heightChooseAllElementsBiforeCEOBlock - corrected));
         }
-        console.log(" ceoBlockHeight2 = " +  ceoBlockHeight);
-        console.log(" blockWithCEO2 = " +  blockWithCEO.height());
-        console.log(" heightFullBlock2 = " +  heightFullBlock );
+        console.log(" ceoBlockHeight2 = " + ceoBlockHeight);
+        console.log(" blockWithCEO2 = " + blockWithCEO.height());
+        console.log(" heightFullBlock2 = " + heightFullBlock);
 
 
         buttonShowMoreInformation.on("click", function () {
@@ -680,10 +678,9 @@ $(document).ready(function () {
         });
 
 
+    }
 
-
-
-    }showMoreInformation();
+    showMoreInformation();
 
 
 });

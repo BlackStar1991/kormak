@@ -1702,71 +1702,103 @@ $minProductHeight: 610px; /////////////////////////////////
   text-align: center;
 }
 
-.buy-one-click {
-  padding-top: 13px;
-}
-
-.bl_buyOneClick__text {
-
-  color: $color_grey2;
-  font-family: $TahomaBold;
-  font-size: 16px;
-}
-
-.btn_buy__overflow {
+.button_buyOneClick{
   position: relative;
-  border: 1px solid $color_blue;
-  box-sizing: border-box;
-  margin: 0 auto;
+  background-color: $color_blue;
   width: 250px;
   height: 50px;
+  color: #fff;
   overflow: hidden;
   border-radius: 24px;
-}
+  line-height: 50px;
 
-.btn_buy__input {
-  width: 100%;
-  height: 100%;
-  outline: none;
-  border: none;
-  text-indent: 25px;
-
-  &::placeholder {
-    text-indent: 25px;
-    color: #c5c5c5;
-    font-family: $Tahoma;
-    font-size: 16px;
-    line-height: 18px;
-  }
-
-}
-
-.btn_buy__send {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 100%;
-  color: #fff;
-  background-color: $color_blue;
-
-  &:hover {
-    background-color: $color_blue2;
+  &:hover,
+  &:focus{
+    background-color: $color_blue_active;
   }
 }
 
-.icon_buy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  vertical-align: middle;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  background: url("../image/buy.svg") 50% 50% no-repeat;
-  background-size: cover;
-  z-index: 4;
+.icon-buyOneClick{
+  &:after{
+    position: absolute;
+    right: 32px;
+    top: 0;
+    font-size: 28px;
+    content: "\f06b";
+    font-family:$FontAwesom;
+    color: inherit;
+  }
 }
+
+// Временно не надо
+//.buy-one-click {
+//  padding-top: 13px;
+//}
+//
+//.bl_buyOneClick__text {
+//
+//  color: $color_grey2;
+//  font-family: $TahomaBold;
+//  font-size: 16px;
+//}
+//
+//.btn_buy__overflow {
+//  position: relative;
+//  border: 1px solid $color_blue;
+//  box-sizing: border-box;
+//  margin: 0 auto;
+//  width: 250px;
+//  height: 50px;
+//  overflow: hidden;
+//  border-radius: 24px;
+//}
+//
+//.btn_buy__input {
+//  width: 100%;
+//  height: 100%;
+//  outline: none;
+//  border: none;
+//  text-indent: 25px;
+//
+//  &::placeholder {
+//    text-indent: 25px;
+//    color: #c5c5c5;
+//    font-family: $Tahoma;
+//    font-size: 16px;
+//    line-height: 18px;
+//  }
+//
+//}
+//
+//.btn_buy__send {
+//  position: absolute;
+//  top: 0;
+//  right: 0;
+//  width: 50px;
+//  height: 100%;
+//  color: #fff;
+//  background-color: $color_blue;
+//
+//  &:hover {
+//    background-color: $color_blue2;
+//  }
+//}
+//
+//.icon_buy {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  vertical-align: middle;
+//  transform: translate(-50%, -50%);
+//  width: 20px;
+//  height: 20px;
+//  background: url("../image/buy.svg") 50% 50% no-repeat;
+//  background-size: cover;
+//  z-index: 4;
+//}
+
+
+//////////////////////
 
 .bl_productDelivery {
 
@@ -2393,7 +2425,8 @@ li.inf_product__item.inf_product__item_correctForThree {
   margin-top: 4px;
 }
 
-.bl_filters__allFilters .btn-danger {
+.bl_filters__allFilters .btn {
+  padding: 1px 4px;
   background-color: $color_blue;
   border-color: $color_blueDark;
 }
@@ -2601,9 +2634,13 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .view_grid__STYLE .bl_fullProducts__item {
-
-  height: 497px;
+  min-height: 497px;
   max-width: 31.8%;
+  &:hover{
+    height: auto !important;
+    overflow: visible;
+    box-shadow: 0 10px 10px 0 rgba(1, 96, 172, 0.2);
+  }
 }
 
 .bl_products {
@@ -2622,7 +2659,8 @@ li.inf_product__item.inf_product__item_correctForThree {
   min-height: 380px; ///////////////
 
   //padding: 16px 20px 23px 20px;
-  padding: 16px 0 23px;
+  //padding: 16px 0 23px;
+  padding: 16px 0 0;
 
   margin: 0  0 10px 10px;
 
@@ -2632,11 +2670,6 @@ li.inf_product__item.inf_product__item_correctForThree {
   box-sizing: border-box;
   overflow: hidden;
 }
-
-//.bl_fullProducts__item_border {
-//  border-right: 1px solid $color_lightGrey;
-//  border-bottom: 1px solid $color_lightGrey;
-//}
 
 .bl_fullProducts__item:hover,
 .product_sliderCart__item:hover {
@@ -2706,6 +2739,27 @@ li.inf_product__item.inf_product__item_correctForThree {
   font-size: 24px;
 }
 
+
+
+.bl_fullProducts__characteristics {
+  position: absolute;
+  display: inline-block;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  padding-left: 6px;
+  z-index: 10;
+  box-shadow: 0 10px 10px 0 rgba(1, 96, 172, 0.2);
+}
+
+
+
+
+
+
 //////  LIST VIEW
 
 .view_list__STYLE .bl_fullProducts__item {
@@ -2761,8 +2815,18 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .view_list__STYLE .bl_fullProducts__listStyle {
-  max-width: 250px;
+  display: inline-block;
+  width: 100%;
+  max-width: initial;
 }
+
+.view_list__STYLE .bl_fullProducts__characteristics{
+  position: relative;
+  width: 100%;
+  box-shadow: none;
+}
+
+
 
 .view_list__STYLE .button_buy {
   margin-top: 16px;
@@ -2909,9 +2973,9 @@ li.inf_product__item.inf_product__item_correctForThree {
   color: $color_red;
 }
 
-/// success Buying
+/// message success
 
-.bl_successBuying {
+.bl_messageSuccess {
   position: fixed;
   width: 300px;
   min-height: 50px;
@@ -2926,7 +2990,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   z-index: 1080;
 }
 
-.bl_successBuying__text {
+.bl_messageSuccess__text {
   position: relative;
   margin-top: 10px;
   font-size: 16px;
@@ -2944,9 +3008,10 @@ li.inf_product__item.inf_product__item_correctForThree {
   }
 }
 
-.bl_successBuying__close,
+.bl_messageSuccess__close,
 .bl_map__close,
-.bl_callback__close {
+.bl_callback__close,
+.miniCallBack__close{
   position: absolute;
   top: -8px;
   right: -4px;
@@ -3129,7 +3194,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 .bl_receiver,
 .bl_deliveryMethod {
-  margin-top: 32px;
+  margin-top: 20px;
   padding: 10px 65px;
   height: 100%;
   min-height: 500px;
@@ -3515,11 +3580,23 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 // COUPONE
 
-.coupon-block-cart {
-  background-color: #fff;
-  padding-top: 15px;
+.button_discount__full{
+  display: block;
+}
+.button_discount{
   margin-top: 20px;
-  padding-bottom: 28px;
+  min-height: 30px;
+  color: #fff;
+  padding: 6px 43px;
+  font-size: 20px;
+  background-color: $color_blue;
+  &:hover{
+    background-color: #157dd0;
+  }
+}
+.coupon-block-cart {
+  padding-top: 6px;
+  margin-top: 20px;
 }
 
 .coupon-block__fullBlock {
@@ -4059,6 +4136,71 @@ li.inf_product__item.inf_product__item_correctForThree {
   left: 62px;
   color: $color_blue;
   transition: all .2s;
+}
+
+////// MINI CallBack
+
+
+// CALLBACK
+
+.btn_miniCallBack{
+  float: right;
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
+  background:none;
+  &:hover,
+  &:focus{
+    text-decoration: underline;
+  }
+}
+
+.bl_miniCallBack {
+  position: fixed;
+  width: 310px;
+  min-height: 150px;
+  padding: 15px 10px;
+  top: 35%;
+  left: calc(50% - 150px);
+
+  background-color: #fff;
+  border: 2px solid $color_blue;
+  text-align: center;
+
+  z-index: 1080;
+}
+
+
+.bl_miniCallBack__input {
+  border: 1px solid $color_blue;
+
+  &:focus {
+    border-color: $color_blue2;
+  }
+
+  &::placeholder {
+    //text-indent: 20px;
+    text-align: center;
+  }
+}
+
+.bl_miniCallBack__error {
+  display: block;
+  min-height: 20px;
+}
+
+.miniCallBack__submit {
+  margin: 5px 0;
+  color: #fff;
+  padding: 5px 10px;
+  background-color: $color_blue;
+
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    background-color: $color_blue2;
+  }
 }
 
 // COMPLEX Product
