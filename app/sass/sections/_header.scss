@@ -301,7 +301,7 @@ $marginTopItem: 16px;
   background-color: #fff;
   border: 1px solid $color_grey3;
   border-radius: 20px;
-  padding-right: 20px;
+  padding-right: 36px;
   outline: none;
   text-indent: 15px;
 
@@ -498,6 +498,7 @@ $marginTopItem2: 22px;
   text-transform: uppercase;
   border: 1px solid #fff;
   font-size: 13px;
+  z-index:3;
 }
 
 
