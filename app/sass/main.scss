@@ -2531,7 +2531,8 @@ li.inf_product__item.inf_product__item_correctForThree {
 .bl_filters__allFilters .noUi-connect {
 
   height: 9px;
-  background-color: #e7e7e7;
+  //background-color: #e7e7e7;
+  background-color: $color_blue;
 }
 
 .bl_filters__allFilters .noUi-horizontal .noUi-handle {
@@ -2541,10 +2542,10 @@ li.inf_product__item.inf_product__item_correctForThree {
 .bl_filters__allFilters .noUi-horizontal .noUi-handle {
   width: 23px;
   height: 23px;
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.17);
-  border: 2px solid #cadded;
-  background: $color_blue linear-gradient(to top, $color_blue 0%, #1d82d3 100%);
+  //border-radius: 50%;
+  //box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.17);
+  //border: 2px solid #cadded;
+  background: $color_blue;
   cursor: pointer;
 }
 
@@ -2769,6 +2770,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   min-height: 497px;
   max-width: 31.8%;
   &:hover{
+    border: 1px solid $color_blue;
     height: auto !important;
     overflow: visible;
     box-shadow: 0 10px 10px 0 rgba(1, 96, 172, 0.2);
@@ -2877,13 +2879,16 @@ li.inf_product__item.inf_product__item_correctForThree {
   position: absolute;
   display: inline-block;
   top: calc(100% + 10px);
-  left: 0;
-  width: 100%;
+  left: -1px;
+  width: calc(100% + 2px);
   background-color: #fff;
   padding-top: 15px;
   padding-bottom: 10px;
   padding-left: 6px;
   z-index: 10;
+  border: 1px solid $color_blue;
+  box-sizing: border-box;
+  border-top-style: none;
   box-shadow: 0 10px 10px 0 rgba(1, 96, 172, 0.2);
 }
 
@@ -2955,6 +2960,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 .view_list__STYLE .bl_fullProducts__characteristics{
   position: relative;
   width: 100%;
+  border: none;
   box-shadow: none;
 }
 
