@@ -1747,32 +1747,34 @@ $minProductHeight: 610px; /////////////////////////////////
 }
 
 .button_buyOneClick{
-  position: relative;
-  background-color: $color_blue;
-  width: 250px;
-  height: 50px;
-  color: #fff;
-  overflow: hidden;
-  border-radius: 24px;
-  line-height: 50px;
+  //position: relative;
+  //background-color: $color_blue;
+  //width: 250px;
+  //height: 50px;
+  color: $color_blue;
+  background: none;
+  //overflow: hidden;
+  //border-radius: 24px;
+  //line-height: 50px;
 
   &:hover,
   &:focus{
-    background-color: $color_blue_active;
+   color: $color_blue_active;
+    text-decoration: underline;
   }
 }
 
-.icon-buyOneClick{
-  &:after{
-    position: absolute;
-    right: 32px;
-    top: 0;
-    font-size: 28px;
-    content: "\f06b";
-    font-family:$FontAwesom;
-    color: inherit;
-  }
-}
+//.icon-buyOneClick{
+//  &:after{
+//    position: absolute;
+//    right: 32px;
+//    top: 0;
+//    font-size: 28px;
+//    content: "\f06b";
+//    font-family:$FontAwesom;
+//    color: inherit;
+//  }
+//}
 // Временно не надо
 //.buy-one-click {
 //  padding-top: 13px;

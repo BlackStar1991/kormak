@@ -9,7 +9,7 @@ var gulp = require("gulp"),                             // gulp core
     uglify = require('gulp-uglify'),                    // uglifies the js
     rename = require('gulp-rename'),                    // rename files
     useref = require('gulp-useref'),                    // parse build blocks in HTML files to replace references
-    minifyCss = require('gulp-minify-css'),             // minify the css files
+    minifyCss = require('gulp-clean-css'),             // minify the css files
     autoprefixer = require('gulp-autoprefixer'),        // sets missing browserprefixes
     browserSync = require('browser-sync').create(),     // inject code to all devices
     imagemin = require('gulp-imagemin'),                // minify images
@@ -126,6 +126,10 @@ gulp.task('extrass', function () {
         '!app/*.html'                                   // except '.html'
     ]).pipe(gulp.dest('dist'));                         // where to put the files
 });
+////////////////////
+
+
+
 
 
 /*********************************************/
@@ -151,6 +155,7 @@ gulp.task('build', ['clean'], function () {
         .pipe(useref())
         .pipe(gulp.dest('./dist'));                     // where to put the files
 });
+
 
 /*********************************************/
 /*FUNCTIONS*/

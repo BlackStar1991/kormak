@@ -2693,25 +2693,11 @@ textarea::-moz-focus-inner {
   text-align: center; }
 
 .button_buyOneClick {
-  position: relative;
-  background-color: #1162ab;
-  width: 250px;
-  height: 50px;
-  color: #fff;
-  overflow: hidden;
-  border-radius: 24px;
-  line-height: 50px; }
+  color: #1162ab;
+  background: none; }
   .button_buyOneClick:hover, .button_buyOneClick:focus {
-    background-color: #157dd0; }
-
-.icon-buyOneClick:after {
-  position: absolute;
-  right: 32px;
-  top: 0;
-  font-size: 28px;
-  content: "\f06b";
-  font-family: "FontAwesome";
-  color: inherit; }
+    color: #157dd0;
+    text-decoration: underline; }
 
 .bl_productDelivery {
   width: 100%;
