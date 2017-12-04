@@ -2602,7 +2602,16 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 .bl_subCategories__item {
   min-height: 208px;
+  max-width: 31.8%;
   box-sizing: border-box;
+  padding: 16px 0 0;
+  margin: 0 0 10px 10px;
+  border: 1px solid #f1f1f1;
+  &:hover,
+  &:focus{
+    box-shadow: 0 10px 10px 0 rgba(1,96,172,.2);
+    border: 1px solid #1162ab;
+  }
 }
 
 .bl_subCategories__link {
@@ -2618,8 +2627,8 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_subCategories__image {
-  margin: 4px auto 0;
-  height: 120px; ////////
+  width: auto;
+  margin: 0 auto;
   display: block;
 }
 
@@ -2627,7 +2636,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 
   color: $color_blue;
   font-family: $Tahoma;
-  font-size: 14px;
+  font-size: 19px;
   line-height: 18px;
 
   transition: 0.2s color;
