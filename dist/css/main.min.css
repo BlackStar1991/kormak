@@ -1501,7 +1501,7 @@ textarea::-moz-focus-inner {
   width: 100%;
   margin-top: 20px;
   padding: 15px;
-  background: #fff url("/image/promo_bg.png") 50% 50% no-repeat;
+  background: #fff url("../image/promo_bg.png") 50% 50% no-repeat;
   background-size: contain; }
 
 .discount_form__likeTitle {
@@ -1554,7 +1554,7 @@ textarea::-moz-focus-inner {
   height: 100px;
   width: 220px;
   display: block;
-  background: url("/image/DiscountFish.svg") 50% 50% no-repeat;
+  background: url("../image/DiscountFish.svg") 50% 50% no-repeat;
   background-size: contain; }
 
 .mainSlider__fullBlock {
@@ -1878,22 +1878,21 @@ textarea::-moz-focus-inner {
   text-overflow: ellipsis; }
 
 .product_sliderCart__price {
+  display: inline-block;
   width: 100%;
-  margin-top: 22px; }
+  max-width: 48%; }
 
 .product_sliderCart__price_oldPrice {
-  float: left;
-  text-align: left;
+  display: block;
   color: #333;
   font-family: "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 33px;
+  line-height: 10px;
   text-decoration: line-through; }
 
 .product_sliderCart__price_newPrice {
-  float: right;
-  text-align: right;
+  display: block;
   color: #333;
   font-family: "TahomaBold", sans-serif;
   font-size: 24px;
@@ -1903,8 +1902,8 @@ textarea::-moz-focus-inner {
   text-align: center;
   color: #333;
   font-family: "TahomaBold", sans-serif;
-  font-size: 24px;
-  line-height: 33px; }
+  font-size: 20px;
+  line-height: 30px; }
 
 .product_sliderCart__buy {
   text-align: center;
@@ -2436,7 +2435,7 @@ textarea::-moz-focus-inner {
   display: block;
   text-align: center;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1;
   color: #333; }
   .product_info__id_text {
     text-transform: uppercase; }
@@ -2557,7 +2556,7 @@ textarea::-moz-focus-inner {
   vertical-align: top;
   margin: 0 auto;
   text-align: center;
-  width: 100px; }
+  width: 140px; }
 
 .block_quantity__full_ifWeHaveSize .block_quantity {
   display: inline-block;
@@ -2676,9 +2675,11 @@ textarea::-moz-focus-inner {
 .view_grid__STYLE .button_buy {
   display: inline-block; }
 
-.view_grid__STYLE .bl_fullProducts__item .button_buy {
+.view_grid__STYLE .bl_fullProducts__item .button_buy,
+.owl-item .button_buy {
+  display: inline-block;
   max-width: 48%;
-  margin: 16px 0;
+  margin: 16px 0 0;
   line-height: 2;
   height: auto; }
 
@@ -3273,7 +3274,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
     transition: all 0.2s; }
 
 .bl_filters__allFilters .noUi-connect {
-  height: 9px;
+  height: 12px;
   background-color: #1162ab; }
 
 .bl_filters__allFilters .noUi-horizontal .noUi-handle {
@@ -3458,7 +3459,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   display: block; }
 
 .view_grid__STYLE .bl_fullProducts__item {
-  min-height: 456px;
+  min-height: 428px;
   max-width: 31.8%; }
   .view_grid__STYLE .bl_fullProducts__item:hover {
     border: 1px solid #1162ab;
