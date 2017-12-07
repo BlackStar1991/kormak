@@ -159,760 +159,1018 @@
     <div class="mainWrapper">
 
         <div class="container correct_left correct_left">
-            <div class="col-xs-12">
+            <div class="col-xs-12 hidden-xs">
                 <ul class="bl_breadcrumbs">
                     <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Главная</a></li>
                     <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link" href="#">Название категории</a>
                     </li>
-                    <li class="bl_breadcrumbs__item"><a class="bl_breadcrumbs__link bl_breadcrumbs__active"
-                                                        href="#">Название товара</a></li>
+                    <li class="bl_breadcrumbs__item"><p class="bl_breadcrumbs__link bl_breadcrumbs__active"
+                                                        href="#">Название подкатегории</p></li>
                 </ul>
             </div>
-        </div>
-
-        <div class="container clearfix block_white">
 
 
-            <div class="bl_productName">
-                <h2 class="bl_fullProduct__title">712001-S Костюм зимний Norfin Hunting Wild Passion (-30°)</h2>
-                <div class="bl_raiting">
-                    <button class="bl_raiting__button">Оценить товар</button>
+            <div class="col-xs-12 col-md-3">
 
-                    <input class="bl_raiting__chackbox" id="raiting5" type="radio" name="raiting" value="5">
-                    <label class="bl_raiting__label" for="raiting5"></label>
-                    <input class="bl_raiting__chackbox" id="raiting4" type="radio" name="raiting" value="4">
-                    <label class="bl_raiting__label" for="raiting4"></label>
-                    <input class="bl_raiting__chackbox" id="raiting3" type="radio" name="raiting" value="3">
-                    <label class="bl_raiting__label" for="raiting3"></label>
-                    <input class="bl_raiting__chackbox" id="raiting2" type="radio" name="raiting" value="2">
-                    <label class="bl_raiting__label" for="raiting2"></label>
-                    <input class="bl_raiting__chackbox" id="raiting1" type="radio" name="raiting" value="1">
-                    <label class="bl_raiting__label" for="raiting1"></label>
-                </div>
-            </div>
-
-
-            <div class="col-md-7 block_white">
-
-                <div class="product_image">
-                    <div class="bl_wrappen">
-
-                        <div class="product_image__scaleIcon"></div>
-                        <div class="product_image__mainBlock">
-                            <a class="fancybox-animated" href="image/Products/product_2-big.jpg" title="">
-                                <!-- фото товара большого размера для fancybox. должны лежать в той же папке что и обычные фото, иначе JS не сработает  -->
-                                <img class="product_image__img" src="image/Products/product_2.jpg" alt="" title="">
-                            </a>
-
-                        </div>
-
-                        <!-- В слайдер должны добавлятся полномасштабные фото! -->
-                        <ul class="product_image__slider owl-carousel">
-                            <li class="product_image__item">
-                                <img class="product_image__sliderImg" src="image/Products/product_1.jpg"
-                                     alt="">
-                            </li>
-                            <li class="product_image__item">
-                                <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
-                                     alt="">
-                            </li>
-                            <li class="product_image__item">
-                                <img class="product_image__sliderImg" src="image/Products/product_small_2.jpg"
-                                     alt="">
-                            </li>
-                            <li class="product_image__item">
-                                <img class="product_image__sliderImg" src="image/Products/product_2.jpg"
-                                     alt="">
-                            </li>
-                        </ul>
-
-                    </div>
+                <div class="rubric__title bl_category__allCategories block_white">
+                    <button class="rubric__title_button rubric__title_button__categories"></button>
+                    <h2 class="rubric__title_text  rubric__title_margin rubric__title_catalog"> Каталог товаров: </h2>
                 </div>
 
-            </div>
-            <div class="col-md-5 block_white">
-                <div class="product_info">
-                    <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
-                    </p>
-                    <p class="product_info__productAvailability">На складе:
-                        <span class="product_info__productAvailability__yes">есть в наличии</span>
-                        <!--  выводи если товар есть -->
-                        <span class="product_info__productAvailability__no hidden">временно нету</span>
-                        <!--  выводи если товара нет -->
-                    </p>
+                <div class="bl_filters block_white">
 
-                    <div class="bl_price">
-                        <span class="bl_price__newPrice hidden">10 328 грн</span>
-                        <span class="bl_price__oldPrice hidden">11 138 грн</span>
-
-                        <span class="bl_price__normal">11 138 грн</span>  <!-- выводить когда нету акций -->
-                    </div>
-                    <div class="product_size">
-                        <p class="product_size__text product_size__text_min">Размер:</p>
-                        <label class="product_size__label">
-                            <input class="product_size__input" id="size_s" type="radio" name="productSize" value="">
-                            <span class="product_size__text">s</span>
-                        </label>
-                        <label class="product_size__label">
-                            <input class="product_size__input" id="size_m" type="radio" name="productSize" value="">
-                            <span class="product_size__text">m</span>
-                        </label>
-                        <label class="product_size__label">
-                            <input class="product_size__input" id="size_l" type="radio" name="productSize" value="">
-                            <span class="product_size__text">l</span>
-                        </label>
-                        <label class="product_size__label">
-                            <input class="product_size__input" id="size_xl" type="radio" name="productSize"
-                                   value="">
-                            <span class="product_size__text">xl</span>
-                        </label>
-                        <label class="product_size__label">
-                            <input class="product_size__input" id="size_xxl" type="radio" name="productSize"
-                                   value="">
-                            <span class="product_size__text">xxl</span>
-                        </label>
-                    </div>
-                    <div class="block_quantity">
-                        <p class="block_quantity__text">Количество:</p>
-                        <div class="block_quantity__box">
-                            <button class="block_quantity__minus"><span>-</span></button>
-                            <input class="block_quantity__input" type="text" value="1">
-                            <button class="block_quantity__plus"><span>+</span></button>
-                        </div>
-                    </div>
-                    <div class="bl_description">
-                        <p class="bl_description__text">Краткое описание:</p>
-
-                        <div class="bl_minInformationAboutProduct">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                Consequuntur doloribus eius enim, eos expedita incidunt laborum
-                                nesciunt nobis odit saepe.
-                            </p>
-                        </div>
-
-
-                        <div class="bl_description__box">
-                            <!-- количество div зависит от количества input class="product_size__input"  JS //// Short description -->
-                            <div class="product_sizeDescription">
-
-                                <p>sssssssssssssssss s sssss s s s s ss s s sssssssssss
-                                    sssssssssssssssssssss s ssssssssssssss s s ss sssssssssssssss s ssss s ss
-                                </p>
-                            </div>
-                            <div class="product_sizeDescription">
-                                <p>aaaaaaaaaaaaa aaaaaaaa a a aaaaaaaaaaaaaa aaaaaaa Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit.
-                                    Ad aperiam eum fugiat nulla tempore. Dolore fugiat necessitatibus officiis
-                                    veritatis. A assumenda, eos id ipsam iure magni
-                                    officiis reiciendis totam voluptate?
-                                </p>
-                            </div>
-                            <div class="product_sizeDescription">
-                                <p>L L L L fdfdfds d fds fdsf sdf sdf df sdf Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Delectus deserunt, natus non perspiciatis qui suscipit. s</p>
-                            </div>
-                            <div class="product_sizeDescription">
-                                <p> xl xl xl xl lx lx lxl xl lxl lx lx Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Asperiores atque consectetur deserunt expedita
-                                    quibusdam? Magni?</p>
-                            </div>
-                            <div class="product_sizeDescription">
-                                <p>XXL XLXLLL xx x xxxxxxxxxxx x x x xxxxxxxxxxxx Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. Adipisci fuga laudantium praesentium qui unde,
-                                    veniam.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="button_buy"><span class="button_buy__text">Купить</span></button>
-
-
-                    <div class="bl_buyOneClick">
-                        <p class="bl_buyOneClick__text">
-                            Купить в 1 клик:
-                        </p>
-                        <div class="btn_buy__overflow">
-                            <input class="btn_buy__input" type="tel" placeholder="+38 (0XX) XXX-XX-XX">
-                            <button class="btn_buy__send">
-                                <i class="icon_buy"></i>
-                            </button>
-                        </div>
-                        <span class="error_text hidden">Введите, пожалуйста, номер своего мобильного телефона</span>
-
-                    </div>
-
-                    <div class="bl_productDelivery">
-                        <p class="bl_productDelivery__text bl_productDelivery__text_mainText">Способы
-                            доставки:</p>
-                        <p class="bl_productDelivery__text">Самовывоз: <span class="color_red">БЕСПЛАТНО</span>
-                        </p>
-                        <p class="bl_productDelivery__text">Курьером: <span class="color_red">БЕСПЛАТНО</span>
-                        </p>
-                        <p class="bl_productDelivery__text">
-                            <span class="bl_productDelivery__text_valueDelivery">Пункт «Нова Пошта»:</span>
-                            <span
-                                    class="bl_productDelivery__text_simplePrice">35 грн</span> <span
-                                class="bl_productDelivery__text_city">(Киев)</span></p>
-                    </div>
-
-
-                </div>
-
-
-            </div>
-        </div>
-
-        <div class="container correct_right correct_left">
-            <div class="col-xs-12 correct_left correct_right">
-
-                <div class="bl_productAdvantages">
-                    <div class="bl_productAdvantagesDelivery">
-                        <div class="bl_productAdvantagesDelivery__icon-delivery"></div>
-                        <p class="bl_advantages__title">
-                            Условия доставки
-                        </p>
-                        <div class="bl_advantages__allVariants">
-                            <p class="bl_advantages__text">
-                                <span>Доставка по Украине — 35 грн.</span>
-                                <span>От 600 грн — бесплатно.</span>
-                            </p>
-
-                            <p class="bl_advantages__text">
-                                <span>Доставка по Киеву — 50 грн.</span>
-                                <span>От 600 грн — бесплатно</span>
-                            </p>
-                            <a class="bl_advantages__link" href="#">Подробнее о доставке</a>
-                            <!-- отсылает на страницу доставки -->
-                        </div>
-                    </div>
-
-                    <div class="bl_productAdvantagesPayment">
-                        <div class="bl_productAdvantagesPayment__icon-cart"></div>
-                        <p class="bl_advantages__title">
-                            Оплата при получении
-                        </p>
-                        <div class="bl_advantages__allVariants">
-                            <p class="bl_advantages__text">Оплата производится наличными при получении товара.</p>
-                            <p class="bl_advantages__text">Также у нас предусмотрен безналичный расчет.</p>
-                        </div>
-
-                    </div>
-
-                    <div class="bl_productAdvantagesExchange">
-                        <div class="bl_productAdvantagesExchange__icon-return"></div>
-                        <p class="bl_advantages__title">
-                            Возврат и обмен
-                        </p>
-                        <div class="bl_advantages__allVariants">
-                            <p class="bl_advantages__text">Если вас не устроил товар вы можете вернуть деньги или
-                                обменять его.</p>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-xs-12 correct_left correct_right">
-                <div class="inf_product">
-
-                    <ul class="nav nav-tabs inf_product__tabs">
-                        <li class="inf_product__item active ">
-                            <a href="#tab-description" data-toggle="tab">Описание</a>
-                        </li>
-
-                        <li class="inf_product__item  ">
-                            <a href="#tab-specification" data-toggle="tab">Характеристики</a>
-                        </li>
-
-                        <li class="inf_product__item  ">   <!-- Выводить только если для товара есть видио -->
-                            <a href="#tab-video" data-toggle="tab">Видео</a>
-                        </li>
-                        <!-- end -->
-
-                        <li class="inf_product__item ">
-                            <a href="#tab-review" data-toggle="tab">Отзывы</a>
-                        </li>
+                    <h3 class="bl_filters__caterogyName decor_triangle code_sliderName">Удилища</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <!-- списки с классами code_sliderList должны иметь классы hidden -->
+                        <li class="bl_filters__item"><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Удилища1</h4></li>
+                        <li class="bl_filters__item"><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Удилища2</h4></li>
                     </ul>
 
-                    <div class="tab-content">
-                        <div class="tab-pane active" id="tab-description">
-                            <ul>
-                                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                    irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                    pariatur.
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Катушки</h3>
+                    <ul class="bl_filters__subList code_sliderList  hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Безинерционные</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">С
+                            бейтраннером</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Мультипликаторные</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Нахлыстовые</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Инерционная</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Матчевые</h4></li>
+                    </ul>
+
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Лески и шнуры</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">Лески и
+                            шнуры1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">Лески и
+                            шнуры2</h4></li>
+                    </ul>
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Приманки</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Приманки1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Приманки2</h4></li>
+                    </ul>
+
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Монтаж</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Монтаж1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Монтаж2</h4></li>
+                    </ul>
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Аксессуары</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Аксессуары1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Аксессуары2</h4></li>
+                    </ul>
+
+                    <h3 class="bl_filters__caterogyName decor_triangle code_sliderName">Хранение и транспортировка</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">Хранение
+                            и транспортировка1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">Хранение
+                            и транспортировка2</h4></li>
+                    </ul>
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Насадки</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Насадки1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Насадки2</h4></li>
+                    </ul>
+
+
+                    <h3 class="bl_filters__caterogyName decor_triangle code_sliderName">Прикормки</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Прикормки1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Прикормки2</h4></li>
+                    </ul>
+
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Зимняя рыбалка</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">Зимняя
+                            рыбалка1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">Зимняя
+                            рыбалка2</h4></li>
+                    </ul>
+
+
+                    <h3 class="bl_filters__caterogyName decor_triangle  code_sliderName">Кемпинг</h3>
+                    <ul class="bl_filters__subList code_sliderList hidden">
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Кемпинг1</h4></li>
+                        <li class="bl_filters__item "><h4 class="bl_filters__caterogyName bl_filters__subName">
+                            Кемпинг2</h4></li>
+                    </ul>
+
+
+                </div>
+
+
+                <div class="bl_filters__allFilters block_white">
+                    <div class="bl_filters__allFilters_wrapper">
+
+                        <div class="rubric__title bl_category__filters">
+                            <button class="rubric__title_button rubric__title_button__filters visible-xs visible-sm"></button>
+                            <h2 class="rubric__title_text rubric__title_margin__filters">
+                                Показать фильтры</h2>
+                        </div>
+
+
+                        <!-- БЛОК С ФИЛЬТРАМИ -->
+
+                        <div class="bl_filters__productsFilters">
+
+                            <p class="filter_name decor_triangle decor_leftTriangle decor_leftTriangle__active code_filterName">
+                                Цена</p>
+                            <label class="bl_filters__fullRubric bl_filters__price">
+
+                                <input class="bl_filters__minPrice" type="text">
+                                <span> - </span>
+                                <input class="bl_filters__maxPrice" type="text">
+                                <span class="text_currency"> ГРН </span>
+
+                                <input type="range" min="0" max="100" step="10">
+                            </label>
+                            <p class="filter_name decor_triangle  decor_leftTriangle decor_leftTriangle__active code_filterName">
+                                Размеры (см)</p>
+                            <ul class="bl_filters__fullRubric bl_filters__size ">
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">16x19</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">20x29</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">36x49</span>
+                                    </label>
                                 </li>
 
-                                <li> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+
+                            </ul>
+                            <p class="filter_name decor_triangle decor_leftTriangle code_filterName">Производитель</p>
+                            <ul class="bl_filters__fullRubric bl_filters__brand hidden">
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">RYOBI</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Team Mosella</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">House of Hardy</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Cabelas Fishing</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Climax</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Cortland</span>
+                                    </label>
                                 </li>
 
-                                <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                    quaerat voluptatem.
-                                </li>
 
-                                <li> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                            </ul>
+                            <p class="filter_name decor_triangle decor_leftTriangle decor_leftTriangle__active code_filterName">
+                                Цвет</p>
+                            <ul class="bl_filters__fullRubric bl_filters__colors">
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Красный</span>
+                                    </label>
                                 </li>
-
-                                <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                                    quaerat voluptatem.
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Чёрный</span>
+                                    </label>
+                                </li>
+                                <li class="filters_item">
+                                    <label class="bl_filter__label">
+                                        <input class="bl_filter__checkbox" type="checkbox">
+                                        <span class="filter_text decor_lickCheckbox">Зелёный</span>
+                                    </label>
                                 </li>
                             </ul>
-
-
                         </div>
 
-
-                        <div class="tab-pane " id="tab-specification">
-                            <table class="table  table-bordered">
-                                <tbody>
-                                <tr>
-                                    <td>Бренд:</td>
-                                    <td>Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                                        aliquid aperiam asperiores culpa delectus deleniti eligendi eum, hic, incidunt
-                                        ipsa iure iusto libero molestiae natus nemo neque, non numquam obcaecati
-                                        repellat soluta ullam velit voluptate voluptates? Ipsam recusandae rem tempore.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Серия:</td>
-                                    <td>Lorem ipsum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-                                        asperiores assumenda cumque earum eligendi eveniet molestias officiis quae quasi
-                                        tempora.
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Длина:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Ширина:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Высота:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Толщина:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Материал:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Цвет:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Объем:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Бренд:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Серия:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Длина:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                <tr>
-                                    <td>Ширина:</td>
-                                    <td>Lorem ipsum.</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-
-                        <div class="tab-pane " id="tab-video">   <!-- Выводить только если для товара есть видио -->
-                            <div class="bl_video">
-
-                                <p class="bl_video__text">Видио о товаре</p>
-                                <h2 class="bl_video__text">Костюм зимний Norfin Hunting Wild Passion</h2>
-
-                                <div class="bl_video_wrapper">
-                                    <iframe src="https://www.youtube.com/embed/4IqjTRwL0Z8" frameborder="0"
-                                            allowfullscreen></iframe>  <!-- видио кото -->
-                                </div>
-
-
-                            </div>
-                        </div>
-
-                        <!-- end -->
-
-                        <div class="tab-pane" id="tab-review">
-
-                            <div class="review_allReview">
-
-                                <div class="review_item">
-                                    <p class="review_item__userName">User Name</p>
-                                    <time class="review_item__time">01.08.2017</time>
-                                    <p class="review_item__raiting"><span>Рейтинг пользователя</span>
-                                        <span>4</span><span>/5</span></p>
-                                    <p class="review_item__fullReview">
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur eos laborum magni quam quod ratione repudiandae suscipit tempora veniam! Aspernatur, atque corporis dignissimos minima nam officia provident quasi quia!</span>
-                                        <span>Alias, amet autem cum cumque delectus, deleniti dignissimos doloribus dolorum facilis illum incidunt iure iusto, laboriosam laborum maxime minus natus necessitatibus perspiciatis quaerat quis repellendus saepe sed similique suscipit unde!</span>
-                                        <span>Assumenda at consectetur cumque cupiditate, dicta obcaecati quas qui ut. Ad consequuntur culpa cumque deleniti, dolores dolorum, harum id inventore nihil porro praesentium quae sunt vel! Atque fugiat possimus similique.</span>
-                                        <span>Accusamus dolorem earum eos error exercitationem, fugiat, id incidunt laudantium nobis obcaecati provident quae quasi quo similique veniam? Aliquam aliquid animi autem dolore dolorem, eos error facere minima odio sit!</span>
-                                        <span>At atque cum facilis optio quia quibusdam quis recusandae! Adipisci architecto consequatur debitis dicta dolore, enim esse est eum, iure labore laborum necessitatibus obcaecati quibusdam quos repudiandae saepe sit unde.</span>
-                                        <span>Ab, aperiam autem dolor dolorem hic iure iusto nobis nulla voluptas? Eligendi esse, eum ipsa laudantium maxime modi non nulla perspiciatis quae, quibusdam temporibus velit veritatis voluptatem! Asperiores, repellat, tempore!</span>
-                                        <span>Aliquam animi aut blanditiis culpa delectus ea esse facilis hic iste laboriosam maiores minus molestiae neque nihil odit quasi quia, quis quisquam ratione repudiandae sapiente sed sunt suscipit veniam veritatis.</span>
-                                    </p>
-                                </div>
-
-                                <div class="review_item">
-                                    <p class="review_item__userName">User Name</p>
-                                    <time class="review_item__time">01.08.2017</time>
-                                    <p class="review_item__raiting"><span>Рейтинг пользователя</span>
-                                        <span>1</span><span>/5</span></p>
-                                    <p class="review_item__fullReview">
-                                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consectetur eos laborum magni quam quod ratione repudiandae suscipit tempora veniam! Aspernatur, atque corporis dignissimos minima nam officia provident quasi quia!</span>
-                                        <span>Alias, amet autem cum cumque delectus, deleniti dignissimos doloribus dolorum facilis illum incidunt iure iusto, laboriosam laborum maxime minus natus necessitatibus perspiciatis quaerat quis repellendus saepe sed similique suscipit unde!</span>
-                                        <span>Assumenda at consectetur cumque cupiditate, dicta obcaecati quas qui ut. Ad consequuntur culpa cumque deleniti, dolores dolorum, harum id inventore nihil porro praesentium quae sunt vel! Atque fugiat possimus similique.</span>
-                                        <span>Accusamus dolorem earum eos error exercitationem, fugiat, id incidunt laudantium nobis obcaecati provident quae quasi quo similique veniam? Aliquam aliquid animi autem dolore dolorem, eos error facere minima odio sit!</span>
-                                        <span>At atque cum facilis optio quia quibusdam quis recusandae! Adipisci architecto consequatur debitis dicta dolore, enim esse est eum, iure labore laborum necessitatibus obcaecati quibusdam quos repudiandae saepe sit unde.</span>
-                                        <span>Ab, aperiam autem dolor dolorem hic iure iusto nobis nulla voluptas? Eligendi esse, eum ipsa laudantium maxime modi non nulla perspiciatis quae, quibusdam temporibus velit veritatis voluptatem! Asperiores, repellat, tempore!</span>
-                                        <span>Aliquam animi aut blanditiis culpa delectus ea esse facilis hic iste laboriosam maiores minus molestiae neque nihil odit quasi quia, quis quisquam ratione repudiandae sapiente sed sunt suscipit veniam veritatis.</span>
-                                    </p>
-                                </div>
-                            </div>
-                            <form class="form-horizontal personal-form-review" id="form-review">
-                                <div id="review"><p>У данного товара пока нету отзывов, будь первым</p></div>
-                                <div class="alert alert-danger"><i class="fa fa-exclamation-circle"></i> Пожалуйста,
-                                    выберите оценку товара!
-                                </div>
-                                <div class="col-xs-12 review_product">
-                                    <p class="review_product__title">Написать отзыв о</p>
-                                    <h2 class="review_product__title review_product__title__bold">Костюм зимний Norfin
-                                        Hunting Wild Passion (-30°)</h2>
-
-                                    <p>Оставить отзыв</p>
-                                </div>
-
-                                <div class="form-group required review_form clearfix">
-                                    <div class="col-sm-6">
-                                        <input class="form-control review_name" type="text" name="name" value=""
-                                               placeholder="Ваше имя:">
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="bl_review__raiting">
-                                            <span class="review_text">Оценить товар</span>
-
-                                            <div class="bl_review__raitingFull">
-                                                <input class="bl_raiting__chackbox" id="review_star5" type="radio"
-                                                       name="raiting" value="5">
-                                                <label class="bl_raiting__label" for="review_star5"></label>
-
-                                                <input class="bl_raiting__chackbox" id="review_star4" type="radio"
-                                                       name="raiting" value="4">
-                                                <label class="bl_raiting__label" for="review_star4"></label>
-
-                                                <input class="bl_raiting__chackbox" id="review_star3" type="radio"
-                                                       name="raiting" value="3">
-                                                <label class="bl_raiting__label" for="review_star3"></label>
-
-                                                <input class="bl_raiting__chackbox" id="review_star2" type="radio"
-                                                       name="raiting" value="2">
-                                                <label class="bl_raiting__label" for="review_star2"></label>
-
-                                                <input class="bl_raiting__chackbox" id="review_star1" type="radio"
-                                                       name="raiting" value="1">
-                                                <label class="bl_raiting__label" for="review_star1"></label>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div class="form-group required">
-                                    <div class="col-sm-12">
-                                        <textarea class="form-control review_textarea" name="text" rows="5"
-                                                  id="input-review" placeholder="Текст сообщения"></textarea>
-                                    </div>
-                                </div>
-                                <button class="button_buy clearfix" type="button" id="button-review"
-                                        data-loading-text="Загрузка...">
-                                    <span class="button_buy__text">Отправить</span>
-                                </button>
-                            </form>
-                        </div>
                     </div>
                 </div>
-                <div class="bl_withThisProductBuy">
-                    <h2 class="title_name bl_withThisProductBuy__title">С этим товаром покупают:</h2>
+            </div>
 
-                    <ul class="slider_withThisProductBuy owl-carousel">
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
+            <div class="col-xs-12 col-md-9  correct_right">
+                <div class="row">
+                    <div class="rubric__title bl_category__allCategories hidden-xs hidden-sm block_white">
+                        <h2 class="rubric__title_text  rubric__title_margin"> Катушки: </h2>
+                    </div>
 
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
 
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
+                    <div class="bl_subCategories block_white hidden-xs hidden-sm  clearfix">
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories1.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories1.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories1.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories1.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories1.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories1.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories2.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories3.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories4.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories5.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-lg-2 bl_subCategories__item">
+                            <a class="bl_subCategories__link" href="#">
+                                <img class="bl_subCategories__image" src="image/CatalogImages/subCategories6.jpg"
+                                     alt="">
+                                <h4 class="bl_subCategories__text ">
+                                    Название подкатегории
+                                </h4>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bl_catalog__fullProducts correct_left correct_right block_white">
+                        <div class="bl_view">
+                            <div class="bl_sorter">
+                                <span class="bl_view__text">Сортировка:</span>
+                                <select class="bl_sorter__select">
+                                    <option value="" selected="selected">По умолчанию</option>
+                                    <option value="">Наименование (А -&gt; Я)</option>
+                                </select>
                             </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
+                            <div class="bl_numberOfItemShow hidden-xs">
+                                <span class="bl_view__text">Выводить по:</span>
+                                <select class="bl_numberOfItemShow__select">
+                                    <option value="" selected="selected">15</option>
+                                    <option value="">30</option>
+                                    <option value="">Все</option>
+                                </select>
                             </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
 
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
+                            <div class="bl_positionSorted hidden-xs">
+                                <input id="view_columns" class="view_columns bl_positionSorted__ratio" type="radio"
+                                       name="positionSorted" value="" checked>
 
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
+                                <label class="bl_positionSorted__label code_grid" for="view_columns">
+                                    <span class="view_columns__button bl_positionSorted__button"></span>
+                                </label>
+
+
+                                <input id="view_list" class="view_list bl_positionSorted__ratio" type="radio"
+                                       name="positionSorted"
+                                       value=""  >
+
+                                <label class="bl_positionSorted__label code_list" for="view_list">
+                                    <span class="view_list__button bl_positionSorted__button"></span>
+                                </label>
                             </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
+                        </div>
 
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
+                        <div class="bl_products bl_products__border view_grid__STYLE  clearfix">  <!-- тут происходит переключение классов view_grid__STYLE  view_list__STYLE-->
 
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <!-- Лейба Хит продаж, для всех страниц-->
+                                        <div class="bl_mark bl_mark__hit">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>
+                                        </div>
+                                        <!-- -->
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#">
+                                            <h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo Diamond Troll 2</h2>
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                  <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
                             </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
 
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
 
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
+                                        <!-- Лейба Хит продаж, для всех страниц-->
+                                        <div class="bl_mark bl_mark__action">
+                                            <div class="wrapperBlock"><span class="bl_mark__text bl_mark__text_action">-50%</span></div>
+                                        </div>
+                                        <!-- -->
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <!--<span class="product_info__productAvailability__yes">есть в наличии</span>-->
+                                                <span class="product_info__productAvailability__no">нету в наличии </span>
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>
+                                                <span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>
+                                                <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
                             </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
 
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
 
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
+                                        <!-- Лейба Хит продаж, для всех страниц-->
+                                        <div class="bl_mark bl_mark__new">
+                                            <div class="wrapperBlock"><span class="bl_mark__text">new</span></div>
+                                        </div>
+                                        <!-- -->
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
                             </div>
-                        </li>
-                    </ul>
+
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6 col-xs-12 clearfix">
+                                <div class="bl_wrappen code_listView1">
+                                    <div class="bl_fullProducts__imageWrapper code_listView2">
+
+                                        <img class="bl_fullProducts__image"
+                                             src="image/Products/product_3-middle.jpg" alt="">
+                                    </div>
+                                    <div class="code_listView3 ">
+
+                                        <a class="bl_fullProducts__link" href="#"><h2 class="bl_fullProducts__title">Катушка мультипликаторная Salmo
+                                            Diamond Troll 2</h2>
+                                            <p class="bl_fullProducts__options">(485g/4,2:1/2п.)</p>
+
+                                        </a>
+
+                                        <div class="bl_fullProducts__listStyle">
+
+                                            <p class="product_info__id">Код товара: <span class="product_info__id_text">518003-L</span>
+                                            </p>
+                                            <p class="product_info__productAvailability">На складе:
+                                                <span class="product_info__productAvailability__yes">есть в наличии</span>
+                                                <!--<span class="product_info__productAvailability__no">нету в наличии </span>  Если товара нету -->
+                                            </p>
+
+                                            <p class="bl_fullProducts__price">
+
+                                                <!--<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>-->
+                                                <!--<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>-->
+                                                <span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>
+                                            </p>
+                                            <button class="button_buy">
+                                                <span class="button_buy__text">Купить</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+
+                            <!------------------------------------------------------------------------->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+
+
+                            <!--&lt;!&ndash; Лейба Хит продаж, для всех страниц&ndash;&gt;-->
+                            <!--<div class="bl_mark bl_mark__hit">-->
+                            <!--<div class="wrapperBlock"><span class="bl_mark__text">хит</span></div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; &ndash;&gt;-->
+
+
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+
+
+                            <!--&lt;!&ndash; Лейба Акции продаж, для всех страниц&ndash;&gt;-->
+                            <!--<div class="bl_mark bl_mark__action">-->
+                            <!--<div class="wrapperBlock"><span class="bl_mark__text bl_mark__text_action">-50%</span></div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; &ndash;&gt;-->
+
+
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+
+                            <!--&lt;!&ndash; Лейба NEW продаж, для всех страниц&ndash;&gt;-->
+                            <!--<div class="bl_mark bl_mark__new">-->
+                            <!--<div class="wrapperBlock"><span class="bl_mark__text bl_mark__text_new">new</span></div>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash; &ndash;&gt;-->
+
+
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="bl_fullProducts__item bl_fullProducts__item_border col-md-4 col-sm-6  col-xs-12">-->
+                            <!--<div class="bl_wrappen">-->
+                            <!--<div class="bl_fullProducts__imageWrapper">-->
+                            <!--<img class="bl_fullProducts__image"-->
+                            <!--src="image/Products/product_3-middle.jpg" alt="">-->
+                            <!--</div>-->
+                            <!--<a href="#"><h2 class="bl_fullProducts__title">Катушка Durareel Бейтраннер KY5000-->
+                            <!--1BB</h2></a>-->
+                            <!--<p class="bl_fullProducts__price">-->
+
+                            <!--&lt;!&ndash;<span class="bl_price__oldPrice bl_fullProducts__oldPrice">2034 грн.</span>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<span class="bl_price__newPrice bl_fullProducts__newPrice">100 грн.</span>&ndash;&gt;-->
+                            <!--<span class="bl_price__normal bl_fullProducts__normal">2700 грн.</span>-->
+                            <!--</p>-->
+                            <!--<button class="button_buy">-->
+                            <!--<span class="button_buy__text">Купить</span>-->
+                            <!--</button>-->
+                            <!--</div>-->
+                            <!--</div>-->
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="bl_pagination">
+                        <ul class="pagination bl_pagination__fullItems">
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__firstPage "><< Первая</a>
+                            </li>
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__arrow bl_pagination__decorLine"> &gt; </a>
+
+
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__link_number bl_pagination__link_number__active">1</a>
+                            </li>
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__link_number bl_pagination__decorLine">2</a>
+                            </li>
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__link_number bl_pagination__decorLine ">3</a>
+                            </li>
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__arrow bl_pagination__decorLine"> &gt; </a>
+                            </li>
+                            <li class="bl_pagination__item"><a href="#"
+                                                               class="bl_pagination__link bl_pagination__lastPage ">Последняя >></a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <article class="catalog_article">
+                        <h2 class="catalog_article__title">Катушки рыболовные</h2> <!-- Название текущей категории -->
+                        <p class="catalog_article__paragraf">В Украине много рыбаков – это популярное увлечение для
+                            отдыха, а также профессиональное занятие. Любому рыбаку нужно качественное оборудование. В
+                            частности, снасти и их элементы. Рыболовная катушка необходима, чтобы хранить леску на
+                            снасти (вид лески будет собранный, смотанный).</p>
+                        <p class="catalog_article__paragraf">Катушка имеет ручку, чтобы сматывать леску. Также
+                            конструкция катушки позволяет далеко забрасывать леску с наживкой (вот, например, на
+                            спиннингах). В интернет-магазине КОРМАК можно найти разные катушки, в частности,
+                            изготовленные из пластмассы, керамики, углепластика, металла, а также разные по
+                            конструкции.</p>
+                        <img class="catalog_article__image" src="image/CatalogImages/subCategories1.jpg" alt="">
+                        <p class="catalog_article__paragraf">Нет ничего лучше, чем после долгих недель работы отдохнуть
+                            на свежем воздухе в хорошей компании. Компанию Вы себе подберете, а все остальное берет на
+                            себя рыболовный интернет магазин Кормак.</p>
+                        <p class="catalog_article__paragraf">Если Вы собрались на рыбалку всерьез, не на один день, мы с
+                            удовольствием обеспечим Вас всем необходимым для кемпинга. Палатки, коврики и матрацы,
+                            компасы для ориентирования на местности и даже аксессуары для барбекю.
+                            Вы можете посетить наш рыболовнй магазин в Киеве.</p>
+                    </article>
+
+
                 </div>
 
-                <div class="bl_youViewed clearfix">
-                    <h2 class="title_name bl_youViewed__title">Вы смотрели:</h2>
-
-                    <ul class="slider_youViewed owl-carousel">
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
-                            </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
-                            </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
-                            </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
-                            </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
-                            </div>
-                        </li>
-                        <li class="product_sliderCart__item">
-                            <div class="product_sliderCart__item_wrapper">
-
-                                <a href="#" class="product_sliderCart__link">
-                                    <img class="product_sliderCart__image" src="image/Products/product_1.jpg"
-                                         alt="">
-                                    <h2 class="product_sliderCart__name">
-                                        Рюкзак тактический Norfin TACTIC 45 45л / NF
-                                    </h2>
-                                </a>
-
-                                <div class="product_sliderCart__price clearfix">
-                                    <span class="product_sliderCart__price_oldPrice">2034 грн.</span>
-                                    <span class="product_sliderCart__price_newPrice">100 грн.</span>
-                                    <!--<span class="product_sliderCart__price_normalPrice">100 грн.</span>  ///Если акции нету -->
-                                </div>
-                                <button type="button" class="product_sliderCart__buy"><span
-                                        class="product_sliderCart__buy_text">Купить</span></button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
+
     </div>
 </main>
 
@@ -985,13 +1243,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
+
+                    <div class="motto_block ">
+
+                            <p class="motto_block__phrase">Сайт разработан</p>
+                        <a class="motto_block__link" href="https://webstars.com.ua" target="_blank">
+                            <p class="motto_block__phrase">Webstars</p>
+                        </a>
+                    </div>
+
+
                     <a class="footer_secondPart__description" href="#">2013-2017 Интернет-магазин Кормак</a>
                 </div>
             </div>
         </div>
     </div>
 </footer>
-
 
 <!-- ANCOR -->
 <div class="bl_ancor hidden-xs hidden">
@@ -1027,7 +1294,7 @@
 
 
 <!-- Call Back -->
-<div class="bl_callback hidden-xs hidden">
+<div class="bl_callback hidden-xs">
     <div class="bl_wrappen">
         <button class="bl_callback__close">
             <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
@@ -1059,27 +1326,6 @@
         </form>
     </div>
 </div>
-
-<!-- miniCallBack-->
-<div class="bl_miniCallBack hidden">
-    <div class="bl_wrappen">
-        <button type="button" class="miniCallBack__close">
-            <i class="fa fa-times decor_icon__close" aria-hidden="true"></i>
-        </button>
-
-
-        <p class="miniCallBack__text"> Укажите ваше Имя </p>
-        <input class="miniCallBack__input" type="text" placeholder="Имя">
-        <p class="error_text miniCallBack__error">*Вы не указали Имя</p>
-        <p class="miniCallBack__text">Укажите номер Вашего телефона</p>
-        <input class="miniCallBack__input" type="tel" placeholder="+38 (0XX) XXX-XX-XX">
-        <p class="error_text miniCallBack__error">*Вы не указали мобильный</p>
-
-        <button type="button" class="miniCallBack__submit">Отправить</button>
-
-    </div>
-</div>
-<!-- -->
 
 
 <div class="blackWrapper hidden"></div>

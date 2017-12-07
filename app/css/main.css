@@ -1882,7 +1882,7 @@ textarea::-moz-focus-inner {
 
 .product_sliderCart__price_oldPrice {
   display: block;
-  color: #333;
+  color: #f00;
   font-family: "Tahoma", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -2467,7 +2467,7 @@ textarea::-moz-focus-inner {
 .bl_price__oldPrice {
   display: inline-block;
   vertical-align: baseline;
-  color: #333;
+  color: #f00;
   font-family: "Tahoma", sans-serif;
   font-size: 21px;
   font-weight: 400;
@@ -3042,24 +3042,25 @@ li.inf_product__item.inf_product__item_correctForTwo {
   left: 20px;
   width: 40px;
   height: 40px;
-  border: 1px solid black;
-  background-color: transparent;
+  border: 2px solid #1162ab;
+  border-radius: 50%;
+  box-shadow: 0 0 2px 2px #0d8dd2;
+  background-color: #0d8dd2;
   color: #fff; }
 
 .rubric__title_button__categories:after,
 .rubric__title_button__filters:after {
+  content: "\f0c9";
+  font-family: "FontAwesome";
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 70%;
+  top: 62%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   font-size: 20px;
-  content: "\f0c9";
-  font-family: "FontAwesome";
-  color: #333;
   background: none; }
 
 .rubric__title_button__filters:after {
@@ -3121,7 +3122,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   position: relative;
   font-size: 18px !important;
   line-height: 30px;
-  color: #000;
+  color: #1162ab;
   font-weight: bold;
   cursor: pointer; }
 
@@ -3276,12 +3277,10 @@ li.inf_product__item.inf_product__item_correctForTwo {
   background-color: #1162ab; }
 
 .bl_filters__allFilters .noUi-horizontal .noUi-handle {
-  height: 23px; }
-
-.bl_filters__allFilters .noUi-horizontal .noUi-handle {
   width: 18px;
   height: 23px;
-  background: #1162ab;
+  border: 1px solid #000;
+  background-color: #1162ab;
   cursor: pointer; }
 
 .bl_filters__allFilters .noUi-horizontal .noUi-handle:before,
@@ -3473,7 +3472,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   height: 100%;
   min-height: 380px;
   padding: 16px 0 0;
-  margin: 0  0 10px 10px;
+  margin: 0 0 10px 10px;
   border: 1px solid #f1f1f1;
   box-sizing: border-box;
   overflow: hidden; }
@@ -3522,7 +3521,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
 
 .bl_fullProducts__oldPrice {
   text-align: left;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #f00; }
 
 .bl_fullProducts__newPrice {
   display: block;
@@ -3592,6 +3592,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
 
 .view_list__STYLE .bl_fullProducts__oldPrice {
   float: right;
+  color: #f00;
   font-size: 21px; }
 
 .view_list__STYLE .bl_fullProducts__newPrice {
@@ -5031,7 +5032,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .rubric__title_margin {
     padding: 0; }
   .view_grid__STYLE .bl_fullProducts__item {
-    min-height: 465px; }
+    min-height: 502px; }
   .bl_catalogProducts__full {
     position: relative;
     text-align: center;
@@ -5170,8 +5171,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .content_discount_form {
     display: block; }
   .view_grid__STYLE .bl_fullProducts__item {
-    margin-left: 4px;
-    min-height: initial; }
+    margin-left: 4px; }
   .bl_subCategories__item {
     max-width: initial; }
   .inf_product__tabs {
@@ -5194,7 +5194,8 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .bl_fullProducts__item .button_buy {
     max-width: 250px; }
   .rubric__title_text {
-    font-size: 20px; }
+    font-size: 20px;
+    padding-left: 16px; }
   li.inf_product__item.inf_product__item_correctForTwo {
     width: 100%; }
   .inf_product .tab-content {
@@ -5208,6 +5209,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .bl_mainSlider__sale_text {
     font-size: 3em; }
   .view_grid__STYLE .bl_fullProducts__item {
+    min-height: 498px;
     max-width: 47.8%; }
   .rubric__title_button {
     left: 15%; }
@@ -5231,7 +5233,7 @@ li.inf_product__item.inf_product__item_correctForTwo {
   .bl_productAdvantages {
     display: none; }
   .rubric__title_button {
-    left: 5%; }
+    left: 2%; }
   .view_grid__STYLE .bl_fullProducts__item {
     max-width: 100%;
     margin-left: 0; }
