@@ -8,7 +8,14 @@
   "author": "Zirka Andry",
   "devDependencies": {
     "browser-sync": "^2.18.8",
-    "gulp": "^3.9.0",
+    "gulp": "^3.9.0"
+    (c) Корпорация Майкрософт (Microsoft Corporation), 2013. Все права защищены.
+
+    D:\allProjects\kormak>
+
+
+
+
     "gulp-autoprefixer": "^3.1.0",
     "gulp-clean": "^0.3.1",
     "gulp-clean-css": "^3.9.0",

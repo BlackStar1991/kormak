@@ -255,23 +255,22 @@ $marginTopItem: 16px;
 }
 
 .bl_phones__icon-cell {
-  float: left;
   &:before{
     content: "";
-    float: left;
-    margin: 3px 5px 0 0;
+    position: absolute;
+    top: 2px;
+    left: -20px;
     @include sprite($cell-phone);
 
   }
 }
 
 .bl_phones__icon-life {
-  float: right;
-
   &:before{
     content: "";
-    float: left;
-    margin: 3px 5px 0 0;
+    position: absolute;
+    top: 2px;
+    left: -20px;
     @include sprite($life);
   }
 }
@@ -282,7 +281,14 @@ $marginTopItem: 16px;
 
 
 .bl_phones__text {
+  position: relative;
   color: $color_grey2;
+  &:nth-of-type(1){
+    float: left;
+  }
+  &:nth-of-type(2){
+    float: right;
+  }
 }
 
 .bl_search {

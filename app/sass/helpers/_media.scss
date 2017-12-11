@@ -17,10 +17,6 @@
     margin-left: 1%;
   }
 
-  //.bl_fullCategories {
-  //  background-color: white;
-  //}
-
   .view_list__STYLE .bl_fullProducts__imageWrapper {
     width: 33%;
   }
@@ -28,6 +24,9 @@
   .button_map {
     position: absolute;
     left: -120%;
+  }
+  .bl_positionSorted {
+    margin-top: 6px;
   }
 
 }
@@ -54,18 +53,14 @@
 
   .bl_phonesSearch {
     float: none;
-    //margin: 30px auto 0;
     margin: 6px auto 0;
 
   }
 
   .bl_currency {
     float: left;
+  }
 
-  }
-  .bl_currency__label {
-    float: none;
-  }
   .bl_currency__label {
     float: none;
   }
@@ -113,7 +108,6 @@
     width: 100%;
     height: 100%;
     background-color: #fff;
-    //border-bottom: 1px solid #fff;
     box-sizing: border-box;
 
   }
@@ -138,15 +132,8 @@
     font-size: 16px;
   }
 
-  .decor_leftTriangle {
-    width: 100%;
-  }
-
-  .bl_filters__productsFilters .decor_leftTriangle:after {
-    left: 50%;
-    transform-origin: 50% 50%;
-  }
   .bl_filters__productsFilters .decor_leftTriangle__active:after {
+    left: 1%;
     top: 0;
     z-index: 2;
   }
@@ -154,11 +141,7 @@
   .filter_name {
     font-size: 20px;
     text-align: center;
-
     margin-top: 10px;
-
-    background-color: $color_blue;
-    color: #fff;
   }
 
   .bl_filters__fullRubric {
@@ -236,7 +219,7 @@
   .open-menu-main {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 35px;
   }
 
   .bl_fullProduct {
@@ -247,6 +230,13 @@
     position: relative;
     margin-top: -48px;
     margin-bottom: 5px;
+  }
+
+  .bl_phones__text {
+    display: block;
+    max-width: 156px;
+    margin: 0 auto;
+    float: none !important;
   }
 
   .bl_shoppingCart {
@@ -387,9 +377,10 @@
   }
 
   .view_grid__STYLE .bl_fullProducts__item {
-    min-height:498px;
     max-width: 47.8%;
+    margin-bottom: 0;
   }
+
 
   .rubric__title_button {
     left: 15%;
@@ -401,7 +392,7 @@
     margin: 10px auto;
   }
 
-  .card-product-info__prior-list{
+  .card-product-info__prior-list {
     display: none;
   }
 
@@ -409,12 +400,6 @@
 
 /* Extra Small Devices, Phones 480px */
 @media only screen and (max-width: 480px) {
-
-  .bl_phones__icon-cell,
-  .bl_phones__icon-life {
-    float: none;
-    display: block;
-  }
 
   .bl_mainSlider__sale {
     top: 30px;
@@ -434,8 +419,15 @@
 
   .view_grid__STYLE .bl_fullProducts__item {
     max-width: 100%;
+    min-height: initial;
     margin-left: 0;
   }
+  .bl_fullProducts__characteristics{
+    position: relative;
+    width: 100%;
+    border: none;
+  }
+
 
   .bl_article .bl_topic__text {
     margin-left: 0;
@@ -457,6 +449,13 @@
     width: 100%;
     padding-bottom: 18px;
   }
+  .bl_sorter__select{
+    display: block;
+  }
+  .icon-arrowDown:after{
+    top: 21px;
+  }
+
 }
 
 /* Custom, iPhone Retina 320px */
