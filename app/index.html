@@ -98,9 +98,115 @@
                             <span class="bl_phones__text bl_phones__left">+38(050) 000-00-00</span>
                             <span class="bl_phones__text bl_phones__right">+38(093) 000-00-00</span>
                         </div>
-                        <div class="bl_search">
-                            <input class="bl_search__field" type="text" placeholder="Найти">
-                            <button class="bl_search__button"></button>
+                        <div class="bl_search hidden-xs hidden-sm clearfix">
+                            <div id="search">
+                                <input type="text" name="search" value="" placeholder="Найти" class="bl_search__field">
+
+                                <button type="submit" class="bl_search__button"></button>
+
+                            </div>
+
+                            <div class="bl_search__wrap"></div>
+
+                            <script async="">
+                                var request = null;
+
+                                function seachRequest(show) {
+
+                                    if (request != null) {
+                                        request.abort();
+                                        request = null;
+                                    }
+
+                                    request = $.ajax({
+                                        url: 'http://kormak.loc/index.php?route=extension/module/advanced_search/searchRequest',
+                                        dataType: 'json',
+                                        type: 'post',
+                                        data: $('#search input'),
+                                        beforeRequest: function () {
+
+                                        },
+                                        success: function (json) {
+                                            $('.bl_search__wrap').html('');
+                                            if (!$.isEmptyObject(json)) {
+
+                                                // if(json['keywords']){
+                                                // 	$('.bl_search__wrap').append('<div class="bl_search__item" id="search-keywords"></div>');
+                                                // 	$.each(json['keywords'],function(index,e){
+                                                // 		$('#search-keywords').append('<div class="bl_search__list-item"><a class="bl_search__link" href="' + e['url'] + '">' + e['keyword'] + '</a></div>');
+                                                // 	});
+                                                // }
+
+                                                if (json['categories']) {
+                                                    $('.bl_search__wrap').append('<div class="bl_search__item" id="search-categories"></div>');
+                                                    $.each(json['categories'], function (index, e) {
+                                                        $('#search-categories').append('<a class="bl_search__link-category" href="' + e['url'] + '"><span class="bl_search__categories-name">' + e['name'] + '</span></a>');
+                                                    });
+                                                }
+
+                                                if (json['products']) {
+                                                    $('.bl_search__wrap').append('<div class="bl_search__item" id="search-products"></div>');
+                                                    $.each(json['products'], function (index, e) {
+                                                        $('#search-products').append('<div class="bl_search__list-item"><div class="bl_search__image-wrap"><a class="bl_search__link-product" href="' + e['url'] + '"><img  class="bl_search__image" src="' + e['image'] + '" alt="' + e['name'] + '" /></a></div><div class="bl_search__product-name"><a class="bl_search__link-product" href="' + e['url'] + '">' + e['name'] + '</a></div><div class="bl_search__price-wrap"><div class="bl_search__price">' + e['price'] + '</div><button class="bl_search__button-buy" onclick="cart.add(\'' + e['id'] + '\' , \'1\');">В корзину</button></div></div>');
+                                                    });
+                                                }
+
+                                            } else {
+                                                $('.bl_search__wrap').html('').fadeOut(100);
+                                            }
+                                        },
+                                        error: function (xhr, asdasd, thrownExeption) {
+                                            console.log(xhr.responseText);
+                                        },
+                                        complete: function (json) {
+                                            if ($.isEmptyObject(json)) {
+                                                $('.bl_search__wrap').html('').fadeOut(100);
+                                            }
+                                            if (show && $('.bl_search__item').length) {
+                                                $('.bl_search__wrap').fadeIn(100);
+                                            }
+                                        }
+                                    });
+                                }
+                            </script>
+                            <script async="">
+
+                                $('input[name="search"]').on('input', function () {
+                                    if ($(this).val().length >= 3) {
+                                        seachRequest(true);
+                                    } else {
+                                        $('.bl_search__wrap').html('');
+                                        $('.bl_search__wrap').fadeOut(100);
+                                    }
+                                });
+
+                                $(document).ready(function () {
+                                    if ($('input[name="search"]').val()) {
+                                        seachRequest(false);
+                                    }
+                                });
+
+                                $('input[name="search"]').on('focus', function () {
+                                    if ($('.bl_search__item').length) {
+                                        $('.bl_search__wrap').fadeIn(100);
+                                    }
+                                });
+
+                                $(document).on('click', function (e) {
+                                    if (!$(e.target).is('.bl_search__wrap') && !$(e.target).parents('.bl_search__wrap').length && !$(e.target).is('input[name="search"]')) {
+                                        $('.bl_search__wrap').fadeOut(100);
+                                    }
+                                });
+
+                                $(document).keyup(function (e) {
+                                    if (e.keyCode == 27) {
+                                        if ($('input[name="search"]').is(":focus")) {
+                                            $('.bl_search__wrap').fadeOut(100);
+                                            $('input[name="search"]').blur();
+                                        }
+                                    }
+                                });
+                            </script>
                         </div>
                     </div>
                 </div>

@@ -2016,7 +2016,6 @@ $minProductHeight: 610px; /////////////////////////////////
   transform: scale(1.1);
 }
 
-
 //.prior-icon-shop{
 //
 //}
@@ -2036,16 +2035,10 @@ $minProductHeight: 610px; /////////////////////////////////
 //
 //}
 
-
-
-
 .prior-item__img {
   max-width: 70%;
   display: block;
 }
-
-
-
 
 .prior-item__title {
   text-align: center;
@@ -2652,7 +2645,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   font-size: 16px;
 }
 
-.icon-arrowDown{
+.icon-arrowDown {
   &:after {
     content: "\f0d7";
     font-family: $FontAwesom;
@@ -2684,12 +2677,12 @@ li.inf_product__item.inf_product__item_correctForThree {
   border: 1px solid #e5e5e5;
 }
 
-
-.bl_availability{
+.bl_availability {
   position: relative;
   margin-left: 1%;
   display: inline-block;
 }
+
 .bl_availability__select {
 
   width: 170px;
@@ -2697,8 +2690,6 @@ li.inf_product__item.inf_product__item_correctForThree {
   border: 1px solid #e5e5e5;
   text-indent: 10px;
 }
-
-
 
 .bl_numberOfItemShow {
   position: relative;
@@ -2832,7 +2823,6 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 .bl_fullProducts__item_border.col-md-4 .bl_fullProducts__item_border:nth-of-type(3) {
   border-right: none;
-  /* Данный стиль актуальный только если у bl_fullProducts__item есть col-md-4 */
 }
 
 .bl_fullProducts__imageWrapper {

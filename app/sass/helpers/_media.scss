@@ -311,7 +311,6 @@
 
   .view_grid__STYLE .bl_fullProducts__item {
     margin-left: 4px;
-    //min-height: initial;
   }
 
   .bl_subCategories__item {
@@ -420,7 +419,9 @@
   .view_grid__STYLE .bl_fullProducts__item {
     max-width: 100%;
     min-height: initial;
+    margin-bottom: 10px;
     margin-left: 0;
+    border: 1px solid $color_blue;
   }
   .bl_fullProducts__characteristics{
     position: relative;
@@ -440,6 +441,14 @@
   .bl_plus,
   .complex_product__secondProduct {
     margin: 0 auto;
+  }
+
+  .bl_mixMobile .product_sliderCart__item{
+    border: 1px solid $color_blue;
+    margin-bottom: 20px;
+  }
+  .bl_mixMobile .product_sliderCart__item_wrapper{
+    margin-bottom: 10px;
   }
 
 }
