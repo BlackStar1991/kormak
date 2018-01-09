@@ -171,3 +171,56 @@
     text-decoration: underline;
   }
 }
+
+
+/////////// Ancors
+
+.bl_ancors{
+  position: fixed;
+  width: 100%;
+  top: -85px;
+
+  padding:5px 0;
+  border-bottom: 1px solid $color_blue;
+  background-color: rgba(255,255,255, .5);
+  text-align: center;
+  min-height: 50px;
+  transition: top .3s;
+  z-index:100;
+}
+
+.bl_ancors.active{
+  top: 0;
+  transition: top .3s;
+}
+
+
+.bl_ancors__btn{
+  display: inline-block;
+  height: 100%;
+  min-height:50px;
+  line-height: 50px;
+  width: 32%;
+  font-family: $TahomaBold;
+  color: #333;
+  font-size: 20px;
+  margin: 10px 4%;
+  background-color: #fff;
+  border-radius: 50px;
+  box-sizing: border-box;
+  border: 2px solid $color_blue;
+
+  .rubric__title_button{
+    position: relative;
+    float: left;
+    left: 2%;
+    margin-top: 4px;
+  }
+}
+
+.ancor_menu .rubric__title_button,
+.ancor_filter .rubric__title_button{
+  &:after{
+    top: 30%;
+  }
+}

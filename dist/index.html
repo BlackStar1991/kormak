@@ -157,44 +157,44 @@
                                     });
                                 }
                             </script>
-                            <script async="">
+                            <!--<script async="">-->
 
-                                $('input[name="search"]').on('input', function () {
-                                    if ($(this).val().length >= 3) {
-                                        seachRequest(true);
-                                    } else {
-                                        $('.bl_search__wrap').html('');
-                                        $('.bl_search__wrap').fadeOut(100);
-                                    }
-                                });
+                                <!--$('input[name="search"]').on('input', function () {-->
+                                    <!--if ($(this).val().length >= 3) {-->
+                                        <!--seachRequest(true);-->
+                                    <!--} else {-->
+                                        <!--$('.bl_search__wrap').html('');-->
+                                        <!--$('.bl_search__wrap').fadeOut(100);-->
+                                    <!--}-->
+                                <!--});-->
 
-                                $(document).ready(function () {
-                                    if ($('input[name="search"]').val()) {
-                                        seachRequest(false);
-                                    }
-                                });
+                                <!--$(document).ready(function () {-->
+                                    <!--if ($('input[name="search"]').val()) {-->
+                                        <!--seachRequest(false);-->
+                                    <!--}-->
+                                <!--});-->
 
-                                $('input[name="search"]').on('focus', function () {
-                                    if ($('.bl_search__item').length) {
-                                        $('.bl_search__wrap').fadeIn(100);
-                                    }
-                                });
+                                <!--$('input[name="search"]').on('focus', function () {-->
+                                    <!--if ($('.bl_search__item').length) {-->
+                                        <!--$('.bl_search__wrap').fadeIn(100);-->
+                                    <!--}-->
+                                <!--});-->
 
-                                $(document).on('click', function (e) {
-                                    if (!$(e.target).is('.bl_search__wrap') && !$(e.target).parents('.bl_search__wrap').length && !$(e.target).is('input[name="search"]')) {
-                                        $('.bl_search__wrap').fadeOut(100);
-                                    }
-                                });
+                                <!--$(document).on('click', function (e) {-->
+                                    <!--if (!$(e.target).is('.bl_search__wrap') && !$(e.target).parents('.bl_search__wrap').length && !$(e.target).is('input[name="search"]')) {-->
+                                        <!--$('.bl_search__wrap').fadeOut(100);-->
+                                    <!--}-->
+                                <!--});-->
 
-                                $(document).keyup(function (e) {
-                                    if (e.keyCode == 27) {
-                                        if ($('input[name="search"]').is(":focus")) {
-                                            $('.bl_search__wrap').fadeOut(100);
-                                            $('input[name="search"]').blur();
-                                        }
-                                    }
-                                });
-                            </script>
+                                <!--$(document).keyup(function (e) {-->
+                                    <!--if (e.keyCode == 27) {-->
+                                        <!--if ($('input[name="search"]').is(":focus")) {-->
+                                            <!--$('.bl_search__wrap').fadeOut(100);-->
+                                            <!--$('input[name="search"]').blur();-->
+                                        <!--}-->
+                                    <!--}-->
+                                <!--});-->
+                            <!--</script>-->
                         </div>
                     </div>
                 </div>
@@ -1365,6 +1365,24 @@
         </div>
     </div>
 </footer>
+
+<!-- Ancor Buttons-->
+
+<div class="bl_ancors hidden-md hidden-lg">
+    <a class="bl_ancors__btn ancor_menu" href="#ancor_menu">
+        <div class="rubric__title_button"></div>
+        <span>Меню</span>
+    </a>
+    <a class="bl_ancors__btn ancor_filter" href="#ancor_filter">
+        <div class="rubric__title_button"></div>
+        <span>Фильтр</span>
+    </a>
+</div>
+
+
+
+
+
 
 <!-- ANCOR -->
 <div class="bl_ancor hidden-xs hidden">

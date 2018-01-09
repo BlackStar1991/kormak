@@ -38,7 +38,7 @@ body {
   -webkit-box-orient: vertical;
   flex-direction: column;
   min-height: 100vh;
-
+  width: 100%;
 }
 
 .wrapperBlock {
@@ -2236,6 +2236,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   position: relative;
   margin: 0 auto;
   width: 100%;
+  background-color: #fff;
   border-bottom: 1px solid #eee;
 
   &:hover {
@@ -2260,7 +2261,9 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .rubric__title_button__categories,
-.rubric__title_button__filters {
+.rubric__title_button__filters,
+.ancor_menu .rubric__title_button,
+.ancor_filter .rubric__title_button{
 
   &:after {
     content: "\f0c9";
@@ -2276,13 +2279,17 @@ li.inf_product__item.inf_product__item_correctForThree {
   }
 }
 
-.rubric__title_button__filters {
+.rubric__title_button__filters,
+.ancor_filter .rubric__title_button{
   &:after {
 
     content: "\f0b0";
     font-family: $FontAwesom;
   }
 }
+
+
+
 
 .rubric__title_text {
   width: 100%;
@@ -2581,16 +2588,17 @@ li.inf_product__item.inf_product__item_correctForThree {
 /////
 
 .bl_subCategories {
-
+  background-color: #fff;
   width: 100%;
 }
 
 .bl_subCategories__item {
   min-height: 208px;
-  max-width: 31.8%;
+  width: 100%;
   box-sizing: border-box;
+  background-color: #fff;
   padding: 16px 0 0;
-  margin: 0 0 10px 10px;
+  margin-bottom: 10px;
   border: 1px solid #f1f1f1;
   &:hover,
   &:focus {
@@ -2674,6 +2682,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 .bl_sorter__select {
   width: 168px;
   height: 25px;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
 }
 
@@ -2687,6 +2696,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 
   width: 170px;
   height: 25px;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   text-indent: 10px;
 }
@@ -2698,9 +2708,9 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_numberOfItemShow__select {
-
   width: 60px;
   height: 25px;
+  background-color: #fff;
   border: 1px solid #e5e5e5;
   text-indent: 10px;
 }
@@ -2770,6 +2780,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   height: 100%;
   margin-top: 16px;
   padding-top: 15px;
+  background-color: #fff;
 }
 
 ///// GRID VIEW

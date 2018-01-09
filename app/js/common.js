@@ -656,7 +656,7 @@ $(document).ready(function () {
 
         var corrected = window.getComputedStyle(blockWithCEO[0]).paddingBottom;
 
-        console.log(" corrected = " + corrected);
+
 
         if (( ceoBlockHeight <= heightNewsBlock)) {
             buttonShowMoreInformation.remove();
@@ -690,6 +690,7 @@ $(document).ready(function () {
 $(window).scroll(function () {
 
     var ancorFish = $(".bl_ancor"),
+        ancorsForMobile = $(".bl_ancors"),
         windowHeight = $(window).height() / 2;
 
     if ($(this).scrollTop() > windowHeight) {
@@ -698,9 +699,15 @@ $(window).scroll(function () {
 
     } else {
         ancorFish.addClass("hidden");
-
     }
 
+    if ($(window).width() < 768){
+        if ($(this).scrollTop() > windowHeight) {
+            ancorsForMobile.addClass("active");
+        } else {
+            ancorsForMobile.removeClass("active");
+        }
+    }
 });
 
 

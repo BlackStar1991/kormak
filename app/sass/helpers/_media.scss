@@ -350,7 +350,7 @@
 
   .rubric__title_text {
     font-size: 20px;
-    padding-left: 16px;
+    padding-left: 30px;
   }
 
   li.inf_product__item.inf_product__item_correctForTwo {
@@ -451,6 +451,10 @@
     margin-bottom: 10px;
   }
 
+
+  .bl_ancors__btn{
+    font-size: 18px;
+  }
 }
 
 @media only screen and (max-width: 400px) {
@@ -464,7 +468,9 @@
   .icon-arrowDown:after{
     top: 21px;
   }
-
+  .bl_ancors__btn{
+    font-size: 15px;
+  }
 }
 
 /* Custom, iPhone Retina 320px */
