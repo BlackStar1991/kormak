@@ -484,13 +484,23 @@ $(document).ready(function () {
     });
 
 
-// Ancor to top
 
-    $(".bl_ancor").on("click", "a", function (event) {
+    $("a[href^=\"#\"]").on("click", function(event){
         event.preventDefault();
         var id = $(this).attr('href'),
-            top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
+            destination = $(id).offset().top;
+
+        console.log(id + " = id");
+        $('body,html').animate({scrollTop: destination}, 500);
+
+        if ( $(this).hasClass("ancor_menu") ){
+            $(".bl_filters").slideDown(1000);
+        }
+        if($(this).hasClass("ancor_filter")){
+            $(".bl_filters__productsFilters").slideDown(1000);
+        }
+
+
     });
 
 // FILTER for telephone number
@@ -691,24 +701,31 @@ $(window).scroll(function () {
 
     var ancorFish = $(".bl_ancor"),
         ancorsForMobile = $(".bl_ancors"),
+        btnMobileMenu = $(".btn_showAncors"),
+        visible768px = "visible-xs",
+        hidden = "hidden",
         windowHeight = $(window).height() / 2;
 
     if ($(this).scrollTop() > windowHeight) {
 
-        ancorFish.removeClass("hidden");
+        ancorFish.removeClass(hidden);
 
     } else {
-        ancorFish.addClass("hidden");
+        ancorFish.addClass(hidden);
     }
 
     if ($(window).width() < 768){
-        if ($(this).scrollTop() > windowHeight) {
-            ancorsForMobile.addClass("active");
-        } else {
+        if ($(this).scrollTop() < windowHeight) {
+            btnMobileMenu.removeClass(visible768px);
             ancorsForMobile.removeClass("active");
+        }else{
+            btnMobileMenu.addClass(visible768px);
+            btnMobileMenu.removeClass(hidden);
         }
+
     }
 });
+
 
 
 // RESIZE WINDOW

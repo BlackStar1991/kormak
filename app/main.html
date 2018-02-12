@@ -760,6 +760,31 @@
     </div>
 </div>
 
+<!-- Ancor Buttons-->
+
+<div class="bl_ancors hidden-md hidden-lg">
+    <a class="bl_ancors__btn ancor_menu" href="#header">
+        <div class="rubric__title_button"></div>
+        <span>Каталог</span>
+    </a>
+    <script>
+        $(document).ready(function () {
+            if ($(window).width() < 768) {
+                if ($("#ancor_filter").length !== 0) {
+
+                    $(".bl_ancors").append("<a class=\"bl_ancors__btn ancor_filter bl_ancors__floatCorrect\" href=\"#header\"><div class=\"rubric__title_button\"></div><span>Фильтр</span></a>");
+                    $(".ancor_menu").addClass("bl_ancors__floatCorrect");
+                }
+            }
+        })
+    </script>
+    <button class="btn_miniCallBack btn_microCallBack" type="button"></button>
+</div>
+
+
+
+
+
 <!-- Success Buying -->
 <div class="bl_successBuying hidden">
     <div class="bl_wrappen">

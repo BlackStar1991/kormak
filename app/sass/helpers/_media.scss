@@ -54,8 +54,13 @@
   .bl_phonesSearch {
     float: none;
     margin: 6px auto 0;
-
   }
+
+
+  .bl_search__wrap{
+    left: -100px;
+  }
+
 
   .bl_currency {
     float: left;
@@ -218,8 +223,9 @@
 
   .open-menu-main {
     position: absolute;
-    left: 0;
-    top: 35px;
+    top: 68px;
+    left: 5px;
+
   }
 
   .bl_fullProduct {
@@ -232,11 +238,15 @@
     margin-bottom: 5px;
   }
 
-  .bl_phones__text {
-    display: block;
-    max-width: 156px;
-    margin: 0 auto;
-    float: none !important;
+  //.bl_phones__text {
+  //  display: block;
+  //  max-width: 156px;
+  //  margin: 0 auto;
+  //  float: none !important;
+  //}
+
+  .bl_search__wrap{
+    width: 320px;
   }
 
   .bl_shoppingCart {
@@ -364,6 +374,24 @@
     margin-top: 0;
   }
 
+  .bl_ancor {
+    bottom: 65px;
+    right: 6%;
+    opacity: 0.8;
+  }
+
+
+  .bl_search{
+    margin-bottom: 20px;
+  }
+
+  .bl_phonesSearch{
+    margin-top: -8px;
+    max-width:200px;
+
+  }
+
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -411,6 +439,10 @@
   .bl_productAdvantages {
     display: none;
   }
+  .bl_search__wrap{
+    left: -70px;
+  }
+
 
   .rubric__title_button {
     left: 2%;
@@ -451,9 +483,11 @@
     margin-bottom: 10px;
   }
 
-
+  .bl_ancor{
+    bottom: 22px;
+  }
   .bl_ancors__btn{
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -468,8 +502,21 @@
   .icon-arrowDown:after{
     top: 21px;
   }
+
+  .rubric__title_button{
+    width: 33px;
+    height: 33px;
+    line-height: 40px;
+    margin-top: 8px!important;
+  }
+  .rubric__title_button__filters:after{
+    line-height: 23px;
+  }
+
+
+
   .bl_ancors__btn{
-    font-size: 15px;
+    font-size: 12px;
   }
 }
 
@@ -478,6 +525,10 @@
 
   .rubric__title_button {
     left: 0;
+  }
+
+  .bl_ancors__btn{
+    width: 27.5%;
   }
 
 }

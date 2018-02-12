@@ -177,12 +177,18 @@
 
 .bl_ancors{
   position: fixed;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
   width: 100%;
   top: -85px;
 
   padding:5px 0;
   border-bottom: 1px solid $color_blue;
-  background-color: rgba(255,255,255, .5);
+  background-color:  $color_blue;
   text-align: center;
   min-height: 50px;
   transition: top .3s;
@@ -194,17 +200,16 @@
   transition: top .3s;
 }
 
-
 .bl_ancors__btn{
   display: inline-block;
   height: 100%;
   min-height:50px;
   line-height: 50px;
-  width: 32%;
+  width: 27%;
   font-family: $TahomaBold;
   color: #333;
   font-size: 20px;
-  margin: 10px 4%;
+  margin: 10px auto;
   background-color: #fff;
   border-radius: 50px;
   box-sizing: border-box;
@@ -218,9 +223,25 @@
   }
 }
 
+
+
 .ancor_menu .rubric__title_button,
 .ancor_filter .rubric__title_button{
   &:after{
     top: 30%;
   }
 }
+
+//.ancor_menu{
+//  float: right;
+//  margin-right: 4%;
+//}
+//
+//
+//.ancor_menu.bl_ancors__floatCorrect{
+//  float: left;
+//}
+//.ancor_filter.bl_ancors__floatCorrect{
+//  float: right;
+//  margin-right: 4%;
+//}
