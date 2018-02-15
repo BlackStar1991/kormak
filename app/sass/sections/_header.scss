@@ -649,6 +649,7 @@ $marginTopItem2: 22px;
 
 .btn_microCallBack{
   position: relative;
+  margin-right: 8px;
   top: 12px;
   display: inline-block;
   width: 40px;
@@ -664,6 +665,9 @@ $marginTopItem2: 22px;
   &:focus,
   &:active{
     color: #fff;
+    &:after{
+      color: #fff;
+    }
   }
   
   &:after{
@@ -676,6 +680,18 @@ $marginTopItem2: 22px;
     color: inherit;
   }
 }
+
+
+.bl_fullControlsMenu .btn_microCallBack{
+  position: absolute;
+  top: -50px;
+  left: 5px;
+  border-color: $color_blue;
+  box-shadow: 0 0 2px 2px $color_blue2;
+}
+
+
+
 ///////
 .field_search__second{
   position: absolute;

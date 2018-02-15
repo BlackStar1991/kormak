@@ -208,7 +208,7 @@
   }
 
   .rubric__title_button {
-    left: 25%;
+    left: 4%;
   }
 
 }
@@ -216,17 +216,27 @@
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
 
+  //.header{
+  //  background-color: #fff;
+  //}
+  
   .bl_fullControlsMenu {
     padding: 0;
+    padding-top: 54px;
     margin-bottom: 6px;
   }
 
   .open-menu-main {
     position: absolute;
-    top: 68px;
+    top: 0;
     left: 5px;
 
   }
+  .field_search__second{
+    height: auto;
+  }
+
+
 
   .bl_fullProduct {
     margin-top: 15px;
@@ -238,12 +248,17 @@
     margin-bottom: 5px;
   }
 
-  //.bl_phones__text {
-  //  display: block;
-  //  max-width: 156px;
-  //  margin: 0 auto;
-  //  float: none !important;
-  //}
+  .rubric__title_margin__filters{
+    margin-top: 10px;
+  }
+
+  .bl_category__filters{
+    line-height: 32px;
+    max-width: 320px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    border: 2px solid $color_blue;
+  }
 
   .bl_search__wrap{
     width: 320px;
@@ -258,8 +273,7 @@
   }
 
   .bl_fullNavigation {
-    min-height: 60px;
-    background-color: #fff;
+    display: none;
   }
 
   #top_menu {
@@ -408,11 +422,6 @@
     margin-bottom: 0;
   }
 
-
-  .rubric__title_button {
-    left: 15%;
-  }
-
   .coupon-block__fildForCoupon,
   .coupon-block__button {
     display: block;
@@ -443,10 +452,6 @@
     left: -70px;
   }
 
-
-  .rubric__title_button {
-    left: 2%;
-  }
 
   .view_grid__STYLE .bl_fullProducts__item {
     max-width: 100%;
@@ -507,12 +512,11 @@
     width: 33px;
     height: 33px;
     line-height: 40px;
-    margin-top: 8px!important;
+    margin-top: 4px!important;
   }
   .rubric__title_button__filters:after{
     line-height: 23px;
   }
-
 
 
   .bl_ancors__btn{
@@ -524,7 +528,7 @@
 @media only screen and (max-width: 320px) {
 
   .rubric__title_button {
-    left: 0;
+    left: 4px;
   }
 
   .bl_ancors__btn{
