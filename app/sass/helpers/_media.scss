@@ -216,19 +216,18 @@
 /* Small Devices, Tablets 768px */
 @media only screen and (max-width: 768px) {
 
-  //.header{
-  //  background-color: #fff;
-  //}
-  
   .bl_fullControlsMenu {
     padding: 0;
     padding-top: 54px;
     margin-bottom: 6px;
   }
+  .bl_fullControlsMenu .btn_microCallBack{
+    display: block;
+  }
 
   .open-menu-main {
     position: absolute;
-    top: 0;
+    top: 56px;
     left: 5px;
 
   }

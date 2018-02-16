@@ -683,8 +683,9 @@ $marginTopItem2: 22px;
 
 
 .bl_fullControlsMenu .btn_microCallBack{
+  display: none;
   position: absolute;
-  top: -50px;
+  top: 8px;
   left: 5px;
   border-color: $color_blue;
   box-shadow: 0 0 2px 2px $color_blue2;
