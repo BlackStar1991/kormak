@@ -255,6 +255,7 @@ $marginTopItem: 16px;
 }
 
 .bl_phones__icon-cell {
+
   &:before{
     content: "";
     position: absolute;
@@ -625,16 +626,10 @@ $marginTopItem2: 22px;
   position: absolute;
   top: 0;
   left: 0;
-
-  //width: 50px;
-  //height: 48px;
-
   color: #fff;
   box-sizing: border-box;
-  //background-color: $color_blue;
   vert-align: bottom;
   text-transform: uppercase;
-  //border: 1px solid #fff;
   font-size: 12px;
   z-index:3;
 
@@ -758,3 +753,34 @@ $marginTopItem2: 22px;
   height: 100%;
   min-height:300px;
 }
+
+/////// Что-то ?
+
+.affilliated-products{
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: -102px;
+  z-index: 100000;
+  height: 100%;
+  background-color: white;
+}
+
+.affilliated-products img{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.bl_affiliated__item img {
+  width: 50px;
+  height: 50px;
+}
+
+.multi-channel{
+  position: absolute;
+  top: -13px;
+  left: 18px;
+  font-size: 11px;
+  color: red;
+}
+

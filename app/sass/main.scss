@@ -670,7 +670,7 @@ $minSliderHeight: 555px; /// 578
 .bl_mark {
   position: absolute;
   top: -24px;
-  left: -18px;
+  left:0;
 
   width: 113px;
   height: 126px;
@@ -688,6 +688,12 @@ $minSliderHeight: 555px; /// 578
   }
 
 }
+
+.bl_mark__complex{
+  background: url("../image/fish_action.svg") 0 50% no-repeat;
+}
+
+
 
 .bl_mark__text {
   position: absolute;
@@ -708,6 +714,15 @@ $minSliderHeight: 555px; /// 578
   }
 
 }
+
+
+.bl_mark__complex .bl_mark__text{
+  text-transform:none;
+  transform: translate(-50%,12%);
+  font-size: 13px;
+  line-height: initial;
+}
+
 
 /////
 
@@ -2046,6 +2061,39 @@ $minProductHeight: 610px; /////////////////////////////////
   display: block;
 }
 
+
+.bl_affiliated{
+  position: relative;
+  width: 100%;
+  margin: 5px auto;
+
+}
+.bl_affiliated__text{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.bl_affiliated__item{
+  display: inline-block;
+  font-size: 0;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 5px 5px 0;
+  border: 1px solid #e1e8ec;
+  background: #fff;
+  padding: 2px;
+  border-radius: 2px;
+}
+.bl_affiliated__item.active{
+  border-color: $color_blue;
+}
+.bl_affiliated__item img{
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+}
+
+
 /* + первые 4 характеристики в карточке + */
 .short-attribute {
   font-size: 14px;
@@ -2350,7 +2398,6 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_filters {
-  display: none;
   position: relative;
   padding-left: 20px;
   padding-right: 10px;
@@ -2818,6 +2865,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   min-height: 440px;
   max-width: 31.8%;
   background-color: #fff;
+
   &:hover {
     border: 1px solid $color_blue;
     height: auto !important;
@@ -2948,9 +2996,52 @@ li.inf_product__item.inf_product__item_correctForThree {
   box-shadow: 0 10px 10px 0 rgba(1, 96, 172, 0.2);
 }
 
+
+.view_grid__STYLE .bl_addedItems{
+
+  opacity: 0;
+  transform: scale(0);
+  transform-origin: top left;
+
+
+  position: absolute;
+  top: -17px;
+  right: -70px;
+  width: 70px;
+  height: 100%;
+  min-height: 400px;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid $color_blue;
+  box-shadow: 2px 1px 3px 0 rgba(0,0,0,.22);
+  transition: all .2s ease-out;
+  z-index:10;
+}
+
+.view_grid__STYLE .bl_fullProducts__item:hover .bl_addedItems{
+
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: top left;
+  transition: all .2s ease-out;
+}
+
+
+
+.view_grid__STYLE .bl_addedItems li{
+  margin-bottom: 10px;
+}
+
+.view_grid__STYLE .bl_addedItems img{
+  width: 50px;
+}
+
+
+
 //////  LIST VIEW
 
 .view_list__STYLE .bl_fullProducts__item {
+  position: relative;
   min-height: 298px;
 }
 
@@ -3020,7 +3111,13 @@ li.inf_product__item.inf_product__item_correctForThree {
   margin-top: 16px;
 }
 
-// PAGINATION
+
+.view_list__STYLE .bl_addedItems{
+  display: none;
+}
+
+
+  // PAGINATION
 
 .bl_pagination {
   text-align: center;
@@ -3283,15 +3380,15 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 // popup_likeShopbag
 
-.TEST_BUTTON { //////////////////////////
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  right: 30px;
-  bottom: 50px;
-  background-color: #f00;
-  cursor: pointer;
-}
+//.TEST_BUTTON { //////////////////////////
+//  width: 50px;
+//  height: 50px;
+//  position: fixed;
+//  right: 30px;
+//  bottom: 50px;
+//  background-color: #f00;
+//  cursor: pointer;
+//}
 
 .popup_likeShopbag {
   position: fixed;
@@ -3341,9 +3438,6 @@ li.inf_product__item.inf_product__item_correctForThree {
   margin: 5px;
 }
 
-.popup_likeShopbag__product {
-
-}
 
 .button_buyProduct {
   background-color: $color_blue;
