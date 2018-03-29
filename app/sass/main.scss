@@ -696,27 +696,24 @@ $minSliderHeight: 555px; /// 578
 
 
 .bl_mark__text {
+  min-width: 78px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -25%);
+  transform: translate(-50%, -30%);
 
   color: #fff;
   font-family: "Arial Narrow", Arial, sans-serif;
 
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 87px;
   text-transform: uppercase;
 
-  &_action {
-    font-size: 22px;
-  }
-
 }
 
-
 .bl_mark__complex .bl_mark__text{
+
   text-transform:none;
   transform: translate(-50%,12%);
   font-size: 13px;
