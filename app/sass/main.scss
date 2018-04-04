@@ -4557,6 +4557,37 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 //////////
 
+.affilliated-products{
+  height: 100%;
+  background-color: #fff;
+}
+.bl_addedItems.affilliated-products{
+  min-height: 542px;
+}
+
+.bl_affiliated__text{
+  text-align: center;
+  font-size: 12px;
+}
+.bl_affiliated__item{
+  display: block;
+  margin: 0 auto 10px;
+  text-align: center;
+  transition: .2s all;
+}
+.bl_affiliated__item:hover{
+  border-color: $color_blue;
+  transition: .2s all;
+}
+
+.bl_affiliated__item img {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
 /*********************************************/
 /*FOOTER*/
 /*********************************************/
