@@ -2089,6 +2089,10 @@ $minProductHeight: 610px; /////////////////////////////////
   height: 32px;
   display: inline-block;
 }
+#product .bl_affiliated__item img {
+  width: 74px;
+  height: 74px;
+}
 
 
 /* + первые 4 характеристики в карточке + */
@@ -2999,8 +3003,6 @@ li.inf_product__item.inf_product__item_correctForThree {
   opacity: 0;
   transform: scale(0);
   transform-origin: top left;
-
-
   position: absolute;
   top: -17px;
   right: -70px;
@@ -3012,6 +3014,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   border: 1px solid $color_blue;
   box-shadow: 2px 1px 3px 0 rgba(0,0,0,.22);
   transition: all .2s ease-out;
+  overflow: hidden;
   z-index:10;
 }
 
@@ -4570,7 +4573,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   font-size: 12px;
 }
 .bl_affiliated__item{
-  display: block;
+  display: inline-block;
   margin: 0 auto 10px;
   text-align: center;
   transition: .2s all;
