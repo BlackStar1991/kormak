@@ -1,8 +1,10 @@
 $(document).ready(function () {
 
 //MENU
-    var headerPage = $('.header');
-    var blackWrapper = $(".blackWrapper");
+
+
+    var blackWrapper = $(".blackWrapper"),
+        active = "active";
 
     $('.open-menu-min').on("click", function () {
         $(this).toggleClass('close-menu-min');
@@ -340,6 +342,41 @@ $(document).ready(function () {
 
 
     });
+//// Function added_catalog
+
+
+
+    (function addedCatalog() {
+
+       var
+           itemCatalog = $('.bl_catalogProducts__item'),
+           fieldAddedCatalog = $(".added_catalog"),
+           addedSection = $(".added_catalog__section") ;
+
+
+        itemCatalog.hover(
+            function(){
+                addedSection.removeClass(active);
+               var currentIndex = $(this).index();
+                fieldAddedCatalog.removeClass("hidden");
+                addedSection.eq(currentIndex).addClass(active);
+
+            },
+            function(){
+
+                var visitedField = $(".bl_catalogProducts__full, .added_catalog__section.active");
+// Тут ещё не всё так глатко
+                visitedField.mouseleave(function(){
+                    setTimeout(function () {
+                        fieldAddedCatalog.addClass("hidden");
+                    }, 1500);
+                });
+
+
+            });
+
+
+    }());
 
 
     // SLIDER for categories show
@@ -752,10 +789,6 @@ $(window).resize(function () {
         fieldContacts = $(".code_contacts__full"),
         fieldAdress = $(".code_adress__full");
 
-
-    // var buttonsWorkRight = liveScopeOfButtons();      ///////////// Эта хрень не работает =(
-
-
     if (body.width() >= 1200) {
 
 
@@ -795,10 +828,6 @@ $(window).resize(function () {
         fieldInformation.css({"display": "none"});
         fieldContacts.css({"display": "none"});
         fieldAdress.css({"display": "none"});
-
-
-        // $(".bl_filters").css({"display": "none"});
-        // $(".bl_filters__productsFilters").css({"display": "none"});
 
     }
 
