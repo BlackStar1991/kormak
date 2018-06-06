@@ -159,6 +159,11 @@
     height: 80px;
   }
 
+  .psevdo_addedItems{
+    height: 48px;
+  }
+
+
   .likeButton_icon-car:after,
   .likeButton_icon__cart:after,
   .likeButton_icon__mark:after {
@@ -431,6 +436,10 @@
     display: none;
   }
 
+  .psevdo_addedItems{
+    height: 62px;
+  }
+
 }
 
 /* Extra Small Devices, Phones 480px */
@@ -539,6 +548,6 @@
     width: 26.5%;
   }
 
-
-
 }
+
+

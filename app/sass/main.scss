@@ -245,18 +245,37 @@ $minSliderHeight: 555px; /// 578
     margin-top: 0;
   }
 
-  &:hover {
+  &:hover,
+  &:focus{
     text-decoration: underline;
   }
 
 }
 
 .bl_catalogProducts__link {
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
   font-family: "TahomaBold", sans-serif;
   font-size: 15px;
+}
+
+
+.bl_catalogProducts__item.active .bl_catalogProducts__link{
+  background-color: #ececec;
+}
+
+.bl_catalogProducts__item.active .bl_catalogProducts__link:after{
+  content: "\f101";
+  font-family: $FontAwesom;
+  position: absolute;
+  top: -8px;
+  right: 5px;
+  z-index: 3;
+  color: #000;
+  font-size: 24px;
+
 }
 
 ///// ADDED CATALOG
@@ -266,7 +285,7 @@ $minSliderHeight: 555px; /// 578
   top: 66px;
   left: 15px;
   width: 100%;
-  min-height: 560px;
+  //min-height: 560px;
   background-color: #fff;
   border: 1px solid $color_blue;
   z-index: 2;
@@ -276,21 +295,25 @@ $minSliderHeight: 555px; /// 578
   display: none;
 
   position: relative;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  float: left;
+  //flex-direction: row;
+  //justify-content: space-between;
+  //flex-wrap: wrap;
+
+
   width: 100%;
   height: 100%;
 }
 
 .added_catalog__section.active {
-  display: flex;
+  //display: flex;
+  display: block;
 }
 
 .added_catalog__item {
   display: inline-block;
   min-height: 208px;
-  width: calc(100% / 5);
+  width: calc(100%/5 - 4px);
   box-sizing: border-box;
   padding: 16px 0 0;
   margin-bottom: 10px;
@@ -302,8 +325,21 @@ $minSliderHeight: 555px; /// 578
   }
 }
 
+.filter_blur{
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+
 .added_catalog__item a {
-  display: block;
+  //display: block;
+
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  min-height: 232px;
+
+
   width: 100%;
   text-align: center;
   color: #1162ab;
@@ -319,7 +355,7 @@ $minSliderHeight: 555px; /// 578
 
 .added_catalog__item p {
   font-size: 19px;
-  line-height: 18px;
+  //line-height: 18px;
 }
 
 .added_catalog__item img {
@@ -2161,7 +2197,7 @@ $minProductHeight: 610px; /////////////////////////////////
 
 .psevdo_addedItems{
   width: 100%;
-  min-height: 30px;
+  height: 30px;
   display: flex;
   flex-direction: row;
   //justify-content: space-between;
@@ -2449,11 +2485,12 @@ li.inf_product__item.inf_product__item_correctForThree {
 .rubric__title_text {
   width: 100%;
   display: inline-block;
+  margin-top: 10px;
   text-align: left;
   font-family: $TahomaBold;
   color: $color_grey2;
   font-size: 24px;
-  line-height: 36px;
+  //line-height: 36px;
 
 }
 
@@ -2676,7 +2713,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   display: inline-block;
 
   padding-left: 30px;
-  font-family: $TahomaBold;
+  //font-family: $TahomaBold;
   font-size: 16px;
   margin-left: 15px;
   line-height: 17px; ////////
@@ -2933,7 +2970,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   width: 100%;
   height: 100%;
   margin-top: 16px;
-  padding-top: 15px;
+  padding-top: 6px;
   background-color: #fff;
 }
 
@@ -2944,7 +2981,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .view_grid__STYLE .bl_fullProducts__item {
-  min-height: 440px;
+  min-height: 470px;  //// 440px
   max-width: 31.8%;
   background-color: #fff;
 
@@ -2957,7 +2994,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_products {
-  margin-top: 20px;
+  margin-top: 0;
   &:after {
     content: "";
     display: none;
@@ -2985,7 +3022,7 @@ li.inf_product__item.inf_product__item_correctForThree {
   box-shadow: 0 1px 10px 0 rgba(1, 96, 172, 0.2);
 }
 
-.bl_fullProducts__item_border.col-md-4 .bl_fullProducts__item_border:nth-of-type(3) {
+.bl_fullProducts__item:nth-of-type(3) {
   border-right: none;
 }
 
@@ -3060,8 +3097,9 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_fullProducts__characteristics {
+  display: none;
+
   position: absolute;
-  display: inline-block;
   top: 100%;
   left: -1px;
   width: calc(100% + 2px);
@@ -3075,6 +3113,13 @@ li.inf_product__item.inf_product__item_correctForThree {
   border-top-style: none;
   box-shadow: 0 10px 10px 0 rgba(1, 96, 172, 0.2);
 }
+
+.bl_fullProducts__item:hover .code_listView3 .bl_fullProducts__characteristics{
+  display: inline-block;
+}
+
+
+
 
 .view_grid__STYLE .bl_addedItems {
 
