@@ -256,11 +256,13 @@ $minSliderHeight: 555px; /// 578
   height: 100%;
   font-family: "TahomaBold", sans-serif;
   font-size: 15px;
+  box-sizing: border-box;
 }
 
 
 .bl_catalogProducts__item.active .bl_catalogProducts__link{
-  background-color: #ececec;
+  border: 1px solid  #1162ab;
+  box-shadow: 0 0 2px 1px #1162ab;
 }
 
 .bl_catalogProducts__item.active .bl_catalogProducts__link:after{
@@ -280,9 +282,9 @@ $minSliderHeight: 555px; /// 578
 .added_catalog {
   position: absolute;
   top: 0; // 66px
-  left: 15px;
+  left: -15px;
   width: 100%;
-  min-height: 560px;
+  min-height: 130px;  // 200px
   background-color: #fff;
   border: 1px solid $color_blue;
   box-shadow: 0 0 2px 1px $color_blue;
@@ -312,7 +314,7 @@ $minSliderHeight: 555px; /// 578
   display: inline-block;
   vertical-align: top;
   //min-height: 208px;
-  height: 190px;
+  //height: 190px;
   width: calc(100%/5 - 4px);
   box-sizing: border-box;
   margin-bottom: 10px;
@@ -323,6 +325,14 @@ $minSliderHeight: 555px; /// 578
     box-shadow: 0 0 2px 1px $color_blue;
   }
 }
+
+
+.added_catalog__item img {
+  height: 100px;
+  max-width: initial;
+}
+
+
 
 .filter_blur{
   -webkit-filter: blur(35px);
@@ -362,6 +372,7 @@ $minSliderHeight: 555px; /// 578
 
 .added_catalog__item img {
   text-align: center;
+  align-self: center;
 }
 
 /// DISCAUNT FORM Дисконт Клуб
@@ -2175,7 +2186,6 @@ $minProductHeight: 610px; /////////////////////////////////
   vertical-align: top;
   text-align: left;
   margin: 0 5px 5px 0;
-  border: 1px solid #e1e8ec;
   background: #fff;
   padding: 2px;
   border-radius: 2px;
@@ -2189,7 +2199,34 @@ $minProductHeight: 610px; /////////////////////////////////
   width: 32px;
   height: 32px;
   display: inline-block;
+  border: 1px solid #e1e8ec;
+  box-sizing: border-box;
+  padding: 2px;
 }
+
+
+
+.bl_affiliated__item:hover img {
+  border-color: #1162ab;
+  transition: .2s all;
+}
+
+.bl_affiliated__item.active img {
+  border-color: #1162ab !important;
+}
+
+
+.bl_affiliated__item_name {
+  font-size: 12px;
+  letter-spacing: -0.3px;
+  display: block;
+}
+
+.bl_affiliated__item-wrap {
+  display: flex;
+  flex-direction: column;
+}
+
 
 
 .button_buy_affiliated {
@@ -4718,7 +4755,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_affiliated__item {
-  display: inline-block;
+  display: block;
   margin: 0 auto 10px;
   text-align: center;
   transition: .2s all;
@@ -4733,6 +4770,14 @@ li.inf_product__item.inf_product__item_correctForThree {
   width: 50px;
   height: 50px;
 }
+
+
+.text-available {
+  font-family: $TahomaBold;
+  color: #699900;
+}
+
+
 
 /*********************************************/
 /*FOOTER*/
