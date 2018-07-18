@@ -2448,18 +2448,87 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_withThisProductBuy,
-.bl_youViewed {
+.bl_youViewed,
+.bl_productOptions {
   position: relative;
   margin-top: 35px;
   background-color: #fff;
 }
 
 .bl_withThisProductBuy__title,
-.bl_youViewed__title {
+.bl_youViewed__title,
+.bl_productOptions__title{
   font-size: 24px;
   font-family: $TahomaBold;
   padding: 22px 20px 20px;
 }
+
+///////////////// product Options
+
+
+.bl_productOptions{
+  clear: both;
+  width: 100%;
+}
+
+.table_prodOptions{
+  width: 100%;
+  margin: 15px auto;
+  text-align: center;
+  vertical-align: center;
+  border-collapse: collapse;
+}
+
+.table_prodOptions__link{
+  display: block;
+  padding: 10px;
+  min-width: 74px;
+}
+
+.table_prodOptions img{
+  width: 74px;
+  box-sizing: border-box;
+  border: 1px solid $color_grey;
+}
+
+
+.table_prodOptions th{
+  padding: 10px 0;
+  text-align: center;
+}
+
+.table_prodOptions tr{
+  border-bottom: 1px solid $color_grey;
+}
+
+
+
+.btn_prodOptions__buy{
+  display: block;
+  margin: 10px auto;
+  height: 50px;
+  padding: 0 10px;
+  transition: .2s all;
+  background-color: $color_blue;
+  color: #fff;
+  border-radius: 10px;
+
+}
+.btn_prodOptions__buy:hover,
+.btn_prodOptions__buy:focus{
+  transition: .2s all;
+  outline: none;
+  background-color: $color_blue_active;
+}
+
+
+
+
+
+
+
+
+
 
 //// CATEGORIES PRODUCT
 
@@ -3057,6 +3126,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 .bl_products {
+  clear: both;
   margin-top: 0;
   &:after {
     content: "";
@@ -4535,6 +4605,7 @@ li.inf_product__item.inf_product__item_correctForThree {
 .page_search__wrapper {
   width: 100%;
   padding: 15px;
+  margin-bottom: 30px;
 }
 
 .page_search__errorText {
@@ -4754,12 +4825,12 @@ li.inf_product__item.inf_product__item_correctForThree {
   font-size: 12px;
 }
 
-.bl_affiliated__item {
-  display: block;
-  margin: 0 auto 10px;
-  text-align: center;
-  transition: .2s all;
-}
+//.bl_affiliated__item {
+//  margin: 0 auto 10px;
+//  text-align: center;
+//  transition: .2s all;
+//  border: none;
+//}
 
 .bl_affiliated__item:hover {
   border-color: $color_blue;
