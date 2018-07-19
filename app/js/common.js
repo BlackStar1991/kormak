@@ -540,6 +540,14 @@ $(document).ready(function () {
 
     });
 
+//// Product Options
+
+   $(".btn_prodOptions__showAll").on("click", function () {
+       $(".table_prodOptions tr").removeClass("hidden");
+       $(this).remove();
+   });
+
+
 // FILTER for telephone number
 
     var telephonseInput = $("input[type='tel']");

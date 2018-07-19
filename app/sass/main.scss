@@ -2502,6 +2502,17 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 
+.table_prodOptions__price{
+
+
+  text-align: center;
+  vertical-align: baseline;
+  color: #333;
+  font-family: "TahomaBold",sans-serif;
+  font-size: 18px;
+}
+
+
 
 .btn_prodOptions__buy{
   display: block;
@@ -2522,9 +2533,23 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 
+.btn_prodOptions__showAll{
+  display: block;
+  margin: 10px auto;
+  height: 50px;
+  padding: 0 10px;
+  transition: .2s all;
+  background-color: $color_blue;
+  color: #fff;
+  border-radius: 10px;
+}
 
-
-
+.btn_prodOptions__showAll:hover,
+.btn_prodOptions__showAll:focus{
+  transition: .2s all;
+  outline: none;
+  background-color: $color_blue_active;
+}
 
 
 
