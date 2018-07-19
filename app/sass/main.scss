@@ -2501,6 +2501,9 @@ li.inf_product__item.inf_product__item_correctForThree {
   border-bottom: 1px solid $color_grey;
 }
 
+.table_prodOptions tr:nth-child(n+5){
+  display: none;
+}
 
 .table_prodOptions__price{
 

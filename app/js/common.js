@@ -542,8 +542,16 @@ $(document).ready(function () {
 
 //// Product Options
 
-   $(".btn_prodOptions__showAll").on("click", function () {
-       $(".table_prodOptions tr").removeClass("hidden");
+  var productOptionsLength = $(".table_prodOptions tr").length;
+  // Если товаров > 4 создаем кнопку на которую можно нажать
+
+      if(productOptionsLength > 4){
+          var text = "Смотреть все варианты";
+          $(".bl_productOptions").append('<button class="btn_prodOptions__showAll" type="button">'+ text +'</button>');
+      }
+
+   $("body").on("click", ".btn_prodOptions__showAll",  function () {
+       $(".table_prodOptions tr:nth-child(n+5)").show().css("display", "table-row");
        $(this).remove();
    });
 
