@@ -222,23 +222,29 @@ $minSliderHeight: 555px; /// 578
   left: 0;
   width: 100%;
   max-width: 280px;
-  z-index: 5;
+  z-index: 3;
 }
 
 .bl_catalogProducts.active{
   display: block;
+
 }
 
 .bl_catalogProducts__full {
-
   display: block;
   width: 100%;
   background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid $color_blue;
 }
+
+
 
 .bl_catalogProducts__item {
   //margin-top: 23px;
   width: 100%;
+  border-top: 1px solid #E1E8EC;
+  box-sizing: border-box;
 
   &:hover,
   &:focus{
@@ -265,9 +271,8 @@ $minSliderHeight: 555px; /// 578
 .bl_catalogProducts__item.active .bl_catalogProducts__link{
 
   color: $color_blueItemMenu;
-  background-color: #eaeff3;
-  border: 1px solid  #1162ab;
-  box-shadow: 0 0 2px 1px #1162ab;
+  background-color:$color_item__border;
+
 }
 
 .bl_catalogProducts__item.active .bl_catalogProducts__link:after{
@@ -286,27 +291,23 @@ $minSliderHeight: 555px; /// 578
 .added_catalog {
   position: absolute;
   top: 41px; // 66px
-  left:280px;
+  left:279px;
   //width: 100%;
   min-height: 130px;  // 200px
   background-color: #fff;
-  //border: 1px solid $color_blue;
-  //box-shadow: 0 0 2px 1px $color_blue;
-  z-index: 3;
+  border: 1px solid $color_blue;
+  border-left-color: $color_item__border;
+  z-index: 4;
 }
+
+$minW:230px;
 
 .added_catalog__section {
   display: none;
 
   position: relative;
-  float: left;
-  //flex-direction: row;
-  //justify-content: space-between;
-  //flex-wrap: wrap;
+  min-width: $minW;
 
-
-  width: 100%;
-  min-width: 230px;
   height: 100%;
 }
 
@@ -317,41 +318,36 @@ $minSliderHeight: 555px; /// 578
 
 .added_catalog__item {
   display: block;
-  //margin-bottom: 10px;
   vertical-align: top;
   box-sizing: border-box;
   font-size: 17px;
-  border: 1px solid #fff;
+  border-top: 1px solid $color_item__border;
 
-  &:hover,
-  &:focus{
-    border-color: $color_blue;
-    //box-shadow: 0 0 2px 1px $color_blue;
-  }
 }
 
 .added_catalog__item a {
   display: block;
-
-  //display: flex;
-  //flex-direction:column;
-  //justify-content: space-between;
-
   //height: 134px;  //min-height 232px
-
+  font-size: 15px;
   width: 100%;
   padding: 10px 5px;
-  text-align: center;
-  color: #1162ab;
+  color: #000;
   transition: .2s color;
 
   &:hover,
   &:focus {
     color: $color_blueItemMenu;
-    background-color: #eaeff3;
+    background-color: $color_item__border;
     text-decoration: none;
     transition: .2s color;
   }
+}
+
+
+.added_catalog__wrapper{
+  display: inline-block;
+  vertical-align: top;
+  min-width: $minW;
 }
 
 
@@ -2198,7 +2194,7 @@ $minProductHeight: 610px; /////////////////////////////////
   width: 32px;
   height: 32px;
   display: inline-block;
-  border: 1px solid #e1e8ec;
+  border: 1px solid $color_item__border;
   box-sizing: border-box;
   padding: 2px;
 }
