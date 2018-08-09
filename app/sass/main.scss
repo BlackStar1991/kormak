@@ -235,7 +235,8 @@ $minSliderHeight: 555px; /// 578
   width: 100%;
   background-color: #fff;
   box-sizing: border-box;
-  border: 1px solid $color_blue;
+  border: 3px solid $color_blue;
+  box-shadow: -2px 2px 3px 0 $color_blue;
 }
 
 
@@ -295,7 +296,7 @@ $minSliderHeight: 555px; /// 578
 
   //min-height: 130px;
 
-  height: 506px;
+  height: 510px; /// 506px
   background-color: #fff;
   border: 3px solid $color_blue;
   box-shadow: 2px 2px 3px 0 $color_blue;
