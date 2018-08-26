@@ -73,6 +73,28 @@ body {
   z-index: 1075;
 }
 
+.page-overlay::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  z-index: 11;
+  background-color: rgba(60,59,59,.5);
+}
+
+@keyframes effectShadowAnimation {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
 .bl_overflow {
   overflow: hidden;
 }
@@ -246,15 +268,6 @@ $minSliderHeight: 555px; /// 578
   width: 100%;
   border-top: 1px solid #E1E8EC;
   box-sizing: border-box;
-
-  &:hover,
-  &:focus{
-    color: $color_blueItemMenu;
-    background-color: #eaeff3;
-    text-decoration: none;
-    transition: .2s color;
-  }
-
 }
 
 .bl_catalogProducts__link {
@@ -4886,6 +4899,55 @@ li.inf_product__item.inf_product__item_correctForThree {
 }
 
 
+//////////////// Popularnie CATEGORII
+
+
+
+.bl_popularCat {
+  clear: both;
+  margin-top: 36px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  min-height: 570px;
+  background-color: #fff;
+}
+
+.bl_popularCat .bl_popular__title{
+  margin-left: 0;
+  font-size: 18px;
+}
+
+
+.bl_popularCat__item {
+  text-align: center;
+  padding: 20px;
+
+}
+
+
+.bl_popularCat__link {
+  display: block;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid $color_blue;
+}
+
+.bl_popularCat__name.title_name {
+  margin-bottom: 10px;
+  color: $color_blue;
+  text-align: center;
+}
+
+
+.bl_popularCat__img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
 
 /*********************************************/
 /*FOOTER*/
@@ -4905,7 +4967,15 @@ li.inf_product__item.inf_product__item_correctForThree {
 
 @media (min-width: 992px) {
 
-  .view_grid__STYLE .bl_fullProducts__item:hover .bl_addedItems {
+  .bl_catalogProducts__item:hover,
+  .bl_catalogProducts__item:focus{
+      color: $color_blueItemMenu;
+      background-color: #eaeff3;
+      text-decoration: none;
+      transition: .2s color;
+    }
+
+    .view_grid__STYLE .bl_fullProducts__item:hover .bl_addedItems {
 
     opacity: 1;
     transform: scale(1);

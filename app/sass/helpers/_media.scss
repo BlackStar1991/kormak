@@ -40,18 +40,21 @@
 
   .bl_fullCategories {
 
-    display: none;
+    display: block;
 
     position: absolute;
     width: auto;
-    left: 0;
+    left: -150%;
     top: 48px;
     border-top: none;
-    z-index: 99;
+
+    transition: .2s ease-in;
+
+    //z-index: 99;
   }
 
-  .bl_fullCategories.active{
-    display: block;
+  .bl_fullCategories.active {
+    left: 0;
   }
 
   .bl_logo__image {
@@ -105,33 +108,43 @@
     min-height: 502px;
   }
 
-  .main-menu.custom_menu{
+  .main-menu.custom_menu {
     display: none;
     min-height: 100px;
   }
 
-  .bl_catalogProducts{
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    max-width: 300px;
-    z-index: 100;
+  #top_menu {
+    background: none;
+    border: none;
+    box-shadow: none;
   }
 
+  .bl_catalogProducts {
+    position: relative;
+    display: block;
+    width: 230px;
+    top: 0;
+    left: 50%;
+    padding: 5px;
+    transform: translate(-50%, 0);
+
+    border: 1px solid $color_blue;
+    background-color: #fff;
+    text-align: left;
+    z-index: 1076;
+  }
 
   .bl_catalogProducts__full {
 
-    min-height: 100px;
-    min-width: 300px;
+    display: none;
+
     position: relative;
-    text-align: center;
+    min-height: 34px;
     text-transform: uppercase;
-    padding: 0;
-    z-index: 10;
+    border: none;
+    box-shadow: none;
+
   }
-
-
 
   .bl_catalogProducts__item {
     margin-top: 0;
@@ -142,11 +155,29 @@
 
   }
 
-  .bl_catalogProducts__link {
+  .bl_catalogProducts__link,
+  .bl_catalogProducts .footer_fullPages__link {
     font-family: $Tahoma;
     font-size: 16px;
     color: #000;
-    padding: 6px 0;
+    padding: 6px 0 6px 10px;
+    text-align: left;
+  }
+
+  .bl_catalogProducts__link.active {
+    background-color: #e7e9ec;
+  }
+
+  .bl_catalogProducts__full .added_catalog__item a {
+    font-size: 14px;
+    padding: 5px 5px 5px 15px;
+    text-transform: none;
+  }
+
+  .added_catalog {
+    position: relative;
+    border: none;
+    box-shadow: none;
   }
 
   .view_grid__STYLE .bl_fullProducts__characteristics {
@@ -253,8 +284,7 @@
     display: inline-block;
     width: calc(100% / 4 - 2px);
 
-
-    &:nth-child(-n+3){
+    &:nth-child(-n+3) {
       margin-right: 2px;
     }
 
@@ -286,15 +316,9 @@
     margin-bottom: 6px;
   }
 
-  .bl_fullCategories{
-    width: 0;
-    //left: 25%;
-  }
-
-  .bl_catalogProducts{
+  .bl_catalogProducts {
     top: 64px;
   }
-
 
   .bl_fullControlsMenu .btn_microCallBack {
     display: block;

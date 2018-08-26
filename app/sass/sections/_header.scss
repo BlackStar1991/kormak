@@ -1,3 +1,10 @@
+.header{
+  position: relative;
+  z-index: 12;
+}
+
+
+
 .bl_fullNavigation {
   position: relative;
   width: 100%;
@@ -5,8 +12,6 @@
   min-height: 28px;
   color: #fff;
 }
-
-
 
   .bl_nav {
     position: relative;
@@ -689,6 +694,36 @@ $marginTopItem2: 22px;
   left: 5px;
   border-color: $color_blue;
   box-shadow: 0 0 2px 2px $color_blue2;
+}
+
+//// Кнопка Категорий для мобильного
+
+.btn_categories{
+  position: relative;
+  width: 100%;
+  font-size: 26px;
+  text-align: left;
+  padding-left: 10px;
+  background: none;
+  color: #000;
+  display: block;
+}
+
+.btn_categories:before{
+  content:'\f0da';
+  position: absolute;
+  top: 2px;
+  right:12px;
+  font-family: $FontAwesom;
+  font-size: inherit;
+  color: $color_blue;
+  transform: rotate(0);
+  transition: .2s all ease-in;
+  transform-origin: 50% 50%;
+}
+.btn_categories.active:before{
+  transform: rotate(90deg);
+  transition: .2s all ease-in;
 }
 
 
